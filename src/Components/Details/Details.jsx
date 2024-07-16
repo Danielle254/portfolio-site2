@@ -1,6 +1,6 @@
 import React from 'react'
-import About from './About'
-import Skills from './Skills'
+import About from '../About/About'
+import Skills from '../Skills/Skills'
 
 export default function Details() {
   return (
