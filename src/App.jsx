@@ -10,6 +10,7 @@ import { React, useState } from 'react'
 
 function App() {
   const [mode, setMode] = useState('light');
+  const [animationsOn, setAnimationsOn] = useState(true);
 
   return (
     <div>

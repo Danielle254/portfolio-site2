@@ -7,8 +7,9 @@ import resumeIcon from '../Images/resume_icon.png'
 
 export default function Contact(props) {
   
-    function copyToClipboard() {
+    function copyToClipboard(event) {
         navigator.clipboard.writeText("danielle.lindblom@gmail.com");
+        event.preventDefault();
       }
   
     return (
