@@ -13,7 +13,7 @@ function App() {
   const [animationsOn, setAnimationsOn] = useState(true);
   const [menuVisible, setMenuVisible] = useState(false);
 
-  function showMenu() {
+  function toggleMenu() {
     setMenuVisible(!menuVisible);
   }
 
@@ -21,7 +21,7 @@ function App() {
     <div>
       <Navbar 
       menuVisible={menuVisible}
-      showMenu={showMenu}      
+      showMenu={toggleMenu}      
       />
       <Hero />
       <Details />

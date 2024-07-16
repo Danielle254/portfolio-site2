@@ -8,7 +8,7 @@ export default function Navbar(props) {
     <div>
       <img src={profile} style={{width: '50px'}}/>
       <p>Danielle Lindblom</p>
-      <button onClick={props.showMenu}>MENU</button>
+      <button onClick={props.toggleMenu}>MENU</button>
       {props.menuVisible && <Menu />}
     </div>
   )
