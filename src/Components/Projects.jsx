@@ -8,7 +8,7 @@ export default function Projects() {
       <Project />
       <Project />
       <Project />
-      <a className='button--secondary large' href="https://github.com/Danielle254">More projects on GitHub</a>
+      <a className='button--secondary large' href="https://github.com/Danielle254" target="_blank">More projects on GitHub</a>
     </div>
   )
 }
