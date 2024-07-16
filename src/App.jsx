@@ -11,15 +11,23 @@ import { React, useState } from 'react'
 function App() {
   const [mode, setMode] = useState('light');
   const [animationsOn, setAnimationsOn] = useState(true);
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  function showMenu() {
+    setMenuVisible(!menuVisible);
+  }
 
   return (
     <div>
-      <Navbar />
+      <Navbar 
+      menuVisible={menuVisible}
+      showMenu={showMenu}      
+      />
       <Hero />
       <Details />
       <Projects />
       <Contact
-      mode={mode}
+      mode={mode}      
       />
       <Footer />
     </div>

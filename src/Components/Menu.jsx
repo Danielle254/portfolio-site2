@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Menu() {
   return (
-    <div>
+    <nav>
       <ul>
         <li><a href="">About</a></li>
         <li><a href="">Projects</a></li>
@@ -15,6 +15,6 @@ export default function Menu() {
         <button></button>
         <p> OFF</p>
       </ul>
-    </div>
+    </nav>
   )
 }
