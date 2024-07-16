@@ -1,4 +1,4 @@
-import './App.css'
+import './app.css'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import Details from './Components/Details/Details'

@@ -1,7 +1,7 @@
 import React from 'react'
 import profile from '../Images/profile rose background.jpeg';
 import Menu from '../Menu/Menu'
-import '../sassStyles//components/Navbar.css'
+import './navbar.css'
 
 export default function Navbar(props) {
   
