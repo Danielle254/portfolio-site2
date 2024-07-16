@@ -25,12 +25,14 @@ export default function Contact(props) {
       </div>
       <div>
         <div>
+            <a href="https://github.com/Danielle254" target='_blank'>
             <img src={githubIcon} style={{width: '50px'}}/>
-            <p>GitHub</p>
+            <p>GitHub</p></a>
         </div>
         <div>
+            <a href="https://www.linkedin.com/in/danielle-lindblom/" target='_blank'>
             <img src={linkedinIcon} style={{width: '50px'}}/>
-            <p>LinkedIn</p>
+            <p>LinkedIn</p></a>
         </div>
         <div>
             <img src={resumeIcon} style={{width: '50px'}}/>
