@@ -13,7 +13,7 @@ export default function Contact(props) {
       }
   
     return (
-    <div>
+    <div id='contact--section'>
       <h2>Contact</h2>
       <p>Available for remote work. Based in Missoula, Montana USA.</p>
       <p>Let's connect to discuss opportunities!</p>

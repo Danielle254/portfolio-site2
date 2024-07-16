@@ -4,9 +4,9 @@ export default function Menu() {
   return (
     <nav>
       <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#about--section">About</a></li>
+        <li><a href="#projects--section">Projects</a></li>
+        <li><a href="#contact--section">Contact</a></li>
         <li><a href="">Resume</a></li>
         <p>Light Mode </p>
         <button></button>

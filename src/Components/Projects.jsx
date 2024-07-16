@@ -3,7 +3,7 @@ import Project from './Project'
 
 export default function Projects() {
   return (
-    <div>
+    <div id='projects--section'>
       <h2>Projects</h2>
       <Project />
       <Project />
