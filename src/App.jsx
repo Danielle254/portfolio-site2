@@ -18,7 +18,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='App'>
       <Navbar 
       menuVisible={menuVisible}
       showMenu={toggleMenu}      
