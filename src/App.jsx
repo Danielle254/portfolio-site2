@@ -19,17 +19,19 @@ function App() {
 
   return (
     <div className='App'>
-      <Navbar 
-      menuVisible={menuVisible}
-      showMenu={toggleMenu}      
-      />
-      <Hero />
-      <Details />
-      <Projects />
-      <Contact
-      mode={mode}      
-      />
-      <Footer />
+      <div id='app--container'>
+        <Navbar 
+        menuVisible={menuVisible}
+        showMenu={toggleMenu}      
+        />
+        <Hero />
+        <Details />
+        <Projects />
+        <Contact
+        mode={mode}      
+        />
+        <Footer />
+      </div>
     </div>
   )
 }

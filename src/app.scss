@@ -3,10 +3,14 @@
 @import './sassStyles/variables';
 
 .App {
-    background-color: $white-color;
+    background-color: $white-color;       
+    font-family: $primary-font; 
+    color: $black-color;
+}
+
+#app--container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    justify-items: center;   
-    font-family: $primary-font; 
+    justify-items: center;
 }

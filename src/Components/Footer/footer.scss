@@ -1,3 +1,14 @@
 @import '../../sassStyles/animations';
 @import '../../sassStyles/typography';
 @import '../../sassStyles/variables';
+
+footer {
+    background-color: $magenta-color;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+}

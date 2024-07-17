@@ -3,13 +3,19 @@
 @import '../../sassStyles/variables';
 
 #hero--section {
-    height: 80vh;
-    margin: 25vh auto 0 auto;
+    height: 100vh;
+    width: $width-desktop;   
+    margin: 0 auto; 
+    display: grid;
+}
+
+#hero--container {
+    place-self: center;    
 }
 
 
 #hero--section h1 {
-    font-size: $h1-fontsize;
+    font-size: $h1-fontsize;    
 }
 
 #hero--section p {

@@ -1,3 +1,39 @@
 @import '../../sassStyles/animations';
 @import '../../sassStyles/typography';
 @import '../../sassStyles/variables';
+
+#contact--section {
+    min-height: 100vh;    
+}
+
+#contact--content {
+    margin: 10rem auto 1rem auto;  
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  
+    gap: 4rem;
+}
+
+#contact--section h2 {
+    font-size: $h2-fontsize; 
+    margin-bottom: 2rem;   
+}
+
+#contact--section p {
+    font-size: $body-fontsize;
+    text-align: center;
+}
+
+#contact--section a {
+    
+    color: $black-color;
+
+}
+
+
+.social--icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 2rem;
+}

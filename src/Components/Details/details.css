@@ -2,8 +2,7 @@
 #details--section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 82rem;
-  gap: 10rem;
+  justify-items: center;
   margin: 0 auto;
   min-height: 80vh;
 }/*# sourceMappingURL=details.css.map */

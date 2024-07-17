@@ -3,18 +3,21 @@
 @import '../../sassStyles/variables';
 
 .project--card {
-    display: flex;
-    flex-direction: row;
-    margin: 2rem auto;
-    max-width: 82rem;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 2rem;
+    max-width: 82rem;    
 }
 
 
 .project--card img {
-    width: 33rem;
-    height: 20rem;
-    object-fit: cover;   
+    width: 33rem;     
+    border: 1px solid $black-color;     
+}
+
+#details--container {
+    max-width: 30rem;
 }
 
 
