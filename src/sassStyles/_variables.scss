@@ -1,1 +1,15 @@
-$whiteColor: #FFF;
+// light mode color palette
+$white-color: #FFFFFF;
+$gray-color: #E7E7E7;
+$black-color: #131B23;
+$magenta-color: #A60067;
+$pink-color: #FFA9F9;
+$horizontal-gradient-light: linear-gradient(90deg, $magenta-color, $pink-color);
+$vertical-gradient-light: linear-gradient(180deg, $pink-color, $magenta-color);
+
+
+// dark mode color additions
+$darkgray-olor: #3E4B57;
+$yellow-olor: #FFF7AD;
+
+
