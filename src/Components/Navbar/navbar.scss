@@ -5,10 +5,27 @@
 #navbar--section {
     background-image: $vertical-gradient-nav;
     height: 5.625rem;
-
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #navbar--section img {
     height: 3.875rem;
     border-radius: 50%;
+    border: $magenta-color 1px solid; 
+    margin: auto 2rem;
+}
+
+#navbar--section p {
+    font-size: $navbar-fontsize;
+    
+}
+
+#navbar--section button {
+    margin-left: auto;
+    margin-right: 2rem;
+    font-size: $navbar-fontsize;
+    font-family: $primary-font;
 }
