@@ -13,7 +13,7 @@ export default function Skills() {
         <li>React</li>
         <li>React</li>
       </ul>
-      <ul>
+      <ul id='second-list'> 
         <li>React</li>
         <li>React</li>
         <li>React</li>
