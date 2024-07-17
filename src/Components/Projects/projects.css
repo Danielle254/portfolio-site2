@@ -2,11 +2,12 @@
 #projects--section {
   display: grid;
   justify-items: center;
+  padding-top: 5.625rem;
 }
 
 #projects--section h2 {
   font-size: 2rem;
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 
 #projects--section a {
