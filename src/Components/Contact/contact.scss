@@ -3,7 +3,7 @@
 @import '../../sassStyles/variables';
 
 #contact--section {
-    min-height: 100vh;    
+    min-height: 80vh;    
 }
 
 #contact--content {
@@ -24,16 +24,21 @@
     text-align: center;
 }
 
-#contact--section a {
-    
+#contact--section a {    
     color: $black-color;
-
 }
 
 
-.social--icons {
+.social--container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     gap: 2rem;
+}
+
+.social--icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }

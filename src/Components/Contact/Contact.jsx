@@ -22,18 +22,18 @@ export default function Contact(props) {
           <img src={props.mode === "light" ? emailDark : emailLight} style={{width: '50px'}} /> {/* email icon */}
           <a href="mailto:danielle.lindblom@gmail.com">Danielle.Lindblom@gmail.com</a>  
         </div>    
-        <div className='social--icons'>
-          <div>
+        <div className='social--container'>
+          <div className='social--icon'>
               <a href="https://github.com/Danielle254" target='_blank'>
               <img src={githubIcon} style={{width: '50px'}}/>
               <p className='social--text'>GitHub</p></a>
           </div>
-          <div>
+          <div className='social--icon'>
               <a href="https://www.linkedin.com/in/danielle-lindblom/" target='_blank'>
               <img src={linkedinIcon} style={{width: '50px'}}/>
               <p className='social--text'>LinkedIn</p></a>
           </div>
-          <div>
+          <div className='social--icon'>
               <a href='' >
               <img src={resumeIcon} style={{width: '50px'}}/>
               <p className='social--text'>Resume</p></a>
