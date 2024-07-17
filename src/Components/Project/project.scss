@@ -7,7 +7,7 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     margin-bottom: 2rem;
-    max-width: 82rem;    
+    gap: 2rem;
 }
 
 
@@ -17,12 +17,13 @@
 }
 
 #details--container {
-    max-width: 30rem;
+    width: 100%;
 }
 
 
 .project--card h3 {
     font-size: $h3-fontsize;
+    margin-bottom: 1rem;
 }
 
 .project--card p {
