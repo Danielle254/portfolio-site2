@@ -27,15 +27,13 @@
 }
 
 #navbar--content p {
-    font-size: $navbar-fontsize;
-    
+    font-size: $navbar-fontsize;   
 }
 
 #navbar--content button {
     margin-left: auto;
     margin-right: 2rem;
-    font-size: $navbar-fontsize;
-    font-family: $primary-font;
+    font-size: $navbar-fontsize;   
     border: 2px solid $magenta-color;
     border-radius: 10px;
     color: $black-color;
