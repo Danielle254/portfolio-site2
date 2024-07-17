@@ -4,4 +4,8 @@
 
 .App {
     background-color: $white-color;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
 }
