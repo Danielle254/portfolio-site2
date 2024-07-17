@@ -33,4 +33,8 @@
     margin-right: 2rem;
     font-size: $navbar-fontsize;
     font-family: $primary-font;
+    border: 2px solid $magenta-color;
+    color: $black-color;
+    background-color: $white-color;
+    cursor: pointer;
 }
