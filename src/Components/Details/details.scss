@@ -1,3 +1,11 @@
 @import '../../sassStyles/animations';
 @import '../../sassStyles/typography';
 @import '../../sassStyles/variables';
+
+#details--section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 82rem;
+    gap: 4rem;
+    
+}

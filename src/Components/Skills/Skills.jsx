@@ -3,9 +3,10 @@ import './skills.css'
 
 export default function Skills() {
   return (
-    <div>
+    <div id='skills--section'>
       <h2>My Skills</h2>
       <h4>Technical Skills</h4>
+      <div id='list--container'>
       <ul>
         <li>React</li>
         <li>React</li>
@@ -17,7 +18,7 @@ export default function Skills() {
         <li>React</li>
         <li>React</li>
         <li>React</li>
-      </ul>
+      </ul></div>
       <h4>Professional Skills</h4>
       <ul>
         <li>Team Leadership</li>

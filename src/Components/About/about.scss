@@ -2,4 +2,19 @@
 @import '../../sassStyles/typography';
 @import '../../sassStyles/variables';
 
+#about--section {
+    max-width: 30rem;
+}
 
+#about--section h2 {
+    font-size: $h2-fontsize;
+}
+
+#about--section p {
+    font-size: $body-fontsize;
+    margin: 1rem auto 2rem auto;
+}
+
+#about--section a {
+    @include hero-button-light;
+}

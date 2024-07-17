@@ -4,8 +4,7 @@ $gray-color: #E7E7E7;
 $black-color: #131B23;
 $magenta-color: #A60067;
 $pink-color: #FFA9F9;
-$horizontal-gradient-light: linear-gradient(90deg, $magenta-color, $pink-color);
-$vertical-gradient-light: linear-gradient(180deg, $pink-color, $magenta-color);
+
 $vertical-gradient-nav: linear-gradient(180deg, $gray-color, $white-color);
 
 
@@ -25,4 +24,9 @@ $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
     background-color: $magenta-color;
     color: $white-color;
     border-radius: 20px;    
+}
+
+@mixin primary-button-light {
+    text-decoration: none;
+    
 }

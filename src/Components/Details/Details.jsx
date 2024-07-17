@@ -5,7 +5,7 @@ import './details.css'
 
 export default function Details() {
   return (
-    <div>
+    <div id='details--section'>
       <About />
       <Skills />
     </div>
