@@ -1,3 +1,14 @@
 @import '../../sassStyles/animations';
 @import '../../sassStyles/typography';
 @import '../../sassStyles/variables';
+
+#navbar--section {
+    background-image: $vertical-gradient-nav;
+    height: 5.625rem;
+
+}
+
+#navbar--section img {
+    height: 3.875rem;
+    border-radius: 50%;
+}
