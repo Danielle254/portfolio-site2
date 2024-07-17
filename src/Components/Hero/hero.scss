@@ -1,3 +1,23 @@
 @import '../../sassStyles/animations';
 @import '../../sassStyles/typography';
 @import '../../sassStyles/variables';
+
+#hero--section {
+    height: 80vh;
+    margin: 10% auto;
+}
+
+
+#hero--section h1 {
+    font-size: $h1-fontsize;
+}
+
+#hero--section p {
+    font-size: $h3-fontsize;
+    max-width: 43rem;
+    margin: 1rem auto 2rem auto;
+}
+
+#hero--button {
+    @include hero-button-light;
+}
