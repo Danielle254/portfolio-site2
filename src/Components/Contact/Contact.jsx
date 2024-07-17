@@ -1,9 +1,9 @@
 import React from 'react'
-import githubIcon from '../Images/github_logo.png'
-import linkedinIcon from '../Images/linkedin_logo.png'
-import emailLight from '../Images/email-icon-white.png'
-import emailDark from '../Images/email-icon-dark.png'
-import resumeIcon from '../Images/resume_icon.png'
+import githubIcon from '../../Images/github_logo.png'
+import linkedinIcon from '../../Images/linkedin_logo.png'
+import emailLight from '../../Images/email-icon-white.png'
+import emailDark from '../../Images/email-icon-dark.png'
+import resumeIcon from '../../Images/resume_icon.png'
 import './contact.css'
 
 export default function Contact(props) {

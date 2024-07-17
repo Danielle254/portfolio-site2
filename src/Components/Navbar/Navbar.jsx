@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../Images/profile rose background.jpeg';
+import profile from '../../Images/profile rose background.jpeg';
 import Menu from '../Menu/Menu'
 import './navbar.css'
 
