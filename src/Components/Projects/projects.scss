@@ -1,3 +1,21 @@
 @import '../../sassStyles/animations';
 @import '../../sassStyles/typography';
 @import '../../sassStyles/variables';
+
+#projects--section {
+    max-width: 83rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+#projects--section h2 {
+    font-size: $h2-fontsize;
+    align-self: center;
+    margin: 2rem auto;
+}
+
+#projects--section a {
+    @include hero-button-light;
+    margin: 2rem auto;
+}
