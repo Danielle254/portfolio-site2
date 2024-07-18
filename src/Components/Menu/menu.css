@@ -4,10 +4,15 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 200px;
-  height: 300px;
+  width: 30%;
+  height: 40%;
   background-color: #E7E7E7;
-  z-index: 1;
+  border: 1px #131B23 solid;
+  border-radius: 20px;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 nav ul {
@@ -17,4 +22,61 @@ nav ul {
 nav a {
   text-decoration: none;
   color: #131B23;
+  transition: color 0.2s ease-in-out;
+}
+
+nav li {
+  padding-bottom: 1rem;
+}
+
+nav a:hover {
+  color: #A60067;
+}
+
+#close--nav {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.access--container {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.access--button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#mode--button {
+  margin-bottom: 0.5rem;
+  background-color: #131B23;
+  color: #FFFFFF;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#animate--button {
+  background-color: #FFFFFF;
+  color: #131B23;
+  border: 2px solid #A60067;
+  transition: all 0.2s ease-in-out;
+}
+
+#mode--button:hover {
+  background-color: rgb(64, 64, 64);
+}
+
+#animate--button:hover {
+  background-color: #A60067;
+  color: #FFFFFF;
 }/*# sourceMappingURL=menu.css.map */

@@ -17,7 +17,8 @@ $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
 
 // buttons
 @mixin button-light {
-    text-decoration: none;   
+    text-decoration: none; 
+    cursor: pointer;  
     padding: 0.5rem 1rem;
     font-size: 1rem;
     font-weight: bold;
@@ -25,6 +26,23 @@ $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
     color: $white-color;
     border-radius: 20px; 
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
+}
+
+@mixin button-light-hover {
+
+}
+
+@mixin button-access {      
+    padding: 0.5rem 1rem;
+    font-size: $body-fontsize;
+    font-weight: bold;    
+    border-radius: 10px; 
+    cursor: pointer; 
+    
+}
+
+@mixin button-access-hover {
+
 }
 
 

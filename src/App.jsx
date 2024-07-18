@@ -27,7 +27,9 @@ function App() {
         />
         {menuVisible && 
         <Menu 
-        toggleMenu={toggleMenu}        
+        toggleMenu={toggleMenu} 
+        mode={mode}
+        animationsOn={animationsOn}       
         />}
         <Hero />
         <Details />
