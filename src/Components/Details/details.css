@@ -5,4 +5,11 @@
   justify-items: center;
   margin: 0 auto;
   min-height: 80vh;
+}
+
+@media screen and (max-width: 1200px) {
+  #details--section {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
 }/*# sourceMappingURL=details.css.map */

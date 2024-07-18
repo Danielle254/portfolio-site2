@@ -3,14 +3,16 @@
 @import '../../sassStyles/variables';
 
 #hero--section {
-    height: 100vh;
+    height: 120vh;
     width: $width-desktop;   
     margin: 0 auto; 
-    display: grid;    
+    display: grid; 
+    grid-template-columns: 1fr;   
 }
 
 #hero--container {
-    place-self: center;    
+    margin: 20rem auto;
+    max-width: 38rem;
 }
 
 
@@ -20,12 +22,16 @@
 
 #hero--section p {
     font-size: $h3-fontsize;
-    max-width: 43rem;
+    
     margin: 1rem auto 2rem auto;
 }
 
 #hero--button {
     @include button-light;
+}
+
+@media screen and (max-width: $breakpoint2) {
+    
 }
 
 

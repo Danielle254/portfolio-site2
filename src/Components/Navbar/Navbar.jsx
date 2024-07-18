@@ -21,7 +21,7 @@ export default function Navbar(props) {
           <button id='mode--button-desktop' className='access--button-desktop' onClick={props.toggleMode}><img className='icon' src={modeIcon} />{props.mode === "light" ? " Dark Mode" : " Light Mode"}</button>
           <button id='animate--button-desktop' className='access--button-desktop' onClick={props.toggleAnimations}><img src={motionIcon} className='icon'/>{props.animationsOn === true ? "Animations OFF" : "Animations ON"}</button>           
         </div> 
-                  
+        {props.mobileMenuVisible === false && <button id='menu--button' onClick={props.toggleMenu}>MENU</button>}         
       </div>
     </div>
   )

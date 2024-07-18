@@ -9,3 +9,11 @@
     margin: 0 auto; 
     min-height: 80vh;   
 }
+
+@media screen and (max-width: $breakpoint2) {
+    #details--section {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        
+    }
+}

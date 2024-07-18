@@ -5,8 +5,7 @@
 .navbar--background {
     background-image: $vertical-gradient-nav;
     height: 5.625rem;   
-    width: 100%; 
-    overflow: hidden;
+    width: 100%;     
     position: fixed;
     top: 0;
 }
@@ -88,6 +87,42 @@
 #animate--button-desktop:hover {
     background-color: $magenta-color;
     color: $white-color;
+}
+
+// mobile menu button
+#menu--button {
+    margin-left: auto;
+    margin-right: 2rem;
+    font-size: $navbar-fontsize;   
+    cursor: pointer;
+    border: 2px solid $magenta-color;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+
+
+@media screen and (max-width: $breakpoint1) {
+    .navbar--content {
+        width: $width-mobile;
+    }
+    
+}
+
+@media screen and (max-width: $breakpoint2) {
+    .navbar--background {
+        right: 0;
+    }
+    
+    .navbar--content {
+        width: $width-mobile;
+        margin: 0;
+    }
+    
+    .menu--items {
+        display: none;
+    }
 }
 
 

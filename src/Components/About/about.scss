@@ -18,3 +18,12 @@
 #about--section a {
     @include button-light;
 }
+
+@media screen and (max-width: $breakpoint3) {
+    #about--section {
+        width: $width-mobile;
+        margin: 2rem;
+        
+    }
+    
+}

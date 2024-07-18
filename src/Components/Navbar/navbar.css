@@ -3,7 +3,6 @@
   background-image: linear-gradient(180deg, #E7E7E7, #FFFFFF);
   height: 5.625rem;
   width: 100%;
-  overflow: hidden;
   position: fixed;
   top: 0;
 }
@@ -84,4 +83,33 @@
 #animate--button-desktop:hover {
   background-color: #A60067;
   color: #FFFFFF;
+}
+
+#menu--button {
+  margin-left: auto;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 2px solid #A60067;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .navbar--content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar--background {
+    right: 0;
+  }
+  .navbar--content {
+    width: 100%;
+    margin: 0;
+  }
+  .menu--items {
+    display: none;
+  }
 }/*# sourceMappingURL=navbar.css.map */

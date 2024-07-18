@@ -14,7 +14,7 @@
 .project--card img {
     width: 33rem;     
     border: 1px solid $black-color;   
-    box-shadow: -12px -12px  $magenta-color; 
+    box-shadow: -12px 12px  $magenta-color; 
 }
 
 #details--container {
@@ -44,4 +44,10 @@
 
 .project--card a {
     @include button-light;
+}
+
+@media screen and (max-width: $breakpoint2) {
+    .project--card {
+        grid-template-columns: 1fr;        
+    }
 }

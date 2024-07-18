@@ -28,3 +28,13 @@
 #second-list {
     margin-left: 4rem;
 }
+
+
+@media screen and (max-width: $breakpoint2) {
+    #skills--section {
+        width: $width-mobile;
+        margin: 2rem;
+        
+    }
+    
+}

@@ -4,16 +4,19 @@
 
 #projects--section {    
     display: grid;
+    grid-template-columns: 1fr;
     justify-items: center;  
-    padding-top: 5.625rem;    
+    padding-top: 5.625rem;  
+    gap: 4rem;  
 }
 
 #projects--section h2 {
     font-size: $h2-fontsize;    
-    margin: 2rem auto;
+    margin: 2rem auto 4rem auto;
 }
 
 #projects--section a {
     @include button-light;
     margin: 2rem auto;
 }
+

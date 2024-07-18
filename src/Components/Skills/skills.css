@@ -24,4 +24,11 @@
 
 #second-list {
   margin-left: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+  #skills--section {
+    width: 100%;
+    margin: 2rem;
+  }
 }/*# sourceMappingURL=skills.css.map */
