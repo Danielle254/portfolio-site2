@@ -99,6 +99,7 @@
     background-color: transparent;
     border-radius: 10px;
     padding: 0.5rem;
+    display: none;
 }
 
 
@@ -122,6 +123,10 @@
     
     .menu--items {
         display: none;
+    }
+
+    #menu--button {
+        display: block;
     }
 }
 
