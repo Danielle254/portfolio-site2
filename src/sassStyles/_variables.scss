@@ -45,12 +45,19 @@ $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
     font-size: $body-fontsize;
     font-weight: bold;    
     border-radius: 10px; 
-    cursor: pointer; 
-    
+    cursor: pointer;     
 }
 
-@mixin button-access-hover {
-
+@mixin button-dark {
+    text-decoration: none; 
+    cursor: pointer;  
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: $pink-color;
+    color: $black-color;
+    border-radius: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
 }
 
 

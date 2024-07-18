@@ -28,6 +28,13 @@
     margin: 1rem 2rem;    
 }
 
+#profile-dark {
+    height: 3.875rem;
+    border-radius: 50%;
+    border: $pink-color 1px solid; 
+    margin: 1rem 2rem;    
+}
+
 .nav--title {
     font-size: $navbar-fontsize;   
 }
@@ -77,15 +84,23 @@
 }
 
 #mode--button-desktop-dark {
-    border: 1px solid $black-color;
+    border: 1px solid $white-color;
     transition: all 0.2s ease-in-out;
     width: 120px;
+    color: $white-color;
 }
 
 #animate--button-desktop {
     border: 1px solid $magenta-color;
     transition: all 0.2s ease-in-out;
     width: 150px;
+}
+
+#animate--button-desktop-dark {
+    border: 1px solid $magenta-color;
+    transition: all 0.2s ease-in-out;
+    width: 150px;
+    color: $white-color;
 }
 
 .icon {

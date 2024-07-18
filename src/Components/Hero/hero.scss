@@ -26,9 +26,23 @@
     margin: 1rem auto 2rem auto;
 }
 
+#span-light {
+    color: $magenta-color;
+}
+
+#span-dark {
+    color: $pink-color;
+}
+
 #hero--button {
     @include button-light;
 }
+
+#hero--button-dark {
+    @include button-dark;
+}
+
+
 
 @media screen and (max-width: $breakpoint2) {
     
