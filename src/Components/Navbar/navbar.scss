@@ -5,8 +5,12 @@
 .navbar--background {
     background-image: $vertical-gradient-nav;
     height: 5.625rem;   
-    width: 100%;     
-    
+    width: 100%;         
+}
+
+.navbar--background-dark {
+    height: 5.625rem;   
+    width: 100%; 
 }
 
 .navbar--content {
@@ -48,20 +52,31 @@
     cursor: pointer;
 }
 
-.navbar--content a {
+.menu-light {
     text-decoration: none;
     color: $black-color;
+}
+
+.menu-dark {
+    text-decoration: none;
+    color: $white-color;
 }
 
 .access--button-desktop {
     background-color: transparent;
     border-radius: 10px;
     font-weight: bold;   
-    cursor: pointer; 
-    /* font-size: $navbar-fontsize; */
+    cursor: pointer;     
 }
 
+
 #mode--button-desktop {
+    border: 1px solid $black-color;
+    transition: all 0.2s ease-in-out;
+    width: 120px;
+}
+
+#mode--button-desktop-dark {
     border: 1px solid $black-color;
     transition: all 0.2s ease-in-out;
     width: 120px;
@@ -80,6 +95,11 @@
 #mode--button-desktop:hover {
     background-color: $black-color;
     color: $white-color;
+}
+
+#mode--button-desktop-dark:hover {
+    background-color: $white-color;
+    color: $black-color;
 }
 
 #animate--button-desktop:hover {

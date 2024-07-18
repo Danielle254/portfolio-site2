@@ -7,6 +7,14 @@ import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import { React, useState } from 'react'
+/* import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom';
+import Project1 from './Pages/Project1';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path=''
+  )
+) */
 
 
 function App() {
@@ -35,7 +43,7 @@ function App() {
   }
 
   return (
-    <div className='App'>
+    <div className={mode === "light" ? 'App' : 'App-dark'}>
       <div id='app--container'>
         <Navbar 
         mobileMenuVisible={mobileMenuVisible}

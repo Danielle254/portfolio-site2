@@ -32,7 +32,7 @@ export default function Project(props) {
         <div className='tags--container'>
           {tags}
         </div>
-        <a href=''>Demo & Details</a>
+        <a href={props.detailsPath}>Demo & Details</a>
       </div>
     </div>
   )

@@ -5,6 +5,11 @@
   width: 100%;
 }
 
+.navbar--background-dark {
+  height: 5.625rem;
+  width: 100%;
+}
+
 .navbar--content {
   width: 80%;
   margin: 0 auto;
@@ -44,9 +49,14 @@
   cursor: pointer;
 }
 
-.navbar--content a {
+.menu-light {
   text-decoration: none;
   color: #131B23;
+}
+
+.menu-dark {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .access--button-desktop {
@@ -54,10 +64,15 @@
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
-  /* font-size: $navbar-fontsize; */
 }
 
 #mode--button-desktop {
+  border: 1px solid #131B23;
+  transition: all 0.2s ease-in-out;
+  width: 120px;
+}
+
+#mode--button-desktop-dark {
   border: 1px solid #131B23;
   transition: all 0.2s ease-in-out;
   width: 120px;
@@ -76,6 +91,11 @@
 #mode--button-desktop:hover {
   background-color: #131B23;
   color: #FFFFFF;
+}
+
+#mode--button-desktop-dark:hover {
+  background-color: #FFFFFF;
+  color: #131B23;
 }
 
 #animate--button-desktop:hover {

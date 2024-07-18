@@ -8,6 +8,12 @@
     color: $black-color;
 }
 
+.App-dark {
+    background-color: $darkgray-color;
+    color: $white-color;
+    font-family: $primary-font;
+}
+
 #app--container {
     display: grid;
     grid-template-columns: 1fr;

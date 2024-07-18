@@ -5,6 +5,12 @@
   color: #131B23;
 }
 
+.App-dark {
+  background-color: #3E4B57;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+}
+
 #app--container {
   display: grid;
   grid-template-columns: 1fr;
