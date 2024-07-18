@@ -24,6 +24,7 @@
 
 .project--card p {
   font-size: 1rem;
+  max-width: 40rem;
 }
 
 .tags--container {
@@ -35,6 +36,9 @@
 .tag {
   margin-right: 1rem;
   font-size: 0.875rem;
+  font-weight: bold;
+  box-shadow: -3px 3px #E7E7E7;
+  padding-left: 0.2rem;
 }
 
 .project--card a {
