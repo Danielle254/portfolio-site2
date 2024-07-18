@@ -1,9 +1,10 @@
 import React from 'react'
 import './menu.css'
 
-export default function Menu() {
+export default function Menu(props) {
   return (
-    <nav>
+    <nav id='nav'>
+      <button onClick={props.toggleMenu}>X</button>
       <ul>
         <li><a href="#about--section">About</a></li>
         <li><a href="#projects--section">Projects</a></li>

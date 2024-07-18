@@ -1,5 +1,6 @@
 import './app.css'
 import Navbar from './Components/Navbar/Navbar'
+import Menu from './Components/Menu/Menu'
 import Hero from './Components/Hero/Hero'
 import Details from './Components/Details/Details'
 import Projects from './Components/Projects/Projects'
@@ -22,8 +23,12 @@ function App() {
       <div id='app--container'>
         <Navbar 
         menuVisible={menuVisible}
-        showMenu={toggleMenu}      
+        toggleMenu={toggleMenu}      
         />
+        {menuVisible && 
+        <Menu 
+        toggleMenu={toggleMenu}        
+        />}
         <Hero />
         <Details />
         <Projects />
