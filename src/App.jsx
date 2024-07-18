@@ -12,10 +12,10 @@ import { React, useState } from 'react'
 function App() {
   const [mode, setMode] = useState('light');
   const [animationsOn, setAnimationsOn] = useState(true);
-  const [menuVisible, setMenuVisible] = useState(false);
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   function toggleMenu() {
-    setMenuVisible(!menuVisible);
+    setMobileMenuVisible(!mobileMenuVisible);
   }
 
   function toggleMode() {
@@ -38,11 +38,14 @@ function App() {
     <div className='App'>
       <div id='app--container'>
         <Navbar 
-        menuVisible={menuVisible}
+        mobileMenuVisible={mobileMenuVisible}
         toggleMenu={toggleMenu}  
-        mode={mode}    
+        mode={mode} 
+        animationsOn={animationsOn}
+        toggleMode={toggleMode}  
+        toggleAnimations={toggleAnimations}    
         />
-        {menuVisible && 
+        {mobileMenuVisible && 
         <Menu 
         toggleMenu={toggleMenu} 
         mode={mode}

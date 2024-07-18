@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-.navbar--content img {
+#profile {
     height: 3.875rem;
     border-radius: 50%;
     border: $magenta-color 1px solid; 
@@ -27,18 +27,67 @@
     
 }
 
-.navbar--content p {
+.nav--title {
     font-size: $navbar-fontsize;   
 }
 
-.navbar--content button {
-    margin-left: auto;
-    margin-right: 2rem;
-    font-size: $navbar-fontsize;   
-    border: 2px solid $magenta-color;
-    border-radius: 10px;
-    color: $black-color;
-    background-color: $white-color;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+.main--menu {
+    list-style-type: none;   
+    font-size: $navbar-fontsize;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;  
 }
+
+.menu--items {    
+    margin-left: auto;
+    margin-right: 2rem; 
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;   
+}
+
+.navbar--content li {
+    cursor: pointer;
+}
+
+.navbar--content a {
+    text-decoration: none;
+    color: $black-color;
+}
+
+.access--button-desktop {
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: bold;   
+    cursor: pointer; 
+    /* font-size: $navbar-fontsize; */
+}
+
+#mode--button-desktop {
+    border: 1px solid $black-color;
+    transition: all 0.2s ease-in-out;
+    width: 120px;
+}
+
+#animate--button-desktop {
+    border: 1px solid $magenta-color;
+    transition: all 0.2s ease-in-out;
+    width: 150px;
+}
+
+.icon {
+    width: 1rem;
+}
+
+#mode--button-desktop:hover {
+    background-color: $black-color;
+    color: $white-color;
+}
+
+#animate--button-desktop:hover {
+    background-color: $magenta-color;
+    color: $white-color;
+}
+
+
