@@ -18,26 +18,57 @@ function App() {
     setMenuVisible(!menuVisible);
   }
 
+  function toggleMode() {
+    const currentMode = mode;
+    switch (currentMode) {
+      case "light":
+        setMode("dark");
+        break;
+      case "dark":
+        setMode("light");
+        break;
+    }
+  }
+
+  function toggleAnimations() {
+    setAnimationsOn(!animationsOn);
+  }
+
   return (
     <div className='App'>
       <div id='app--container'>
         <Navbar 
         menuVisible={menuVisible}
-        toggleMenu={toggleMenu}      
+        toggleMenu={toggleMenu}  
+        mode={mode}    
         />
         {menuVisible && 
         <Menu 
         toggleMenu={toggleMenu} 
         mode={mode}
-        animationsOn={animationsOn}       
+        animationsOn={animationsOn}
+        toggleMode={toggleMode}  
+        toggleAnimations={toggleAnimations}     
         />}
-        <Hero />
-        <Details />
-        <Projects />
-        <Contact
-        mode={mode}      
+        <Hero
+        mode={mode}
+        animationsOn={animationsOn} 
         />
-        <Footer />
+        <Details 
+        mode={mode}
+        animationsOn={animationsOn} 
+        />
+        <Projects 
+        mode={mode}
+        animationsOn={animationsOn} 
+        />
+        <Contact
+        mode={mode} 
+        animationsOn={animationsOn}      
+        />
+        <Footer 
+        mode={mode}
+        />
       </div>
     </div>
   )

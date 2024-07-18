@@ -5,7 +5,7 @@
   right: 0;
   top: 0;
   width: 30%;
-  height: 40%;
+  height: 50%;
   background-color: #E7E7E7;
   border: 1px #131B23 solid;
   border-radius: 20px;
@@ -60,9 +60,10 @@ nav a:hover {
 
 #mode--button {
   margin-bottom: 0.5rem;
-  background-color: #131B23;
-  color: #FFFFFF;
-  transition: background-color 0.2s ease-in-out;
+  background-color: #FFFFFF;
+  border: 2px solid #131B23;
+  color: #131B23;
+  transition: all 0.2s ease-in-out;
 }
 
 #animate--button {
@@ -73,7 +74,8 @@ nav a:hover {
 }
 
 #mode--button:hover {
-  background-color: rgb(64, 64, 64);
+  background-color: #131B23;
+  color: #FFFFFF;
 }
 
 #animate--button:hover {

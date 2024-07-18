@@ -8,7 +8,7 @@
     right: 0;
     top: 0;
     width: 30%;
-    height: 40%;
+    height: 50%;
     background-color: $gray-color;
     border: 1px $black-color solid;
     border-radius: 20px;
@@ -58,10 +58,11 @@ nav a:hover {
 }
 
 #mode--button {
-    margin-bottom: 0.5rem;
-    background-color: $black-color;
-    color: $white-color; 
-    transition: background-color 0.2s ease-in-out;   
+    margin-bottom: 0.5rem;    
+    background-color: $white-color;
+    border: 2px solid $black-color;
+    color: $black-color;
+    transition: all 0.2s ease-in-out;   
 }
 
 #animate--button {
@@ -72,7 +73,8 @@ nav a:hover {
 }
 
 #mode--button:hover {
-    background-color: rgb(64, 64, 64);
+    background-color: $black-color;
+    color: $white-color;
 }
 
 #animate--button:hover {
