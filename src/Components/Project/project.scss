@@ -61,4 +61,9 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    .project--card img {
+        max-width: 33rem;
+        margin: auto 2rem;
+    }
 }

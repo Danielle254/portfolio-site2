@@ -5,8 +5,7 @@
 #projects--section {    
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;  
-     
+    justify-items: center;      
     gap: 4rem;  
 }
 
@@ -15,9 +14,10 @@
     margin: 2rem auto 4rem auto;
 }
 
-#projects--section a {
-    @include button-light;
+#more-projects-button {
+    @include button-light-secondary;
     margin: 2rem auto;
 }
+
 
 

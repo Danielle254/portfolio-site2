@@ -24,7 +24,7 @@ export default function Projects() {
     <div id='projects--section'>
       <h2>Projects</h2>
       {projects}
-      <a href="https://github.com/Danielle254" target="_blank">More Projects</a>
+      <a id='more-projects-button' href="https://github.com/Danielle254" target="_blank">More Projects</a>
     </div>
   )
 }
