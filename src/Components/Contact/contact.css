@@ -3,7 +3,7 @@
   min-height: 80vh;
 }
 
-#contact--content {
+.contact--content {
   margin: 10rem auto 1rem auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -37,4 +37,12 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+.social--icon img {
+  width: 3rem;
+}
+
+.social--icon a {
+  text-decoration: none;
 }/*# sourceMappingURL=contact.css.map */

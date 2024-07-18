@@ -15,7 +15,7 @@ export default function Contact(props) {
   
     return (
     <div id='contact--section'>
-      <div id='contact--content'>
+      <div className='contact--content'>
         <h2>Contact</h2>
         <p>Available for remote work. Based in Missoula, Montana USA.<br />Let's connect to discuss opportunities!</p>
         <div className='email--container'>
@@ -25,17 +25,17 @@ export default function Contact(props) {
         <div className='social--container'>
           <div className='social--icon'>
               <a href="https://github.com/Danielle254" target='_blank'>
-              <img src={githubIcon} style={{width: '50px'}}/>
+              <img src={githubIcon} />
               <p className='social--text'>GitHub</p></a>
           </div>
           <div className='social--icon'>
               <a href="https://www.linkedin.com/in/danielle-lindblom/" target='_blank'>
-              <img src={linkedinIcon} style={{width: '50px'}}/>
+              <img src={linkedinIcon} />
               <p className='social--text'>LinkedIn</p></a>
           </div>
           <div className='social--icon'>
               <a href='' >
-              <img src={resumeIcon} style={{width: '50px'}}/>
+              <img src={resumeIcon} />
               <p className='social--text'>Resume</p></a>
           </div>
         </div>

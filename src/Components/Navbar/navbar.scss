@@ -24,6 +24,7 @@
     border-radius: 50%;
     border: $magenta-color 1px solid; 
     margin: 1rem 2rem;
+    
 }
 
 #navbar--content p {
@@ -39,4 +40,5 @@
     color: $black-color;
     background-color: $white-color;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
