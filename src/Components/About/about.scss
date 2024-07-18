@@ -16,15 +16,20 @@
     margin: 1rem auto 2rem auto;
 }
 
-#about--section a {
+#h4-dark {
+    color: $pink-color;
+}
+
+#resume-button-light {
     @include button-light;
+}
+
+#resume-button-dark {
+    @include button-dark;
 }
 
 @media screen and (max-width: $breakpoint3) {
     #about--section {
-        width: $width-mobile;
-        
-        
-    }
-    
+        width: $width-mobile;        
+    }    
 }

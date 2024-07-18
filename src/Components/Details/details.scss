@@ -7,14 +7,12 @@
     grid-template-columns: 1fr 1fr;    
     justify-items: center;    
     margin: 0 auto;     
-    min-height: 100vh;   
-    
+    min-height: 100vh;    
 }
 
 @media screen and (max-width: $breakpoint2) {
     #details--section {
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: 1fr;        
         margin: 2rem;
     }
 }
