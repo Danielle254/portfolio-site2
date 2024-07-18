@@ -53,4 +53,13 @@
   .project--card {
     grid-template-columns: 1fr;
   }
+}
+@media screen and (max-width: 800px) {
+  #details--container {
+    text-align: center;
+  }
+  .tags--container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=project.css.map */
