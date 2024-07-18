@@ -9,21 +9,22 @@ export default function Skills() {
       <div id='list--container'>
       <ul>
         <li>React</li>
-        <li>React</li>
-        <li>React</li>
-        <li>React</li>
+        <li>JavaScript</li>
+        <li>HTML/CSS</li>
+        <li>Web Accessibility</li>
       </ul>
       <ul id='second-list'> 
-        <li>React</li>
-        <li>React</li>
-        <li>React</li>
-        <li>React</li>
+        <li>Sass, Bootstrap</li>
+        <li>Git & GitHub</li>
+        <li>Testing</li>
+        <li>VSCode</li>
       </ul></div>
-      <h4>Professional Skills</h4>
+      <h4 className='skills2'>Professional Skills</h4>
       <ul>
         <li>Team Leadership</li>
-        <li>Team Leadership</li>
-        <li>Team Leadership</li>
+        <li>Continuous Improvement</li>
+        <li>Technical Training</li>
+        <li>Project Collaboration</li>
       </ul>
     </div>
   )

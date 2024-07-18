@@ -17,8 +17,8 @@
 }
 
 #skills--section h4 {
-    font-size: $body-fontsize;
-    margin: 1rem auto;
+    font-size: $body-fontsize; 
+    margin-bottom: 0.25rem;   
 }
 
 #skills--section ul {
@@ -27,6 +27,10 @@
 
 #second-list {
     margin-left: 4rem;
+}
+
+.skills2 {
+    margin-top: 1.5rem;
 }
 
 
