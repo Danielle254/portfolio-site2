@@ -41,6 +41,14 @@ nav a:hover {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: border 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+#close--nav:hover {
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5px;
 }
 
 .access--container {
@@ -67,12 +75,10 @@ nav a:hover {
   width: 200px;
 }
 
-#mode--button-dark {
-  margin-bottom: 0.5rem;
+#mode--button:hover {
   background-color: #131B23;
+  border: 2px solid #131B23;
   color: #FFFFFF;
-  transition: all 0.2s ease-in-out;
-  width: 200px;
 }
 
 #animate--button {
@@ -80,17 +86,6 @@ nav a:hover {
   color: #131B23;
   border: 2px solid #A60067;
   transition: all 0.2s ease-in-out;
-}
-
-#mode--button:hover {
-  background-color: #131B23;
-  border: 2px solid #131B23;
-  color: #FFFFFF;
-}
-
-#mode--button-dark:hover {
-  background-color: #FFFFFF;
-  color: #FFFFFF;
 }
 
 #animate--button:hover {
