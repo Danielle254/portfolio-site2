@@ -3,7 +3,7 @@
 @import '../../sassStyles/variables';
 
 #skills--section {
-    max-width: 40rem;
+    min-height: 100vh;
 }
 
 #list--container {
@@ -13,23 +13,23 @@
 
 #skills--section h2 {
     font-size: $h2-fontsize;
-    margin: 2rem auto;
+    margin: 2rem 0;
 }
 
 .h4-light {
     font-size: $body-fontsize; 
-    margin-bottom: 0.25rem; 
+    margin-bottom: 0.5rem; 
     color: $magenta-color;  
 }
 
 .h4-dark {
     font-size: $body-fontsize; 
-    margin-bottom: 0.25rem; 
+    margin-bottom: 0.5rem; 
     color: $pink-color;  
 }
 
 #skills--section ul {
-    padding-left: 1rem;
+    padding-left: 1.25rem;
 }
 
 #second-list {
@@ -40,8 +40,10 @@
     margin-top: 1.5rem;
 }
 
+// old media queries
 
-@media screen and (max-width: $breakpoint2) {
+
+/* @media screen and (max-width: $breakpoint2) {
     #skills--section {
         width: $width-mobile;
         margin: 2rem;        
@@ -53,4 +55,4 @@
         width: 100%;
         margin: 0;
     }
-}
+} */

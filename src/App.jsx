@@ -82,11 +82,11 @@ function App() {
         mode={mode}
         animationsOn={animationsOn} 
         />}
-        {/* {showContent && <Details 
+        {showContent && <Details 
         mode={mode}
         animationsOn={animationsOn} 
         />}
-        {showContent && <Projects 
+        {/* {showContent && <Projects 
         mode={mode}
         animationsOn={animationsOn} 
         />} */}

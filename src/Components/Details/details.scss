@@ -4,13 +4,15 @@
 
 #details--section {
     display: grid;
-    grid-template-columns: 1fr 1fr;    
-    justify-items: center;    
-    margin: 0 auto;     
-    min-height: 100vh;    
+    grid-template-columns: 1fr;    
+    margin: 2rem 1rem;      
 }
 
-@media screen and (max-width: $breakpoint2) {
+
+
+// old media queries
+
+/* @media screen and (max-width: $breakpoint2) {
     #details--section {
         grid-template-columns: 1fr;        
         margin: 2rem;
@@ -22,4 +24,4 @@
         justify-items: left;
         margin: 0;
     }
-}
+} */

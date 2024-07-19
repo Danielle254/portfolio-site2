@@ -3,7 +3,7 @@
 @import '../../sassStyles/variables';
 
 #about--section {
-    max-width: 30rem;
+    min-height: 100vh;
 }
 
 #about--section h2 {
@@ -13,7 +13,7 @@
 
 #about--section p {
     font-size: $body-fontsize;
-    margin: 1rem auto 2rem auto;
+    margin: 1rem 0 2rem 0;
 }
 
 #h4-light {
@@ -40,7 +40,13 @@
     @include button-dark-hover;
 }
 
-@media screen and (max-width: $breakpoint3) {
+
+
+
+
+// old media queries 
+
+/* @media screen and (max-width: $breakpoint3) {
     #about--section {
         width: $width-mobile;        
     }    
@@ -55,4 +61,4 @@
     #about--section p {
         margin: 1rem 0 2rem 0;        
     }
-}
+} */

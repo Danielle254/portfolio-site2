@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 #skills--section {
-  max-width: 40rem;
+  min-height: 100vh;
 }
 
 #list--container {
@@ -10,23 +10,23 @@
 
 #skills--section h2 {
   font-size: 2rem;
-  margin: 2rem auto;
+  margin: 2rem 0;
 }
 
 .h4-light {
   font-size: 1rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   color: #A60067;
 }
 
 .h4-dark {
   font-size: 1rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   color: #FFA9F9;
 }
 
 #skills--section ul {
-  padding-left: 1rem;
+  padding-left: 1.25rem;
 }
 
 #second-list {
@@ -37,15 +37,16 @@
   margin-top: 1.5rem;
 }
 
-@media screen and (max-width: 1200px) {
-  #skills--section {
-    width: 100%;
-    margin: 2rem;
-  }
+/* @media screen and (max-width: $breakpoint2) {
+    #skills--section {
+        width: $width-mobile;
+        margin: 2rem;        
+    }    
 }
-@media screen and (max-width: 600px) {
-  #skills--section {
-    width: 100%;
-    margin: 0;
-  }
-}/*# sourceMappingURL=skills.css.map */
+
+@media screen and (max-width: $breakpoint4) {
+    #skills--section {
+        width: 100%;
+        margin: 0;
+    }
+} *//*# sourceMappingURL=skills.css.map */
