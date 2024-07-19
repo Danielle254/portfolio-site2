@@ -26,17 +26,17 @@ export default function Contact(props) {
           <a id={props.mode === "light" ? 'link-light' : 'link-dark'} href="mailto:danielle.lindblom@gmail.com">Danielle.Lindblom@gmail.com</a>  
         </div>    
         <div className='social--container'>
-          <div className='social--icon'>
+          <div className={props.mode === "light" ? 'social--icon' : 'social--icon-dark'}>
               <a className={props.mode === "light" ? 'social--text' : 'social--text-dark'} href="https://github.com/Danielle254" target='_blank'>
               <img src={props.mode === "light" ? githubIcon : githubWhite} />
               <p>GitHub</p></a>
           </div>
-          <div className='social--icon'>
+          <div className={props.mode === "light" ? 'social--icon' : 'social--icon-dark'}>
               <a className={props.mode === "light" ? 'social--text' : 'social--text-dark'} href="https://www.linkedin.com/in/danielle-lindblom/" target='_blank'>
               <img src={props.mode === "light" ? linkedinIcon : linkedinWhite} />
               <p>LinkedIn</p></a>
           </div>
-          <div className='social--icon'>
+          <div className={props.mode === "light" ? 'social--icon' : 'social--icon-dark'}>
               <a className={props.mode === "light" ? 'social--text' : 'social--text-dark'} href='' >
               <img src={props.mode === "light" ?resumeIcon : resumeWhite} />
               <p>Resume</p></a>

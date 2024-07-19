@@ -49,7 +49,19 @@
     transition: box-shadow 0.2s ease-in-out;   
 }
 
+.social--icon-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    transition: box-shadow 0.2s ease-in-out;   
+}
+
 .social--icon img {
+    height: 3rem;    
+}
+
+.social--icon-dark img {
     height: 3rem;    
 }
 
@@ -69,6 +81,10 @@
 }
 
 .social--icon:hover {
+    box-shadow: -3px 3px $magenta-color;
+}
+
+.social--icon-dark:hover {
     box-shadow: -3px 3px $pink-color;
 }
 
