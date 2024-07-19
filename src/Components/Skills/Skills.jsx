@@ -4,8 +4,8 @@ import './skills.css'
 export default function Skills(props) {
   return (
     <div id='skills--section'>
-      <h2>My Skills</h2>
-      <h4 className={props.mode === "light" ? 'h4-light' : 'h4-dark'}>Technical Skills</h4>
+      <h2>Skills</h2>
+      <h4 className={props.mode === "light" ? 'h4-light' : 'h4-dark'}>Technical</h4>
       <div id='list--container'>
       <ul>
         <li>React</li>
@@ -19,7 +19,7 @@ export default function Skills(props) {
         <li>Testing</li>
         <li>VSCode</li>
       </ul></div>
-      <h4 className={props.mode === "light" ? 'h4-light skills2' : 'h4-dark skills2'}>Professional Skills</h4>
+      <h4 className={props.mode === "light" ? 'h4-light skills2' : 'h4-dark skills2'}>Professional</h4>
       <ul>
         <li>Team Leadership</li>
         <li>Continuous Improvement</li>
