@@ -45,10 +45,10 @@ nav a:hover {
 }
 
 .access--container {
-  position: absolute;
-  bottom: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  width: 200px;
 }
 
 .access--button {
