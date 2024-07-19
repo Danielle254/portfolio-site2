@@ -3,31 +3,34 @@
 @import '../../sassStyles/variables';
 
 #projects--section {    
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;      
-    gap: 4rem;  
+    justify-items: left;      
+    gap: 6rem; 
+    padding: 2rem 1rem;     
 }
 
 #projects--section h2 {
     font-size: $h2-fontsize;    
-    margin: 2rem auto 4rem auto;
+    margin: 2rem 0;
 }
 
 #more-projects-button, #more-projects-button-dark {
     @include button-light-secondary;
-    margin: 2rem auto;
+    margin: -4rem 0 10rem 0;
+    width: 155px;
+    text-align: center;
 }
 
 #more-projects-button:hover {
     @include button-light-secondary-hover;
-    margin: 2rem auto;
+    margin: 2rem 0;
 }
-
 
 #more-projects-button-dark:hover {
     @include button-secondary-dark-hover;
-    margin: 2rem auto;
+    margin: 2rem 0;
 }
 
 

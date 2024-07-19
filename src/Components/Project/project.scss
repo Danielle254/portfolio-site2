@@ -4,23 +4,21 @@
 
 .project--card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    margin-bottom: 2rem;
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;    
+    gap: 1rem;
+    width: 100%;
 }
 
 
 .img-light {
-    width: 33rem;     
-    border: 1px solid $black-color;   
-    box-shadow: -12px 12px  $magenta-color; 
+    width: 100%;   
+    border: 1px solid $black-color;    
 }
 
 .img-dark {
-    width: 33rem;     
-    border: 1px solid $white-color;   
-    box-shadow: -12px 12px  $pink-color; 
+    max-width: 33rem;     
+    border: 1px solid $white-color;      
 }
 
 #details--container {
@@ -67,7 +65,10 @@
     @include button-dark-hover;
 }
 
-@media screen and (max-width: $breakpoint2) {
+/* box-shadow: -12px 12px  $magenta-color; */
+// old media queries
+
+/* @media screen and (max-width: $breakpoint2) {
     .project--card {
         grid-template-columns: 1fr;        
     }
@@ -91,4 +92,4 @@
     .project--card p {
         margin: auto 1rem;
     }
-}
+} */
