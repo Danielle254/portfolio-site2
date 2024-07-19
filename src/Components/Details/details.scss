@@ -9,19 +9,9 @@
 }
 
 
-
-// old media queries
-
-/* @media screen and (max-width: $breakpoint2) {
+// mobile to desktop - responsive design
+@media screen and (min-width: $breakpoint1) {
     #details--section {
-        grid-template-columns: 1fr;        
         margin: 2rem;
     }
 }
-
-@media screen and (max-width: $breakpoint4) {
-    #details--section {
-        justify-items: left;
-        margin: 0;
-    }
-} */

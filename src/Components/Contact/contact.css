@@ -1,4 +1,12 @@
+/* $breakpoint1: 1600px;
+$breakpoint2: 1200px;
+$breakpoint3: 800px;
+$breakpoint4: 600px; */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* $breakpoint1: 1600px;
+$breakpoint2: 1200px;
+$breakpoint3: 800px;
+$breakpoint4: 600px; */
 #contact--section {
   min-height: 60vh;
   width: 100%;
@@ -96,4 +104,10 @@
 
 #link-dark:hover {
   color: #FFA9F9;
+}
+
+@media screen and (min-width: 500px) {
+  .contact--content {
+    padding: 0 2rem;
+  }
 }/*# sourceMappingURL=contact.css.map */

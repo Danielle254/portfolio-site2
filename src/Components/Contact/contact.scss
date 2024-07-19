@@ -99,3 +99,10 @@
 #link-dark:hover {    
     color: $pink-color;
 }
+
+// mobile to desktop - responsive design
+@media screen and (min-width: $breakpoint1) {
+    .contact--content {
+        padding: 0 2rem;
+    }
+}

@@ -4,6 +4,9 @@
 
 #skills--section {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #list--container {
@@ -41,7 +44,7 @@
     margin-top: 1.5rem;
 }
 
-@media screen and (max-width: $breakpoint4) {
+@media screen and (max-width: 400px) {
     #second-list {
        margin-left: 1rem; 
     }

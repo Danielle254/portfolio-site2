@@ -5,8 +5,7 @@
 #projects--section {    
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-         
+    grid-template-columns: 1fr;         
     gap: 6rem; 
     padding: 2rem 1rem;     
 }
@@ -33,6 +32,13 @@
 #more-projects-button-dark:hover {
     @include button-secondary-dark-hover;
     margin: 2rem 0;
+}
+
+// mobile to desktop - responsive design
+@media screen and (min-width: $breakpoint1) {
+    #projects--section {
+        padding: 2rem;
+    }
 }
 
 
