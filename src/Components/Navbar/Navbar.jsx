@@ -1,8 +1,10 @@
 import React from 'react'
 import profile from '../../Images/profile rose background.jpeg';
-import modeIcon from '../../Images/light-dark-mode-icon.png';
+import modeIcon from '../../Images/light-dark.png'
+import modeIconWhite from '../../Images/light-dark-white.png'
 import motionIcon from '../../Images/motion-icon.png';
 import './navbar.css'
+import motionIconWhite from '../../Images/motion-icon-white.png'
 
 export default function Navbar(props) {
   
@@ -18,8 +20,8 @@ export default function Navbar(props) {
             <li><a className={props.mode === "light" ? 'menu-light' : 'menu-dark'} href="#contact--section">Contact</a></li>
             <li><a className={props.mode === "light" ? 'menu-light' : 'menu-dark'} href="">Resume</a></li>
           </ul>                       
-          <button id={props.mode === "light" ? 'mode--button-desktop' : 'mode--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleMode}><img className='icon' src={modeIcon} />{props.mode === "light" ? " Dark Mode" : " Light Mode"}</button>
-          <button id={props.mode === "light" ? 'animate--button-desktop' : 'animate--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleAnimations}><img src={motionIcon} className='icon'/>{props.animationsOn === true ? "Animations OFF" : "Animations ON"}</button>           
+          <button id={props.mode === "light" ? 'mode--button-desktop' : 'mode--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleMode}><img className='icon' src={props.mode === "light" ? modeIcon : modeIconWhite} />{props.mode === "light" ? " Dark Mode" : " Light Mode"}</button>
+          <button id={props.mode === "light" ? 'animate--button-desktop' : 'animate--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleAnimations}><img src={props.mode === "light" ? motionIcon : motionIconWhite} className='icon'/>{props.animationsOn === true ? "Animations OFF" : "Animations ON"}</button>           
         </div> 
         {props.mobileMenuVisible === false && <button id='menu--button' onClick={props.toggleMenu}>MENU</button>}         
       </div>

@@ -118,6 +118,11 @@
   color: #FFFFFF;
 }
 
+#animate--button-desktop-dark:hover {
+  background-color: #A60067;
+  color: #FFFFFF;
+}
+
 #menu--button {
   margin-left: auto;
   margin-right: 2rem;
