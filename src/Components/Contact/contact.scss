@@ -3,25 +3,29 @@
 @import '../../sassStyles/variables';
 
 #contact--section {
-    min-height: 90vh;    
+    min-height: 60vh;  
+    width: 100%; 
+    margin: 0; 
 }
 
-.contact--content {
-    margin: 10rem auto 1rem auto;  
+.contact--content {      
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;  
-    gap: 4rem;
+    gap: 2.5rem;
+    padding: 0 1rem;
 }
 
 #contact--section h2 {
     font-size: $h2-fontsize; 
-    margin-bottom: 2rem;   
+    margin: 0 0 1rem 0;
 }
 
 #contact--section p {
     font-size: $body-fontsize;
     text-align: center;
+    margin: 0;
+    text-wrap: balance;
 }
 
 #link-light{    
@@ -39,6 +43,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .social--icon {

@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
+  margin: 0;
 }
 
 .footer-dark {
@@ -19,4 +20,5 @@
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
+  margin: 0;
 }/*# sourceMappingURL=footer.css.map */

@@ -89,14 +89,14 @@ function App() {
         {showContent && <Projects 
         mode={mode}
         animationsOn={animationsOn} 
-        />}
+        />} */}
         {showContent && <Contact
         mode={mode} 
         animationsOn={animationsOn}      
         />}
         {showContent && <Footer 
         mode={mode}
-        />} */}
+        />}
       </div>
     </div>
   )
