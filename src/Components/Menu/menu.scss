@@ -2,24 +2,17 @@
 @import '../../sassStyles/typography';
 @import '../../sassStyles/variables';
 
-#nav {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 350px;
-    height: 500px;
-    background-color: $gray-color;
-    border: 1px $black-color solid;
-    border-radius: 10px;
-    padding-top: 2rem;
+#nav {    
+    height: 100vh;
+    width: 100vw;
+    background-color: $gray-color;    
     font-size: $h3-fontsize;
-    font-weight: bold;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
+    font-weight: bold;        
 }
 
 nav ul {
     list-style-type: none;
+    padding-top: 2rem;
 }
 
 nav a {
@@ -56,13 +49,13 @@ nav a:hover {
 
 .access--container {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     display: flex;
     flex-direction: column;
 }
 
 .access--button {
-    @include button-access;
+    @include button-access;    
 }
 
 #mode--button {
@@ -92,9 +85,36 @@ nav a:hover {
     color: $white-color;
 }
 
+.icon {
+    width: 1rem;
+}
+
+
+
+/* #nav {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 500px;
+    background-color: $gray-color;
+    border: 1px $black-color solid;
+    border-radius: 10px;
+    padding-top: 2rem;
+    font-size: $h3-fontsize;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
+} */
+
+
+
+
+// old media queries
+
 
 // remove mobile menu button from wider screens
-@media screen and (min-width: $breakpoint2) {
+/* @media screen and (min-width: $breakpoint2) {
     #nav {
         display: none;
     }
@@ -114,7 +134,7 @@ nav a:hover {
         font-size: $body-fontsize;
     }
 }
-
+ */
 
 
 

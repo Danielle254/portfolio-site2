@@ -21,7 +21,7 @@ function App() {
   const [mode, setMode] = useState('light');
   const [animationsOn, setAnimationsOn] = useState(true);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
-  const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(true);
 
   function menuOn() {
     const screenWidth = window.innerWidth;
@@ -61,14 +61,14 @@ function App() {
   return (
     <div className={mode === "light" ? 'App' : 'App-dark'}>
       <div id='app--container'>
-        <Navbar 
+        {!mobileMenuVisible && <Navbar 
         mobileMenuVisible={mobileMenuVisible}
         menuOn={menuOn}  
         mode={mode} 
         animationsOn={animationsOn}
         toggleMode={toggleMode}  
         toggleAnimations={toggleAnimations}    
-        />
+        />}
         {mobileMenuVisible && 
         <Menu 
         menuOff={menuOff} 
@@ -77,16 +77,12 @@ function App() {
         animationsOn={animationsOn}
         toggleMode={toggleMode}  
         toggleAnimations={toggleAnimations}     
+        />}        
+        {showContent && <Hero
+        mode={mode}
+        animationsOn={animationsOn} 
         />}
-        <Hero
-        mode={mode}
-        animationsOn={animationsOn} 
-        />
-        {/* {showContent && <Hero
-        mode={mode}
-        animationsOn={animationsOn} 
-        />} */}
-        {showContent && <Details 
+        {/* {showContent && <Details 
         mode={mode}
         animationsOn={animationsOn} 
         />}
@@ -100,7 +96,7 @@ function App() {
         />}
         {showContent && <Footer 
         mode={mode}
-        />}
+        />} */}
       </div>
     </div>
   )
