@@ -164,6 +164,14 @@
 }
 
 // mobile menu button
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
 #menu--button {
     margin-left: auto;
     margin-right: 2rem;
@@ -212,7 +220,7 @@
         display: none;
     }
 
-    #menu--button {
+    #menu--button, #menu--button-dark {
         display: block;
     }
 }

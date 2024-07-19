@@ -7,7 +7,7 @@ import animateIcon from '../../Images/motion-icon.png';
 export default function Menu(props) {
   return (
     <nav id='nav'>
-      <button id='close--nav' onClick={props.toggleMenu}>X</button>
+      <button id='close--nav' onClick={props.menuOff}>X</button>
       <ul>
         <li><a onClick={props.mobileReset} href="#about--section" >About</a></li>
         <li><a onClick={props.mobileReset}  href="#projects--section" >Projects</a></li>

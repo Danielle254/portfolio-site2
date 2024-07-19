@@ -23,12 +23,17 @@ function App() {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [showContent, setShowContent] = useState(true);
 
-  function toggleMenu() {
+  function menuOn() {
     const screenWidth = window.innerWidth;
-    if (screenWidth <= 600 && mobileMenuVisible === true) {
+    setMobileMenuVisible(true);
+    if (screenWidth <= 600) {
       setShowContent(false);
-    }
-    setMobileMenuVisible(!mobileMenuVisible);
+    }    
+  }
+
+  function menuOff() {
+    setMobileMenuVisible(false);
+    setShowContent(true);
   }
 
   function toggleMode() {
@@ -54,11 +59,11 @@ function App() {
   
 
   return (
-    <div className='App'>
+    <div className={mode === "light" ? 'App' : 'App-dark'}>
       <div id='app--container'>
         <Navbar 
         mobileMenuVisible={mobileMenuVisible}
-        toggleMenu={toggleMenu}  
+        menuOn={menuOn}  
         mode={mode} 
         animationsOn={animationsOn}
         toggleMode={toggleMode}  
@@ -66,7 +71,7 @@ function App() {
         />
         {mobileMenuVisible && 
         <Menu 
-        toggleMenu={toggleMenu} 
+        menuOff={menuOff} 
         mobileReset={mobileReset}
         mode={mode}
         animationsOn={animationsOn}
