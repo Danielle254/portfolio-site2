@@ -21,8 +21,13 @@ function App() {
   const [mode, setMode] = useState('light');
   const [animationsOn, setAnimationsOn] = useState(true);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+  const [showContent, setShowContent] = useState(true);
 
   function toggleMenu() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth <= 600 && mobileMenuVisible === true) {
+      setShowContent(false);
+    }
     setMobileMenuVisible(!mobileMenuVisible);
   }
 
@@ -40,10 +45,11 @@ function App() {
 
   function toggleAnimations() {
     setAnimationsOn(!animationsOn);
-  }
+  }  
+  
 
   return (
-    <div className={mode === "light" ? 'App' : 'App-dark'}>
+    <div className='App'>
       <div id='app--container'>
         <Navbar 
         mobileMenuVisible={mobileMenuVisible}
@@ -61,25 +67,25 @@ function App() {
         toggleMode={toggleMode}  
         toggleAnimations={toggleAnimations}     
         />}
-        <Hero
+        {showContent && <Hero
         mode={mode}
         animationsOn={animationsOn} 
-        />
-        <Details 
+        />}
+        {showContent && <Details 
         mode={mode}
         animationsOn={animationsOn} 
-        />
-        <Projects 
+        />}
+        {showContent && <Projects 
         mode={mode}
         animationsOn={animationsOn} 
-        />
-        <Contact
+        />}
+        {showContent && <Contact
         mode={mode} 
         animationsOn={animationsOn}      
-        />
-        <Footer 
+        />}
+        {showContent && <Footer 
         mode={mode}
-        />
+        />}
       </div>
     </div>
   )
