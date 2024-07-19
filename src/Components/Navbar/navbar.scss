@@ -91,13 +91,18 @@
 
 .menu-light:hover {
     text-decoration: underline;
-    color: $magenta-color;
-    
+    color: $magenta-color;    
 }
 
 .menu-dark {
     text-decoration: none;
     color: $white-color;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-dark:hover {
+    text-decoration: none;
+    color: $pink-color;
 }
 
 .access--button-desktop {

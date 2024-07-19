@@ -94,6 +94,12 @@
 .menu-dark {
   text-decoration: none;
   color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-dark:hover {
+  text-decoration: none;
+  color: #FFA9F9;
 }
 
 .access--button-desktop {
