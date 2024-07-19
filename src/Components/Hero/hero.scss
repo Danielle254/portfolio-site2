@@ -11,7 +11,7 @@
 }
 
 #hero--container {
-    margin: 20rem auto;
+    margin: 20% auto;
     max-width: 38rem;
 }
 
@@ -52,6 +52,18 @@
 }
 
 // mobile
+@media screen and (max-width: $breakpoint2) {
+    #hero--container {
+        margin: 25% auto;
+    }
+}
+
+@media screen and (max-width: $breakpoint3) {
+    #hero--container {
+        margin: 30% auto;
+    }
+}
+
 @media screen and (max-width: $breakpoint4) {
     #hero--section {
         height: 100vh;
