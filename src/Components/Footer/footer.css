@@ -11,6 +11,10 @@
   margin: 0;
 }
 
+.footer p {
+  padding: 0 1rem;
+}
+
 .footer-dark {
   background-color: #FFA9F9;
   color: #131B23;

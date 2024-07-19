@@ -3,17 +3,18 @@
 @import '../../sassStyles/variables';
 
 #about--section {
-    min-height: 100vh;
+    min-height: 100vh;   
 }
 
 #about--section h2 {
     font-size: $h2-fontsize;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 #about--section p {
     font-size: $body-fontsize;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 2rem 0;    
 }
 
 #h4-light {

@@ -3,7 +3,6 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: left;
   gap: 6rem;
   padding: 2rem 1rem;
 }
@@ -11,6 +10,7 @@
 #projects--section h2 {
   font-size: 2rem;
   margin: 0;
+  text-align: center;
 }
 
 #more-projects-button, #more-projects-button-dark {

@@ -11,6 +11,7 @@
 #skills--section h2 {
   font-size: 2rem;
   margin: 2rem 0;
+  text-align: center;
 }
 
 .h4-light {
@@ -37,16 +38,8 @@
   margin-top: 1.5rem;
 }
 
-/* @media screen and (max-width: $breakpoint2) {
-    #skills--section {
-        width: $width-mobile;
-        margin: 2rem;        
-    }    
-}
-
-@media screen and (max-width: $breakpoint4) {
-    #skills--section {
-        width: 100%;
-        margin: 0;
-    }
-} *//*# sourceMappingURL=skills.css.map */
+@media screen and (max-width: 600px) {
+  #second-list {
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=skills.css.map */

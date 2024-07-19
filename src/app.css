@@ -16,6 +16,5 @@
 #app--container {
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: center;
   width: 100%;
 }/*# sourceMappingURL=app.css.map */

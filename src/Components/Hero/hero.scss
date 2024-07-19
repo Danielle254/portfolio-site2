@@ -14,9 +14,9 @@
 #hero--container {
     grid-row: 2;      
     padding: 2rem 1rem;
-    width: 100%;
-    text-align: left;  
-    margin: 0;
+    width: 100%;    
+    padding: 0 2rem;
+    
 }
 
 #hero--container h1 {
@@ -27,6 +27,7 @@
 #hero--container p {
     font-size: $h3-fontsize;    
     margin: 0 0 2rem 0;
+    text-wrap: balance;
 }
 
 #span-light {

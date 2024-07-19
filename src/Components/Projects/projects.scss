@@ -6,14 +6,15 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: left;      
+         
     gap: 6rem; 
     padding: 2rem 1rem;     
 }
 
 #projects--section h2 {
     font-size: $h2-fontsize;    
-    margin: 0;
+    margin: 0;  
+    text-align: center;  
 }
 
 #more-projects-button, #more-projects-button-dark {
@@ -21,6 +22,7 @@
     margin: -4rem 0 10rem 0;
     width: 155px;
     text-align: center;
+    
 }
 
 #more-projects-button:hover {
