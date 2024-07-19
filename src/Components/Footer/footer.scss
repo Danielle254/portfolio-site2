@@ -2,12 +2,23 @@
 @import '../../sassStyles/typography';
 @import '../../sassStyles/variables';
 
-footer {
+.footer {
     background-color: $magenta-color;
-    color: white;
+    color: $white-color;
     width: 100%;
     text-align: center;
-    height: 6rem;
+    height: 8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+}
+
+.footer-dark {
+    background-color: $pink-color;
+    color: $black-color;
+    width: 100%;
+    text-align: center;
+    height: 8rem;
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;

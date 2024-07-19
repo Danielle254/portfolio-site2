@@ -7,10 +7,16 @@
   gap: 2rem;
 }
 
-.project--card img {
+.img-light {
   width: 33rem;
   border: 1px solid #131B23;
   box-shadow: -12px 12px #A60067;
+}
+
+.img-dark {
+  width: 33rem;
+  border: 1px solid #FFFFFF;
+  box-shadow: -12px 12px #FFA9F9;
 }
 
 #details--container {
@@ -41,7 +47,7 @@
   padding-left: 0.2rem;
 }
 
-.project--card a {
+.button-light {
   text-decoration: none;
   cursor: pointer;
   padding: 0.5rem 1rem;
@@ -49,6 +55,18 @@
   font-weight: bold;
   background-color: #A60067;
   color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.button-dark {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #FFA9F9;
+  color: #131B23;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }

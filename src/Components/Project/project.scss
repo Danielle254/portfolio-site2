@@ -11,10 +11,16 @@
 }
 
 
-.project--card img {
+.img-light {
     width: 33rem;     
     border: 1px solid $black-color;   
     box-shadow: -12px 12px  $magenta-color; 
+}
+
+.img-dark {
+    width: 33rem;     
+    border: 1px solid $white-color;   
+    box-shadow: -12px 12px  $pink-color; 
 }
 
 #details--container {
@@ -46,8 +52,12 @@
     padding-left: 0.2rem;
 }
 
-.project--card a {
+.button-light {
     @include button-light;
+}
+
+.button-dark {
+    @include button-dark;
 }
 
 @media screen and (max-width: $breakpoint2) {

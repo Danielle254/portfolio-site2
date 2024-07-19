@@ -3,7 +3,7 @@ import Project from '../Project/Project'
 import './projects.css'
 import data from '../../projectData'
 
-export default function Projects() {
+export default function Projects(props) {
   const projects = data.projectSummaries.map(
     project => {
       return (
@@ -15,6 +15,7 @@ export default function Projects() {
         summary={project.summary}
         tags={project.tags}
         path={project.detailsPath}
+        mode={props.mode}
         />
       )
     }

@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-footer {
+.footer {
   background-color: #A60067;
-  color: white;
+  color: #FFFFFF;
   width: 100%;
   text-align: center;
-  height: 6rem;
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+}
+
+.footer-dark {
+  background-color: #FFA9F9;
+  color: #131B23;
+  width: 100%;
+  text-align: center;
+  height: 8rem;
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;

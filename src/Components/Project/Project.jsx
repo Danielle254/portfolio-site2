@@ -25,14 +25,14 @@ export default function Project(props) {
   
   return (
     <div className='project--card'>
-      <img src={displayImage}  />
+      <img src={displayImage} className={props.mode === "light" ? 'img-light' : 'img-dark'} />
       <div id='details--container'>
         <h3>{props.title}</h3>
         <p>{props.summary}</p>
         <div className='tags--container'>
           {tags}
         </div>
-        <a href={props.detailsPath}>Demo & Details</a>
+        <a className={props.mode === "light" ? 'button-light' : 'button-dark'} href={props.detailsPath}>Demo & Details</a>
       </div>
     </div>
   )
