@@ -46,6 +46,11 @@ function App() {
   function toggleAnimations() {
     setAnimationsOn(!animationsOn);
   }  
+
+  function mobileReset() {
+    setMobileMenuVisible(false);
+    setShowContent(true);
+  }
   
 
   return (
@@ -62,6 +67,7 @@ function App() {
         {mobileMenuVisible && 
         <Menu 
         toggleMenu={toggleMenu} 
+        mobileReset={mobileReset}
         mode={mode}
         animationsOn={animationsOn}
         toggleMode={toggleMode}  
