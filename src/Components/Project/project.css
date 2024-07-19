@@ -114,4 +114,7 @@
     max-width: 33rem;
     margin: auto 2rem;
   }
+  .project--card p {
+    margin: auto 1rem;
+  }
 }/*# sourceMappingURL=project.css.map */

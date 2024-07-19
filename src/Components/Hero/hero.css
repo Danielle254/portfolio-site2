@@ -12,11 +12,12 @@
   max-width: 38rem;
 }
 
-#hero--section h1 {
+#hero--container h1 {
   font-size: 3.5rem;
+  margin: 0;
 }
 
-#hero--section p {
+#hero--container p {
   font-size: 1.5rem;
   margin: 1rem auto 2rem auto;
 }
@@ -79,4 +80,18 @@
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  #hero--section {
+    height: 100vh;
+    width: 100%;
+  }
+  #hero--container {
+    margin: 10rem 2rem;
+  }
+  #hero--container p {
+    margin: 1rem 0 2rem 0;
+    max-width: 400px;
+  }
 }/*# sourceMappingURL=hero.css.map */

@@ -27,7 +27,6 @@
     width: 100%;
 }
 
-
 .project--card h3 {
     font-size: $h3-fontsize;
     margin-bottom: 1rem;
@@ -87,5 +86,9 @@
     .project--card img {
         max-width: 33rem;
         margin: auto 2rem;
+    }
+
+    .project--card p {
+        margin: auto 1rem;
     }
 }
