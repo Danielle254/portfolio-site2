@@ -14,13 +14,19 @@
     margin: 2rem auto 4rem auto;
 }
 
-#more-projects-button {
+#more-projects-button, #more-projects-button-dark {
     @include button-light-secondary;
     margin: 2rem auto;
 }
 
 #more-projects-button:hover {
     @include button-light-secondary-hover;
+    margin: 2rem auto;
+}
+
+
+#more-projects-button-dark:hover {
+    @include button-secondary-dark-hover;
     margin: 2rem auto;
 }
 

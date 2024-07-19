@@ -25,7 +25,7 @@ export default function Projects(props) {
     <div id='projects--section'>
       <h2>Projects</h2>
       {projects}
-      <a id='more-projects-button' href="https://github.com/Danielle254" target="_blank">More Projects</a>
+      <a id={props.mode === "light" ? 'more-projects-button' : 'more-projects-button-dark'} href="https://github.com/Danielle254" target="_blank">More Projects</a>
     </div>
   )
 }

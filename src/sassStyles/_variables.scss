@@ -11,7 +11,7 @@ $vertical-gradient-nav: linear-gradient(180deg, $gray-color, $white-color);
 // dark mode color additions
 $darkgray-color: #2c343d;
 $yellow-color: #FFF7AD;
-$horizontal-gradient-dark: linear-gradient(90deg, $yellow-color, $pink-color);
+$horizontal-gradient-dark: linear-gradient(45deg,  $pink-color, $yellow-color);
 $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
 
 
@@ -28,19 +28,6 @@ $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;     
 }
 
-@mixin button-light-hover {
-    text-decoration: none; 
-    cursor: pointer;  
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    background: $horizontal-gradient-light;
-    color: $white-color;
-    border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;  
-    font-style: italic;   
-}
-
 @mixin button-light-secondary {
     text-decoration: none; 
     cursor: pointer;  
@@ -52,19 +39,6 @@ $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
     border-radius: 20px; 
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transition: all 0.2s ease-in-out;     
-}
-
-@mixin button-light-secondary-hover {
-    text-decoration: none; 
-    cursor: pointer;  
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: $darkgray-color;
-    color: $white-color;
-    border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
-    font-style: italic;    
 }
 
 @mixin button-access {      
@@ -84,7 +58,61 @@ $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
     background-color: $pink-color;
     color: $black-color;
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;       
+}
+
+// button hover effects
+
+@mixin button-light-hover {
+    text-decoration: none; 
+    cursor: pointer;  
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: $horizontal-gradient-light;
+    color: $white-color;
+    border-radius: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;  
+    font-style: italic;   
+}
+
+@mixin button-light-secondary-hover {
+    text-decoration: none; 
+    cursor: pointer;  
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: $darkgray-color;
+    color: $white-color;
+    border-radius: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+    font-style: italic;    
+}
+
+@mixin button-secondary-dark-hover {
+    text-decoration: none; 
+    cursor: pointer;  
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: $white-color;
+    color: $black-color;
+    border-radius: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+    font-style: italic;    
+}
+
+@mixin button-dark-hover {
+    text-decoration: none; 
+    cursor: pointer;  
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: $horizontal-gradient-dark;
+    color: $black-color;
+    border-radius: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    font-style: italic;      
 }
 
 

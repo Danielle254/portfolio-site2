@@ -48,6 +48,10 @@
     @include button-dark;
 }
 
+#hero--button-dark:hover {
+    @include button-dark-hover;
+}
+
 
 
 
