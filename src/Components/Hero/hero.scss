@@ -28,14 +28,20 @@
 
 #span-light {
     color: $magenta-color;
+    font-weight: bold;
 }
 
 #span-dark {
     color: $pink-color;
+    font-weight: bold;
 }
 
 #hero--button {
     @include button-light;
+}
+
+#hero--button:hover {
+    @include button-light-hover;
 }
 
 #hero--button-dark {
@@ -43,10 +49,6 @@
 }
 
 
-
-@media screen and (max-width: $breakpoint2) {
-    
-}
 
 
 

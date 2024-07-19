@@ -4,7 +4,7 @@ $gray-color: #E7E7E7;
 $black-color: #131B23;
 $magenta-color: #A60067;
 $pink-color: #FFA9F9;
-$vertical-gradient-light: linear-gradient(180deg, $pink-color, $magenta-color);
+$horizontal-gradient-light: linear-gradient(45deg, $magenta-color, $pink-color);
 $vertical-gradient-nav: linear-gradient(180deg, $gray-color, $white-color);
 
 
@@ -22,10 +22,23 @@ $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
     padding: 0.5rem 1rem;
     font-size: 1rem;
     font-weight: bold;
-    background-color: $magenta-color;
+    background: $magenta-color;
     color: $white-color;
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;     
+}
+
+@mixin button-light-hover {
+    text-decoration: none; 
+    cursor: pointer;  
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: $horizontal-gradient-light;
+    color: $white-color;
+    border-radius: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;  
+    font-style: italic;   
 }
 
 @mixin button-light-secondary {
@@ -37,7 +50,21 @@ $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
     background-color: $gray-color;
     color: $black-color;
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all 0.2s ease-in-out;     
+}
+
+@mixin button-light-secondary-hover {
+    text-decoration: none; 
+    cursor: pointer;  
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: $darkgray-color;
+    color: $white-color;
+    border-radius: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+    font-style: italic;    
 }
 
 @mixin button-access {      

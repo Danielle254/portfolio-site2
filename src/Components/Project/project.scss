@@ -56,6 +56,10 @@
     @include button-light;
 }
 
+.button-light:hover {
+    @include button-light-hover;
+}
+
 .button-dark {
     @include button-dark;
 }

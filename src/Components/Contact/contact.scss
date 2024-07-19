@@ -26,10 +26,12 @@
 
 #link-light{    
     color: $black-color;
+    transition: color 0.2s ease-in-out;
 }
 
 #link-dark {    
     color: $white-color;
+    transition: color 0.2s ease-in-out;
 }
 
 .social--container {
@@ -43,7 +45,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;    
+    text-align: center; 
+    transition: box-shadow 0.2s ease-in-out;   
 }
 
 .social--icon img {
@@ -63,4 +66,15 @@
 .email-icon {
     width: 40px;
     margin-right: 5px;
+}
+
+.social--icon:hover {
+    box-shadow: -3px 3px $pink-color;
+}
+
+#link-light:hover {    
+    color: $magenta-color;
+}
+#link-dark:hover {    
+    color: $pink-color;
 }

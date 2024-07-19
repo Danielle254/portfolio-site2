@@ -62,6 +62,13 @@
 .menu-light {
     text-decoration: none;
     color: $black-color;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-light:hover {
+    text-decoration: underline;
+    color: $magenta-color;
+    
 }
 
 .menu-dark {

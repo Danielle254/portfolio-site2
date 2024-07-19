@@ -23,10 +23,12 @@
 
 #link-light {
   color: #131B23;
+  transition: color 0.2s ease-in-out;
 }
 
 #link-dark {
   color: #FFFFFF;
+  transition: color 0.2s ease-in-out;
 }
 
 .social--container {
@@ -41,6 +43,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .social--icon img {
@@ -60,4 +63,16 @@
 .email-icon {
   width: 40px;
   margin-right: 5px;
+}
+
+.social--icon:hover {
+  box-shadow: -3px 3px #FFA9F9;
+}
+
+#link-light:hover {
+  color: #A60067;
+}
+
+#link-dark:hover {
+  color: #FFA9F9;
 }/*# sourceMappingURL=contact.css.map */

@@ -16,12 +16,20 @@
     margin: 1rem auto 2rem auto;
 }
 
+#h4-light {
+    color: $magenta-color;
+}
+
 #h4-dark {
     color: $pink-color;
 }
 
 #resume-button-light {
     @include button-light;
+}
+
+#resume-button-light:hover {
+    @include button-light-hover;
 }
 
 #resume-button-dark {
