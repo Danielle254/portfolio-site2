@@ -36,7 +36,31 @@
 }
 
 .nav--title {
-    font-size: $navbar-fontsize;   
+    font-size: $navbar-fontsize;  
+    text-decoration: none;
+    color: $black-color;
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out;
+}
+
+.nav--title:hover {
+    font-size: $navbar-fontsize;  
+    text-decoration: none;
+    color: $magenta-color;
+}
+
+.nav--title-dark {
+    font-size: $navbar-fontsize;  
+    text-decoration: none;
+    color: $white-color;
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out;
+}
+
+.nav--title-dark:hover {
+    font-size: $navbar-fontsize;  
+    text-decoration: none;
+    color: $pink-color;
 }
 
 .main--menu {

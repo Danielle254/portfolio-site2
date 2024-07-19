@@ -12,7 +12,7 @@ export default function Navbar(props) {
     <div className={props.mode === "light" ? 'navbar--background' : 'navbar--background-dark'}>
       <div className='navbar--content'>
         <img id={props.mode === "light" ? 'profile' : 'profile-dark'} src={profile} />
-        <p className='nav--title'>Danielle Lindblom</p>
+        <a className={props.mode === "light" ? 'nav--title' : 'nav--title-dark'} href='/'>Danielle Lindblom</a>
         <div className='menu--items'>
           <ul className='main--menu'>
             <li><a className={props.mode === "light" ? 'menu-light' : 'menu-dark'} href="#about--section">About</a></li>
