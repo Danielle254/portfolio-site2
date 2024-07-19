@@ -12,4 +12,10 @@
     grid-template-columns: 1fr;
     margin: 2rem;
   }
+}
+@media screen and (max-width: 600px) {
+  #details--section {
+    justify-items: left;
+    margin: 0;
+  }
 }/*# sourceMappingURL=details.css.map */

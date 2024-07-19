@@ -21,7 +21,7 @@ function App() {
   const [mode, setMode] = useState('light');
   const [animationsOn, setAnimationsOn] = useState(true);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
-  const [showContent, setShowContent] = useState(true);
+  const [showContent, setShowContent] = useState(false);
 
   function menuOn() {
     const screenWidth = window.innerWidth;
@@ -78,10 +78,14 @@ function App() {
         toggleMode={toggleMode}  
         toggleAnimations={toggleAnimations}     
         />}
-        {showContent && <Hero
+        <Hero
         mode={mode}
         animationsOn={animationsOn} 
-        />}
+        />
+        {/* {showContent && <Hero
+        mode={mode}
+        animationsOn={animationsOn} 
+        />} */}
         {showContent && <Details 
         mode={mode}
         animationsOn={animationsOn} 

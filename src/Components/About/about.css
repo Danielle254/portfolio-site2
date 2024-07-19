@@ -31,6 +31,7 @@
   color: #FFFFFF;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin: 0;
 }
 
 #resume-button-light:hover {
@@ -74,5 +75,14 @@
 @media screen and (max-width: 800px) {
   #about--section {
     width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #about--section {
+    margin: 0;
+    width: 100%;
+  }
+  #about--section p {
+    margin: 1rem 0 2rem 0;
   }
 }/*# sourceMappingURL=about.css.map */

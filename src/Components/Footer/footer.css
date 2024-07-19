@@ -4,7 +4,7 @@
   color: #FFFFFF;
   width: 100%;
   text-align: center;
-  height: 8rem;
+  min-height: 8rem;
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
@@ -15,7 +15,7 @@
   color: #131B23;
   width: 100%;
   text-align: center;
-  height: 8rem;
+  min-height: 8rem;
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;

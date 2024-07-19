@@ -25,7 +25,8 @@ $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
     background: $magenta-color;
     color: $white-color;
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;     
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+    margin: 0;    
 }
 
 @mixin button-light-secondary {

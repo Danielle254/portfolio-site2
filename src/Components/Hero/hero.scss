@@ -3,26 +3,29 @@
 @import '../../sassStyles/variables';
 
 #hero--section {
-    height: 120vh;
-    width: $width-desktop;   
-    margin: 0 auto; 
-    display: grid; 
-    grid-template-columns: 1fr;   
+    height: 100vh;
+    width: $width-mobile;   
+    margin: 0; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;   
 }
 
 #hero--container {
-    margin: 20% auto;
-    max-width: 38rem;
+    grid-row: 2;      
+    padding: 2rem 1rem;
+    width: 100%;
+    text-align: left;  
 }
 
 #hero--container h1 {
-    font-size: $h1-fontsize;
+    font-size: $h1-fontsize; 
     margin: 0;    
 }
 
 #hero--container p {
     font-size: $h3-fontsize;    
-    margin: 1rem auto 2rem auto;
+    margin: 0 0 2rem 0;
 }
 
 #span-light {
@@ -51,8 +54,15 @@
     @include button-dark-hover;
 }
 
-// mobile
-@media screen and (max-width: $breakpoint2) {
+// from mobile to desktop - responsive design
+
+
+
+
+
+
+
+/* @media screen and (max-width: $breakpoint2) {
     #hero--container {
         margin: 25% auto;
     }
@@ -71,15 +81,14 @@
     }
 
     #hero--container {
-        margin: 10rem 2rem;
-        
+        margin: 10rem 2rem;        
     }
 
     #hero--container p {
         margin: 1rem 0 2rem 0;
         max-width: 400px;
     }
-}
+} */
 
 
 

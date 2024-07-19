@@ -16,3 +16,10 @@
         margin: 2rem;
     }
 }
+
+@media screen and (max-width: $breakpoint4) {
+    #details--section {
+        justify-items: left;
+        margin: 0;
+    }
+}

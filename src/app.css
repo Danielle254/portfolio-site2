@@ -3,17 +3,19 @@
   background-color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   color: #131B23;
+  width: 100%;
 }
 
 .App-dark {
   background-color: #2c343d;
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
+  width: 100%;
 }
 
 #app--container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
   justify-items: center;
+  width: 100%;
 }/*# sourceMappingURL=app.css.map */

@@ -44,8 +44,13 @@
 @media screen and (max-width: $breakpoint2) {
     #skills--section {
         width: $width-mobile;
-        margin: 2rem;
-        
+        margin: 2rem;        
+    }    
+}
+
+@media screen and (max-width: $breakpoint4) {
+    #skills--section {
+        width: 100%;
+        margin: 0;
     }
-    
 }

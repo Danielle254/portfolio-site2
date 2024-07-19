@@ -42,4 +42,10 @@
     width: 100%;
     margin: 2rem;
   }
+}
+@media screen and (max-width: 600px) {
+  #skills--section {
+    width: 100%;
+    margin: 0;
+  }
 }/*# sourceMappingURL=skills.css.map */
