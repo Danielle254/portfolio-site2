@@ -38,7 +38,7 @@ export default function Contact(props) {
           </div>
           <div className='social--icon'>
               <a className={props.mode === "light" ? 'social--text' : 'social--text-dark'} href='' >
-              <img src={props.mode === "white" ?resumeIcon : resumeWhite} />
+              <img src={props.mode === "light" ?resumeIcon : resumeWhite} />
               <p>Resume</p></a>
           </div>
         </div>
