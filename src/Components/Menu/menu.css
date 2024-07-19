@@ -67,6 +67,14 @@ nav a:hover {
   width: 200px;
 }
 
+#mode--button-dark {
+  margin-bottom: 0.5rem;
+  background-color: #131B23;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+  width: 200px;
+}
+
 #animate--button {
   background-color: #FFFFFF;
   color: #131B23;
@@ -76,6 +84,12 @@ nav a:hover {
 
 #mode--button:hover {
   background-color: #131B23;
+  border: 2px solid #131B23;
+  color: #FFFFFF;
+}
+
+#mode--button-dark:hover {
+  background-color: #FFFFFF;
   color: #FFFFFF;
 }
 

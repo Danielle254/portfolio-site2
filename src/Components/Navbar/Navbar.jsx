@@ -23,7 +23,7 @@ export default function Navbar(props) {
           <button id={props.mode === "light" ? 'mode--button-desktop' : 'mode--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleMode}><img className='icon' src={props.mode === "light" ? modeIcon : modeIconWhite} />{props.mode === "light" ? " Dark Mode" : " Light Mode"}</button>
           <button id={props.mode === "light" ? 'animate--button-desktop' : 'animate--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleAnimations}><img src={props.mode === "light" ? motionIcon : motionIconWhite} className='icon'/>{props.animationsOn === true ? "Animations OFF" : "Animations ON"}</button>           
         </div> 
-        {props.mobileMenuVisible === false && <button id='menu--button' onClick={props.toggleMenu}>MENU</button>}         
+        <button id={props.mode === "light" ? 'menu--button' : 'menu--button-dark'} onClick={props.toggleMenu}>MENU</button>         
       </div>
     </div>
   )
