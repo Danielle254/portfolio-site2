@@ -24,13 +24,11 @@
 }
 
 #more-projects-button:hover {
-    @include button-light-secondary-hover;
-    margin: 2rem 0;
+    @include button-light-secondary-hover;    
 }
 
 #more-projects-button-dark:hover {
-    @include button-secondary-dark-hover;
-    margin: 2rem 0;
+    @include button-secondary-dark-hover;    
 }
 
 // mobile to desktop - responsive design
@@ -40,5 +38,12 @@
     }
 }
 
+@media screen and (min-width: $breakpoint3) {
+    #projects--section {
+        justify-items: center;
+    }
 
-
+    #more-projects-button, #more-projects-button-dark {
+        margin: 4rem 0;
+    }
+}

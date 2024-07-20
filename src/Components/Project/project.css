@@ -96,29 +96,19 @@
   font-style: italic;
 }
 
-/* box-shadow: -12px 12px  $magenta-color; */
-/* @media screen and (max-width: $breakpoint2) {
-    .project--card {
-        grid-template-columns: 1fr;        
-    }
-}
-
-@media screen and (max-width: $breakpoint3) {
-    #details--container {
-        text-align: center;
-    }
-
-    .tags--container {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .project--card img {
-        max-width: 33rem;
-        margin: auto 2rem;
-    }
-
-    .project--card p {
-        margin: auto 1rem;
-    }
-} *//*# sourceMappingURL=project.css.map */
+@media screen and (min-width: 800px) {
+  .project--card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 4rem;
+  }
+  .img-light {
+    box-shadow: -12px 12px #A60067;
+    margin-left: 12px;
+  }
+  .img-dark {
+    box-shadow: -12px 12px #FFA9F9;
+    margin-left: 12px;
+  }
+}/*# sourceMappingURL=project.css.map */

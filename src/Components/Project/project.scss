@@ -6,7 +6,6 @@
     width: 100%;
 }
 
-
 .img-light {
     width: 100%;   
     border: 1px solid $black-color;  
@@ -65,31 +64,21 @@
     @include button-dark-hover;
 }
 
-/* box-shadow: -12px 12px  $magenta-color; */
-// old media queries
+@media screen and (min-width: $breakpoint3) {
+    .project--card {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 4rem;
+    }
 
-/* @media screen and (max-width: $breakpoint2) {
-    .project--card {
-        grid-template-columns: 1fr;        
+    .img-light {
+        box-shadow: -12px 12px  $magenta-color;
+        margin-left: 12px;
+    }
+
+    .img-dark {
+        box-shadow: -12px 12px  $pink-color;
+        margin-left: 12px;
     }
 }
-
-@media screen and (max-width: $breakpoint3) {
-    #details--container {
-        text-align: center;
-    }
-
-    .tags--container {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .project--card img {
-        max-width: 33rem;
-        margin: auto 2rem;
-    }
-
-    .project--card p {
-        margin: auto 1rem;
-    }
-} */

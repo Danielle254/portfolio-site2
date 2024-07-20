@@ -40,7 +40,6 @@
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   font-style: italic;
-  margin: 2rem 0;
 }
 
 #more-projects-button-dark:hover {
@@ -54,11 +53,18 @@
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   font-style: italic;
-  margin: 2rem 0;
 }
 
 @media screen and (min-width: 500px) {
   #projects--section {
     padding: 2rem 3rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  #projects--section {
+    justify-items: center;
+  }
+  #more-projects-button, #more-projects-button-dark {
+    margin: 4rem 0;
   }
 }/*# sourceMappingURL=projects.css.map */
