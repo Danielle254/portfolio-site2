@@ -97,7 +97,10 @@
 }
 @media screen and (min-width: 800px) {
   #hero--container {
+    margin: 2rem 6rem;
     width: 680px;
-    padding: 2rem 6rem;
+  }
+  #hero--container p {
+    text-wrap: wrap;
   }
 }/*# sourceMappingURL=hero.css.map */
