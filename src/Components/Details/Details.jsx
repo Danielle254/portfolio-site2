@@ -5,13 +5,15 @@ import './details.css'
 
 export default function Details(props) {
   return (
-    <div id='details--section'>
-      <About 
-      mode={props.mode}
-      />
-      <Skills 
-      mode={props.mode}
-      />
+    <div id={props.mode === "light" ? 'details--section' : 'details--section-dark'}>
+      <div className='details--container'>
+        <About 
+        mode={props.mode}
+        />
+        <Skills 
+        mode={props.mode}
+        />
+      </div>
     </div>
   )
 }
