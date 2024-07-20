@@ -13,8 +13,8 @@ export default function Navbar(props) {
       <div className='navbar--content'>
         <img id={props.mode === "light" ? 'profile' : 'profile-dark'} src={profile} />
         <a className={props.mode === "light" ? 'nav--title' : 'nav--title-dark'} href='/'>Danielle Lindblom</a>
-        <div className='menu--items'>
-          <ul className='main--menu'>
+        <div id='desktop--menu'>
+          <ul className='menu--items'>
             <li><a className={props.mode === "light" ? 'menu-light' : 'menu-dark'} href="#about--section">About</a></li>
             <li><a className={props.mode === "light" ? 'menu-light' : 'menu-dark'} href="#projects--section">Projects</a></li>
             <li><a className={props.mode === "light" ? 'menu-light' : 'menu-dark'} href="#contact--section">Contact</a></li>

@@ -105,37 +105,21 @@
     color: $pink-color;
 }
 
-// responsive design
-@media screen and (min-width: $breakpoint2) {
-    .nav--title, .nav--title-dark, #menu--button, #menu--button-dark  {
-        font-size: $navbar-fontsize-desktop;
-    }  
-    
-    .navbar--content {
-        padding: 0 2rem;
-    }    
+
+// desktop
+#desktop--menu {
+    display: none;
 }
 
-/* .main--menu {    
+.menu--items {    
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;  
-} */
-
-/* .main--menu {    
+    gap: 1.5rem; 
     list-style-type: none;   
-    font-size: $navbar-fontsize;        
-} */
-
-/* .menu--items {    
-    margin-left: auto;
-    margin-right: 2rem; 
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;   
+    font-size: $navbar-fontsize-desktop;  
 }
 
-.navbar--content li {
+.menu--items li {
     cursor: pointer;
 }
 
@@ -168,14 +152,15 @@
     cursor: pointer;     
 }
 
-
 #mode--button-desktop {
+    display: none;
     border: 1px solid $black-color;
     transition: all 0.2s ease-in-out;
     width: 120px;
 }
 
 #mode--button-desktop-dark {
+    display: none;
     border: 1px solid $white-color;
     transition: all 0.2s ease-in-out;
     width: 120px;
@@ -183,12 +168,14 @@
 }
 
 #animate--button-desktop {
+    display: none;
     border: 1px solid $magenta-color;
     transition: all 0.2s ease-in-out;
     width: 150px;
 }
 
 #animate--button-desktop-dark {
+    display: none;
     border: 1px solid $pink-color;
     transition: all 0.2s ease-in-out;
     width: 150px;
@@ -217,47 +204,41 @@
 #animate--button-desktop-dark:hover {
     background-color: $magenta-color;
     color: $white-color;
-} */
+}
 
-
-
-
-
-// old media queries
-
-/* @media screen and (max-width: $breakpoint1) {
+// responsive design
+// increase font size and left/right padding at 500px
+@media screen and (min-width: $breakpoint2) {
+    .nav--title, .nav--title-dark, #menu--button, #menu--button-dark  {
+        font-size: $navbar-fontsize-desktop;
+    }  
+    
     .navbar--content {
-        width: 100vw;
+        padding: 0 2rem;
     }    
 }
 
-@media screen and (max-width: $breakpoint2) {
-    .navbar--background {
-        right: 0;
-    }
-    
-    .navbar--content {        
-        margin: 0;
-    }
-    
-    .menu--items {
+// switch from mobile menu button to full horizontal navbar
+@media screen and (min-width: $breakpoint4) {    
+    #menu--button, #menu--button-dark {
         display: none;
     }
+    
+    #desktop--menu {   
+        display: flex;
+        margin-left: auto;
+        margin-right: 2rem;     
+        flex-direction: row;
+        gap: 1.5rem; 
+    }
 
-    #menu--button, #menu--button-dark {
+    #mode--button-desktop, #mode--button-desktop-dark, #animate--button-desktop, #animate--button-desktop-dark {
         display: block;
     }
+    
+    
 }
 
-@media screen and (max-width: $breakpoint4) {
-    #menu--button {
-        margin-left: auto;
-        margin-right: 2rem;
-    }
 
-    #profile {
-        margin: 1rem;
-    }
-} */
 
 

@@ -100,6 +100,105 @@
   color: #FFA9F9;
 }
 
+#desktop--menu {
+  display: none;
+}
+
+.menu--items {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+.menu--items li {
+  cursor: pointer;
+}
+
+.menu-light {
+  text-decoration: none;
+  color: #131B23;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-light:hover {
+  text-decoration: underline;
+  color: #A60067;
+}
+
+.menu-dark {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-dark:hover {
+  text-decoration: none;
+  color: #FFA9F9;
+}
+
+.access--button-desktop {
+  background-color: transparent;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#mode--button-desktop {
+  display: none;
+  border: 1px solid #131B23;
+  transition: all 0.2s ease-in-out;
+  width: 120px;
+}
+
+#mode--button-desktop-dark {
+  display: none;
+  border: 1px solid #FFFFFF;
+  transition: all 0.2s ease-in-out;
+  width: 120px;
+  color: #FFFFFF;
+}
+
+#animate--button-desktop {
+  display: none;
+  border: 1px solid #A60067;
+  transition: all 0.2s ease-in-out;
+  width: 150px;
+}
+
+#animate--button-desktop-dark {
+  display: none;
+  border: 1px solid #FFA9F9;
+  transition: all 0.2s ease-in-out;
+  width: 150px;
+  color: #FFFFFF;
+}
+
+.icon {
+  width: 1rem;
+}
+
+#mode--button-desktop:hover {
+  background-color: #131B23;
+  color: #FFFFFF;
+}
+
+#mode--button-desktop-dark:hover {
+  background-color: #FFFFFF;
+  color: #131B23;
+}
+
+#animate--button-desktop:hover {
+  background-color: #A60067;
+  color: #FFFFFF;
+}
+
+#animate--button-desktop-dark:hover {
+  background-color: #A60067;
+  color: #FFFFFF;
+}
+
 @media screen and (min-width: 500px) {
   .nav--title, .nav--title-dark, #menu--button, #menu--button-dark {
     font-size: 1.5rem;
@@ -108,137 +207,18 @@
     padding: 0 2rem;
   }
 }
-/* .main--menu {    
+@media screen and (min-width: 1200px) {
+  #menu--button, #menu--button-dark {
+    display: none;
+  }
+  #desktop--menu {
     display: flex;
-    flex-direction: row;
-    gap: 1.5rem;  
-} */
-/* .main--menu {    
-    list-style-type: none;   
-    font-size: $navbar-fontsize;        
-} */
-/* .menu--items {    
     margin-left: auto;
-    margin-right: 2rem; 
-    display: flex;
+    margin-right: 2rem;
     flex-direction: row;
-    gap: 1.5rem;   
-}
-
-.navbar--content li {
-    cursor: pointer;
-}
-
-.menu-light {
-    text-decoration: none;
-    color: $black-color;
-    transition: all 0.2s ease-in-out;
-}
-
-.menu-light:hover {
-    text-decoration: underline;
-    color: $magenta-color;    
-}
-
-.menu-dark {
-    text-decoration: none;
-    color: $white-color;
-    transition: all 0.2s ease-in-out;
-}
-
-.menu-dark:hover {
-    text-decoration: none;
-    color: $pink-color;
-}
-
-.access--button-desktop {
-    background-color: transparent;
-    border-radius: 10px;
-    font-weight: bold;   
-    cursor: pointer;     
-}
-
-
-#mode--button-desktop {
-    border: 1px solid $black-color;
-    transition: all 0.2s ease-in-out;
-    width: 120px;
-}
-
-#mode--button-desktop-dark {
-    border: 1px solid $white-color;
-    transition: all 0.2s ease-in-out;
-    width: 120px;
-    color: $white-color;
-}
-
-#animate--button-desktop {
-    border: 1px solid $magenta-color;
-    transition: all 0.2s ease-in-out;
-    width: 150px;
-}
-
-#animate--button-desktop-dark {
-    border: 1px solid $pink-color;
-    transition: all 0.2s ease-in-out;
-    width: 150px;
-    color: $white-color;
-}
-
-.icon {
-    width: 1rem;
-}
-
-#mode--button-desktop:hover {
-    background-color: $black-color;
-    color: $white-color;
-}
-
-#mode--button-desktop-dark:hover {
-    background-color: $white-color;
-    color: $black-color;
-}
-
-#animate--button-desktop:hover {
-    background-color: $magenta-color;
-    color: $white-color;
-}
-
-#animate--button-desktop-dark:hover {
-    background-color: $magenta-color;
-    color: $white-color;
-} */
-/* @media screen and (max-width: $breakpoint1) {
-    .navbar--content {
-        width: 100vw;
-    }    
-}
-
-@media screen and (max-width: $breakpoint2) {
-    .navbar--background {
-        right: 0;
-    }
-
-    .navbar--content {        
-        margin: 0;
-    }
-
-    .menu--items {
-        display: none;
-    }
-
-    #menu--button, #menu--button-dark {
-        display: block;
-    }
-}
-
-@media screen and (max-width: $breakpoint4) {
-    #menu--button {
-        margin-left: auto;
-        margin-right: 2rem;
-    }
-
-    #profile {
-        margin: 1rem;
-    }
-} *//*# sourceMappingURL=navbar.css.map */
+    gap: 1.5rem;
+  }
+  #mode--button-desktop, #mode--button-desktop-dark, #animate--button-desktop, #animate--button-desktop-dark {
+    display: block;
+  }
+}/*# sourceMappingURL=navbar.css.map */
