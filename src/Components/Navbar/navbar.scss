@@ -38,30 +38,26 @@
 }
 
 .nav--title {
-    font-size: $navbar-fontsize;  
+    font-size: $navbar-fontsize-mobile;  
     text-decoration: none;
     color: $black-color;     
     transition: all 0.2s ease-in-out;
     margin: 0;
 }
 
-.nav--title:hover {
-    font-size: $navbar-fontsize;  
-    text-decoration: none;
+.nav--title:hover {    
     color: $magenta-color;
 }
 
 .nav--title-dark {
-    font-size: $navbar-fontsize;  
+    font-size: $navbar-fontsize-mobile;  
     text-decoration: none;
     color: $white-color;    
     transition: all 0.2s ease-in-out;
     margin: 0;
 }
 
-.nav--title-dark:hover {
-    font-size: $navbar-fontsize;  
-    text-decoration: none;
+.nav--title-dark:hover {    
     color: $pink-color;
 }
 
@@ -70,35 +66,49 @@
 }
 
 
-
-
 // mobile menu button
 #menu--button {
     margin-left: auto;
     margin-right: 1rem;
-    font-size: $navbar-fontsize;   
+    font-size: $navbar-fontsize-mobile;   
     cursor: pointer;
     border: 2px solid $magenta-color;
     background-color: transparent;
     border-radius: 10px;
     padding: 0.5rem;    
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
+    box-shadow: $box-shadow;   
+    transition: color 0.2s ease-in-out;
+}
+
+#menu--button:hover {
+    color: $magenta-color;
+    background-color: $gray-color;
 }
 
 #menu--button-dark {
     margin-left: auto;
     margin-right: 2rem;
     color: $white-color;
-    font-size: $navbar-fontsize;   
+    font-size: $navbar-fontsize-mobile;   
     cursor: pointer;
     border: 2px solid $pink-color;
     background-color: transparent;
     border-radius: 10px;
     padding: 0.5rem;    
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
+    box-shadow: $box-shadow; 
+    transition: color 0.2s ease-in-out;  
+}
+
+#menu--button-dark:hover {
+    color: $pink-color;
 }
 
 // responsive design
+@media screen and (min-width: $breakpoint2) {
+    .nav--title, .nav--title-dark, #menu--button, #menu--button-dark  {
+        font-size: $navbar-fontsize-desktop;
+    }    
+}
 
 /* .main--menu {    
     display: flex;

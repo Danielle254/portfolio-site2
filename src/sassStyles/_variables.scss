@@ -14,6 +14,8 @@ $yellow-color: #FFF7AD;
 $horizontal-gradient-dark: linear-gradient(45deg,  $pink-color, $yellow-color);
 $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
 
+$box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
 
 // buttons
 @mixin button-light {
@@ -122,8 +124,9 @@ $vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
 // sizing
 $width-desktop: 80%;
 $width-mobile: 100%;
-/* $breakpoint1: 1600px;
-$breakpoint2: 1200px;
+
+$breakpoint1: 400px;
+$breakpoint2: 500px;
 $breakpoint3: 800px;
-$breakpoint4: 600px; */
-$breakpoint1: 500px;
+$breakpoint4: 1200px;
+$breakpoint5: 1600px;

@@ -15,12 +15,11 @@
     grid-row: 2;      
     padding: 2rem 1rem;
     width: 100%;    
-    padding: 0 2rem;
-    
+    padding: 0 2rem;    
 }
 
 #hero--container h1 {
-    font-size: $h1-fontsize; 
+    font-size: $h1-fontsize-mobile; 
     margin: 0;    
 }
 
@@ -57,7 +56,11 @@
 }
 
 // from mobile to desktop - responsive design
-
+@media screen and (min-width: $breakpoint2) {
+    #hero--container h1 {
+        font-size: $h1-fontsize-desktop;
+    }
+}
 
 
 

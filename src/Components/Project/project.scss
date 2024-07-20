@@ -11,12 +11,14 @@
     width: 100%;   
     border: 1px solid $black-color;  
     margin-bottom: 1rem;  
+    box-shadow: $box-shadow;
 }
 
 .img-dark {
     width: 100%;     
     border: 1px solid $white-color; 
-    margin-bottom: 1rem;       
+    margin-bottom: 1rem;
+    box-shadow: $box-shadow;       
 }
 
 #details--container {
