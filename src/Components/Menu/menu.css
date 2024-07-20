@@ -2,7 +2,7 @@
 #nav {
   height: 100vh;
   width: 100vw;
-  background-color: #E7E7E7;
+  background: linear-gradient(180deg, #E7E7E7, #FFFFFF);
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -10,12 +10,14 @@
 nav ul {
   list-style-type: none;
   padding-top: 2rem;
+  text-align: center;
+  margin-right: 3rem;
 }
 
 nav a {
   text-decoration: none;
   color: #131B23;
-  transition: color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 nav li {
@@ -24,6 +26,7 @@ nav li {
 
 nav a:hover {
   color: #A60067;
+  text-decoration: underline;
 }
 
 #close--nav {
@@ -45,10 +48,10 @@ nav a:hover {
 }
 
 .access--container {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 180px;
+  margin: 0 auto;
 }
 
 .access--button {
@@ -61,11 +64,11 @@ nav a:hover {
 
 #mode--button {
   margin-bottom: 0.5rem;
+  margin-top: 2rem;
   background-color: #FFFFFF;
   border: 2px solid #131B23;
   color: #131B23;
   transition: all 0.2s ease-in-out;
-  width: 200px;
 }
 
 #mode--button:hover {
