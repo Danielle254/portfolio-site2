@@ -3,4 +3,10 @@
   display: grid;
   grid-template-columns: 1fr;
   margin: 2rem 0;
+}
+
+@media screen and (min-width: 500px) {
+  #details--section {
+    justify-items: center;
+  }
 }/*# sourceMappingURL=details.css.map */

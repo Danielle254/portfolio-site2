@@ -108,7 +108,7 @@
   color: #FFA9F9;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   .contact--content {
     padding: 0 2rem;
   }

@@ -57,8 +57,8 @@
   margin: 2rem 0;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   #projects--section {
-    padding: 2rem;
+    padding: 2rem 3rem;
   }
 }/*# sourceMappingURL=projects.css.map */

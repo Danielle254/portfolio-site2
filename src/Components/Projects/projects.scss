@@ -20,8 +20,7 @@
     @include button-light-secondary;
     margin: -4rem 0 10rem 0;
     width: 155px;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 #more-projects-button:hover {
@@ -35,9 +34,9 @@
 }
 
 // mobile to desktop - responsive design
-@media screen and (min-width: $breakpoint1) {
+@media screen and (min-width: $breakpoint2) {
     #projects--section {
-        padding: 2rem;
+        padding: 2rem 3rem;
     }
 }
 

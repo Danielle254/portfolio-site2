@@ -4,13 +4,13 @@
 
 #about--section {
     min-height: 100vh; 
-    padding: 0 1rem;  
+    width: 100%;
+    padding: 0 1rem;    
 }
 
 #about--section h2 {
     font-size: $h2-fontsize;
-    margin-bottom: 2rem;
-    text-align: center;
+    margin-bottom: 2rem;    
 }
 
 #about--section p {
@@ -42,9 +42,10 @@
     @include button-dark-hover;
 }
 
-@media screen and (min-width: $breakpoint1) {
+@media screen and (min-width: $breakpoint2) {
     #about--section {
-        padding: 0 2rem;
+        padding: 0 3rem;
+       
     }
 }
 

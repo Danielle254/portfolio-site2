@@ -4,9 +4,14 @@
 
 #details--section {
     display: grid;
-    grid-template-columns: 1fr;    
+    grid-template-columns: 1fr;       
     margin: 2rem 0;    
 }
 
 
 // mobile to desktop - responsive design
+@media screen and (min-width: $breakpoint2) {
+    #details--section {
+        justify-items: center;
+    }
+}
