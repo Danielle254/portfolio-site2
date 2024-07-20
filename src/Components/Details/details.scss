@@ -5,13 +5,8 @@
 #details--section {
     display: grid;
     grid-template-columns: 1fr;    
-    margin: 2rem 1rem;      
+    margin: 2rem 0;    
 }
 
 
 // mobile to desktop - responsive design
-@media screen and (min-width: $breakpoint1) {
-    #details--section {
-        margin: 2rem;
-    }
-}

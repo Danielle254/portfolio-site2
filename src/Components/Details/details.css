@@ -2,11 +2,5 @@
 #details--section {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 2rem 1rem;
-}
-
-@media screen and (min-width: 400px) {
-  #details--section {
-    margin: 2rem;
-  }
+  margin: 2rem 0;
 }/*# sourceMappingURL=details.css.map */

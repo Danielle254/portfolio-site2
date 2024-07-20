@@ -3,7 +3,8 @@
 @import '../../sassStyles/variables';
 
 #about--section {
-    min-height: 100vh;   
+    min-height: 100vh; 
+    padding: 0 1rem;  
 }
 
 #about--section h2 {
@@ -39,6 +40,12 @@
 
 #resume-button-dark:hover {
     @include button-dark-hover;
+}
+
+@media screen and (min-width: $breakpoint1) {
+    #about--section {
+        padding: 0 2rem;
+    }
 }
 
 
