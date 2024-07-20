@@ -17,28 +17,28 @@ export default function Contact(props) {
       }
   
     return (
-    <div id={props.mode === "light" ? 'contact--section' : 'contact--section-dark'}>
+    <div id={props.lightMode ? 'contact--section' : 'contact--section-dark'}>
       <div className='contact--content'>
         <h2>Contact</h2>
         <p>Available for remote work. Based in Missoula, Montana USA.<br />Let's connect to discuss opportunities!</p>
         <div className='email--container'>
-          <img src={props.mode === "light" ? emailDark : emailLight} className='email-icon' /> 
-          <a id={props.mode === "light" ? 'link-light' : 'link-dark'} href="mailto:danielle.lindblom@gmail.com">Danielle.Lindblom@gmail.com</a>  
+          <img src={props.lightMode ? emailDark : emailLight} className='email-icon' /> 
+          <a id={props.lightMode ? 'link-light' : 'link-dark'} href="mailto:danielle.lindblom@gmail.com">Danielle.Lindblom@gmail.com</a>  
         </div>    
         <div className='social--container'>
-          <div className={props.mode === "light" ? 'social--icon' : 'social--icon-dark'}>
-              <a className={props.mode === "light" ? 'social--text' : 'social--text-dark'} href="https://github.com/Danielle254" target='_blank'>
-              <img src={props.mode === "light" ? githubIcon : githubWhite} />
+          <div className={props.lightMode ? 'social--icon' : 'social--icon-dark'}>
+              <a className={props.lightMode ? 'social--text' : 'social--text-dark'} href="https://github.com/Danielle254" target='_blank'>
+              <img src={props.lightMode ? githubIcon : githubWhite} />
               <p>GitHub</p></a>
           </div>
-          <div className={props.mode === "light" ? 'social--icon' : 'social--icon-dark'}>
-              <a className={props.mode === "light" ? 'social--text' : 'social--text-dark'} href="https://www.linkedin.com/in/danielle-lindblom/" target='_blank'>
-              <img src={props.mode === "light" ? linkedinIcon : linkedinWhite} />
+          <div className={props.lightMode ? 'social--icon' : 'social--icon-dark'}>
+              <a className={props.lightMode ? 'social--text' : 'social--text-dark'} href="https://www.linkedin.com/in/danielle-lindblom/" target='_blank'>
+              <img src={props.lightMode ? linkedinIcon : linkedinWhite} />
               <p>LinkedIn</p></a>
           </div>
-          <div className={props.mode === "light" ? 'social--icon' : 'social--icon-dark'}>
-              <a className={props.mode === "light" ? 'social--text' : 'social--text-dark'} href='' >
-              <img src={props.mode === "light" ?resumeIcon : resumeWhite} />
+          <div className={props.lightMode ? 'social--icon' : 'social--icon-dark'}>
+              <a className={props.lightMode ? 'social--text' : 'social--text-dark'} href='' >
+              <img src={props.lightMode ?resumeIcon : resumeWhite} />
               <p>Resume</p></a>
           </div>
         </div>

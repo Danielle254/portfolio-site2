@@ -18,7 +18,7 @@ const router = createBrowserRouter(
 
 
 function App() {
-  const [mode, setMode] = useState('light');
+  const [lightMode, setLightMode] = useState(true);
   const [animationsOn, setAnimationsOn] = useState(true);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [showContent, setShowContent] = useState(true);
@@ -36,16 +36,8 @@ function App() {
     setShowContent(true);
   }
 
-  function toggleMode() {
-    const currentMode = mode;
-    switch (currentMode) {
-      case "light":
-        setMode("dark");
-        break;
-      case "dark":
-        setMode("light");
-        break;
-    }
+  function toggleLightMode() {
+    setLightMode(!lightMode);
   }
 
   function toggleAnimations() {
@@ -59,43 +51,43 @@ function App() {
   
 
   return (
-    <div className={mode === "light" ? 'App' : 'App-dark'}>
+    <div className={lightMode ? 'App' : 'App-dark'}>
       <div id='app--container'>
         {showContent && <Navbar 
         mobileMenuVisible={mobileMenuVisible}
         menuOn={menuOn}  
-        mode={mode} 
+        lightMode={lightMode} 
         animationsOn={animationsOn}
-        toggleMode={toggleMode}  
+        toggleLightMode={toggleLightMode}  
         toggleAnimations={toggleAnimations}    
         />}
         {mobileMenuVisible && 
         <Menu 
         menuOff={menuOff} 
         mobileReset={mobileReset}
-        mode={mode}
+        lightMode={lightMode}
         animationsOn={animationsOn}
-        toggleMode={toggleMode}  
+        toggleLightMode={toggleLightMode}  
         toggleAnimations={toggleAnimations}     
         />}        
         {showContent && <Hero
-        mode={mode}
+        lightMode={lightMode}
         animationsOn={animationsOn} 
         />}
         {showContent && <Details 
-        mode={mode}
+        lightMode={lightMode}
         animationsOn={animationsOn} 
         />}
         {showContent && <Projects 
-        mode={mode}
+        lightMode={lightMode}
         animationsOn={animationsOn} 
         />}
         {showContent && <Contact
-        mode={mode} 
+        lightMode={lightMode} 
         animationsOn={animationsOn}      
         />}
         {showContent && <Footer 
-        mode={mode}
+        lightMode={lightMode}
         />}
       </div>
     </div>
