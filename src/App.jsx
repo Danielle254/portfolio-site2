@@ -26,7 +26,7 @@ function App() {
   function menuOn() {
     const screenWidth = window.innerWidth;
     setMobileMenuVisible(true);
-    if (screenWidth <= 800) {
+    if (screenWidth < 800) {
       setShowContent(false);
     }    
   }
@@ -61,14 +61,14 @@ function App() {
   return (
     <div className={mode === "light" ? 'App' : 'App-dark'}>
       <div id='app--container'>
-        <Navbar 
+        {showContent && <Navbar 
         mobileMenuVisible={mobileMenuVisible}
         menuOn={menuOn}  
         mode={mode} 
         animationsOn={animationsOn}
         toggleMode={toggleMode}  
         toggleAnimations={toggleAnimations}    
-        />
+        />}
         {mobileMenuVisible && 
         <Menu 
         menuOff={menuOff} 
