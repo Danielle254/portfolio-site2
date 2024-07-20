@@ -10,6 +10,14 @@
     font-weight: bold;        
 }
 
+#nav-dark {    
+    height: 100vh;
+    width: 100vw;
+    background: $vertical-gradient-nav-dark;   
+    font-size: $h3-fontsize;
+    font-weight: bold;        
+}
+
 nav ul {
     list-style-type: none;
     padding-top: 2rem;
@@ -17,9 +25,15 @@ nav ul {
     margin-right: 3rem;
 }
 
-nav a {
+#nav a {
     text-decoration: none;
     color: $black-color;  
+    transition: all 0.2s ease-in-out;     
+}
+
+#nav-dark a {
+    text-decoration: none;
+    color: $white-color;
     transition: all 0.2s ease-in-out;     
 }
 
@@ -27,8 +41,13 @@ nav li {
     padding-bottom: 1rem;
 }
 
-nav a:hover {
+#nav a:hover {
     color: $magenta-color;
+    text-decoration: underline;
+}
+
+#nav-dark a:hover {
+    color: $pink-color;
     text-decoration: underline;
 }
 
@@ -44,8 +63,27 @@ nav a:hover {
     transition: box-shadow  0.2s ease-in-out;
 }
 
+#close--nav-dark {
+    position: absolute;
+    color: $white-color;
+    right: 2rem;
+    top: 2rem;
+    font-size: $h3-fontsize;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: border  0.2s ease-in-out;
+    transition: box-shadow  0.2s ease-in-out;
+}
+
 #close--nav:hover {
     border: 1px solid black;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+}
+
+#close--nav-dark:hover {
+    border: 1px solid $white-color;
     box-shadow: $box-shadow;
     border-radius: 5px;
 }
