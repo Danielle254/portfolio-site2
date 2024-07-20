@@ -6,7 +6,10 @@
     background-image: $vertical-gradient-nav;
     min-height: 5.625rem;   
     width: 100%;  
-    margin: 0;      
+    margin: 0; 
+    display: flex;
+    flex: row;
+    align-items: center;     
 }
 
 .navbar--background-dark {
@@ -18,6 +21,7 @@
 .navbar--content {
     width: $width-mobile;
     margin: 0;
+    padding: 0 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,7 +31,7 @@
     height: 3.875rem;
     border-radius: 50%;
     border: $magenta-color 1px solid; 
-    margin: 1rem;    
+    margin-right: 1rem;    
 }
 
 #profile-dark {
@@ -68,8 +72,7 @@
 
 // mobile menu button
 #menu--button {
-    margin-left: auto;
-    margin-right: 1rem;
+    margin-left: auto;    
     font-size: $navbar-fontsize-mobile;   
     cursor: pointer;
     border: 2px solid $magenta-color;
@@ -86,8 +89,7 @@
 }
 
 #menu--button-dark {
-    margin-left: auto;
-    margin-right: 2rem;
+    margin-left: auto;    
     color: $white-color;
     font-size: $navbar-fontsize-mobile;   
     cursor: pointer;
@@ -107,6 +109,10 @@
 @media screen and (min-width: $breakpoint2) {
     .nav--title, .nav--title-dark, #menu--button, #menu--button-dark  {
         font-size: $navbar-fontsize-desktop;
+    }  
+    
+    .navbar--content {
+        padding: 0 2rem;
     }    
 }
 
