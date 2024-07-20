@@ -5,6 +5,7 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
@@ -12,7 +13,6 @@
   grid-row: 2;
   padding: 2rem 1rem;
   width: 100%;
-  padding: 0 2rem;
 }
 
 #hero--container h1 {
@@ -88,34 +88,15 @@
 }
 
 @media screen and (min-width: 500px) {
+  #hero--container {
+    padding: 2rem;
+  }
   #hero--container h1 {
     font-size: 3.5rem;
   }
 }
-/* @media screen and (max-width: $breakpoint2) {
-    #hero--container {
-        margin: 25% auto;
-    }
-}
-
-@media screen and (max-width: $breakpoint3) {
-    #hero--container {
-        margin: 30% auto;
-    }
-}
-
-@media screen and (max-width: $breakpoint4) {
-    #hero--section {
-        height: 100vh;
-        width: $width-mobile;
-    }
-
-    #hero--container {
-        margin: 10rem 2rem;        
-    }
-
-    #hero--container p {
-        margin: 1rem 0 2rem 0;
-        max-width: 400px;
-    }
-} *//*# sourceMappingURL=hero.css.map */
+@media screen and (min-width: 800px) {
+  #hero--container {
+    width: 680px;
+  }
+}/*# sourceMappingURL=hero.css.map */
