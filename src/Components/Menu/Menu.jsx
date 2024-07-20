@@ -14,8 +14,8 @@ export default function Menu(props) {
         <li><a onClick={props.mobileReset}  href="#contact--section" >Contact</a></li>
         <li><a onClick={props.mobileReset}  href="" >Resume</a></li>
         <div className='access--container'>
-          <button id='mode--button' className='access--button' onClick={props.toggleMode}><img className='icon' src={modeIcon} />{props.mode === "light" ? "  Dark Mode" : "   Light Mode"}</button>
-          <button id='animate--button' className='access--button' onClick={props.toggleAnimations}><img src={animateIcon} className='icon'/>{props.animationsOn === true ? "Animations OFF" : "Animations ON"}</button>
+          <button id={props.mode === "light" ? 'mode--button' : 'mode--button-dark'} className='access--button' onClick={props.toggleMode}><img className='icon' src={modeIcon} />{props.mode === "light" ? "  Dark Mode" : "   Light Mode"}</button>
+          <button id={props.mode === "light" ? 'animate--button' : 'animate--button-dark'} className='access--button' onClick={props.toggleAnimations}><img src={animateIcon} className='icon'/>{props.animationsOn === true ? " Animations OFF" : " Animations ON"}</button>
         </div>
       </ul>
     </nav>

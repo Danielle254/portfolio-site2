@@ -11,12 +11,12 @@ $vertical-gradient-nav: linear-gradient(180deg, $gray-color 60%, $white-color);
 // dark mode color additions
 $darkgray-color: #2c343d;
 $darkblue-color: #182750;
-$yellow-color: #FFF7AD;
-$horizontal-gradient-dark: linear-gradient(45deg,  $pink-color, $yellow-color);
-$vertical-gradient-dark: linear-gradient(180deg, $yellow-color, $pink-color);
+
+$horizontal-gradient-dark: linear-gradient(45deg,  $pink-color, $white-color);
 $vertical-gradient-nav-dark: linear-gradient(180deg, $darkblue-color 60%, $darkgray-color);
 
 $box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+$box-shadow-light: rgb(255, 255, 255, 0.6) 0px 10px 20px, rgba(255, 255, 255, 0.8) 0px 6px 6px;
 
 
 // buttons
@@ -29,7 +29,7 @@ $box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background: $magenta-color;
     color: $white-color;
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+    box-shadow: $box-shadow;
     margin: 0;    
 }
 
@@ -42,7 +42,7 @@ $box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: $gray-color;
     color: $black-color;
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: $box-shadow;
     transition: all 0.2s ease-in-out;     
 }
 
@@ -51,7 +51,7 @@ $box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     font-size: $body-fontsize;
     font-weight: bold;    
     border-radius: 10px; 
-    cursor: pointer;     
+    cursor: pointer;      
 }
 
 

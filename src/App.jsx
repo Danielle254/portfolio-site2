@@ -26,7 +26,7 @@ function App() {
   function menuOn() {
     const screenWidth = window.innerWidth;
     setMobileMenuVisible(true);
-    if (screenWidth <= 600) {
+    if (screenWidth <= 800) {
       setShowContent(false);
     }    
   }
