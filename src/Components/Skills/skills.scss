@@ -11,6 +11,15 @@
     padding: 0 1rem;
 }
 
+#skills--section-dark {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $darkblue-color;
+    padding: 0 1rem;
+}
+
 #list--container {
     display: flex;
     flex-direction: row;
@@ -18,7 +27,13 @@
 
 #skills--section h2 {
     font-size: $h2-fontsize;
-    margin: 2rem 0;
+    margin: 4rem 0;
+    text-align: center;
+}
+
+#skills--section-dark h2 {
+    font-size: $h2-fontsize;
+    margin: 4rem 0;
     text-align: center;
 }
 

@@ -3,7 +3,7 @@ import './skills.css'
 
 export default function Skills(props) {
   return (
-    <div id='skills--section'>
+    <div id={props.mode === "light" ? 'skills--section' : 'skills--section-dark'}>
       <h2>Skills</h2>
       <div className='content--container'>
         <h4 className={props.mode === "light" ? 'h4-light' : 'h4-dark'}>Technical</h4>
