@@ -16,6 +16,9 @@
     min-height: 5.625rem;   
     width: 100%; 
     margin: 0;
+    display: flex;
+    flex: row;
+    align-items: center; 
 }
 
 .navbar--content {

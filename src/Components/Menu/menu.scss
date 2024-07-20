@@ -161,21 +161,44 @@ nav li {
     
 }
 
-/* #nav {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 350px;
-    height: 500px;
-    background-color: $gray-color;
-    border: 1px $black-color solid;
-    border-radius: 10px;
-    padding-top: 2rem;
-    font-size: $h3-fontsize;
-    font-weight: bold;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
-} */
+@media screen and (min-width: $breakpoint3) {
+    #nav {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 350px;
+        height: 500px;
+        background: none;
+        background-color: $gray-color;
+        border: 1px $black-color solid;
+        border-radius: 10px;
+        padding-top: 2rem;
+        font-size: $h3-fontsize;
+        font-weight: bold;
+        box-shadow: $box-shadow; 
+        z-index: 1;
+    }
+
+    #nav-dark {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 350px;
+        height: 500px;
+        background: none;
+        background-color: $darkblue-color;
+        border: 1px $white-color solid;
+        border-radius: 10px;
+        padding-top: 2rem;
+        font-size: $h3-fontsize;
+        font-weight: bold;
+        box-shadow: $box-shadow; 
+    }
+}
+
+
 
 
 

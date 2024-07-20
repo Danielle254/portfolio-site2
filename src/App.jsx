@@ -61,14 +61,14 @@ function App() {
   return (
     <div className={mode === "light" ? 'App' : 'App-dark'}>
       <div id='app--container'>
-        {!mobileMenuVisible && <Navbar 
+        <Navbar 
         mobileMenuVisible={mobileMenuVisible}
         menuOn={menuOn}  
         mode={mode} 
         animationsOn={animationsOn}
         toggleMode={toggleMode}  
         toggleAnimations={toggleAnimations}    
-        />}
+        />
         {mobileMenuVisible && 
         <Menu 
         menuOff={menuOff} 
