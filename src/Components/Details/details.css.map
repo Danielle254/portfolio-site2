@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../sassStyles/_typography.scss","details.scss","details.css"],"names":[],"mappings":"AAAQ,kMAAA;ACIR;EACI,aAAA;EACA,0BAAA;EACA,cAAA;ACFJ;;ADOA;EACI;IACI,qBAAA;ECJN;AACF","file":"details.css"}
+{"version":3,"sources":["../../sassStyles/_typography.scss","details.scss","details.css"],"names":[],"mappings":"AAAQ,kMAAA;ACIR;EACI,aAAA;EACA,0BAAA;EACA,cAAA;ACFJ;;ADOA;EACI;IACI,qBAAA;ECJN;AACF;ADOA;EACI;IACI,8BAAA;IACA,cAAA;IACA,SAAA;IACA,UAAA;ECLN;AACF","file":"details.css"}

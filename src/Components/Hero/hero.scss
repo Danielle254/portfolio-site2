@@ -68,10 +68,11 @@
 
 @media screen and (min-width: $breakpoint3) {
     #hero--container {
-        width: 680px;
-        
+        width: 680px; 
+        padding: 2rem 6rem;       
     }
 }
+// add in illustration at breakpoint3
 
 
 

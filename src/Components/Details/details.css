@@ -9,4 +9,12 @@
   #details--section {
     justify-items: center;
   }
+}
+@media screen and (min-width: 800px) {
+  #details--section {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    gap: 4rem;
+    width: 80%;
+  }
 }/*# sourceMappingURL=details.css.map */

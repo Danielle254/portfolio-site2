@@ -78,4 +78,9 @@
   #about--section {
     padding: 0 3rem;
   }
+}
+@media screen and (min-width: 800px) {
+  #about--section {
+    padding: 0;
+  }
 }/*# sourceMappingURL=about.css.map */

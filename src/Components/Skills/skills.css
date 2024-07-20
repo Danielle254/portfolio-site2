@@ -67,4 +67,23 @@
   #skills--section {
     padding: 0 2rem;
   }
+  #skills--section-dark {
+    padding: 0 2rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  #skills--section {
+    background-color: transparent;
+    padding: 0;
+  }
+  #skills--section-dark {
+    background-color: transparent;
+    padding: 0;
+  }
+  #skills--section h2 {
+    margin: 0 0 2rem 0;
+  }
+  #skills--section-dark h2 {
+    margin: 0 0 2rem 0;
+  }
 }/*# sourceMappingURL=skills.css.map */
