@@ -16,7 +16,7 @@ $horizontal-gradient-dark: linear-gradient(45deg,  $pink-color, $white-color);
 $vertical-gradient-nav-dark: linear-gradient(180deg, $darkblue-color 60%, $darkgray-color);
 
 $box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-$box-shadow-light: rgb(255, 255, 255, 0.6) 0px 10px 20px, rgba(255, 255, 255, 0.8) 0px 6px 6px;
+$box-shadow-light: rgb(255, 255, 255, 0.2) 0px 10px 20px, rgba(255, 255, 255, 0.5) 0px 6px 6px;
 
 
 // buttons
@@ -54,7 +54,6 @@ $box-shadow-light: rgb(255, 255, 255, 0.6) 0px 10px 20px, rgba(255, 255, 255, 0.
     cursor: pointer;      
 }
 
-
 @mixin button-dark {
     text-decoration: none; 
     cursor: pointer;  
@@ -64,11 +63,10 @@ $box-shadow-light: rgb(255, 255, 255, 0.6) 0px 10px 20px, rgba(255, 255, 255, 0.
     background-color: $pink-color;
     color: $black-color;
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;       
+    box-shadow: $box-shadow;      
 }
 
 // button hover effects
-
 @mixin button-light-hover {
     text-decoration: none; 
     cursor: pointer;  
@@ -78,7 +76,7 @@ $box-shadow-light: rgb(255, 255, 255, 0.6) 0px 10px 20px, rgba(255, 255, 255, 0.
     background: $horizontal-gradient-light;
     color: $white-color;
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;  
+    box-shadow: $box-shadow; 
     font-style: italic;   
 }
 
@@ -91,7 +89,7 @@ $box-shadow-light: rgb(255, 255, 255, 0.6) 0px 10px 20px, rgba(255, 255, 255, 0.
     background-color: $darkgray-color;
     color: $white-color;
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+    box-shadow: $box-shadow;
     font-style: italic;    
 }
 
@@ -104,7 +102,7 @@ $box-shadow-light: rgb(255, 255, 255, 0.6) 0px 10px 20px, rgba(255, 255, 255, 0.
     background-color: $white-color;
     color: $black-color;
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+    box-shadow: $box-shadow;
     font-style: italic;    
 }
 
@@ -117,7 +115,7 @@ $box-shadow-light: rgb(255, 255, 255, 0.6) 0px 10px 20px, rgba(255, 255, 255, 0.
     background: $horizontal-gradient-dark;
     color: $black-color;
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: $box-shadow;
     font-style: italic;      
 }
 
