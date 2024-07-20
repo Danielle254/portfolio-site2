@@ -47,3 +47,11 @@
         margin: 4rem 0;
     }
 }
+
+@media screen and (min-width: $breakpoint4) {
+    #projects--section {
+        padding: 0;
+        width: $width-desktop;
+        margin: 4rem auto;
+    }
+}

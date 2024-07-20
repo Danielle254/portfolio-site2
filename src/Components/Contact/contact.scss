@@ -22,6 +22,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;  
+    
     gap: 2.5rem;
     padding: 0 1rem;
 }
@@ -113,6 +114,10 @@
 // mobile to desktop - responsive design
 @media screen and (min-width: $breakpoint2) {
     .contact--content {
-        padding: 0 2rem;
+        padding: 6rem 0 2rem 0 ;
     }
+}
+
+@media screen and (min-width: $breakpoint3) {
+
 }

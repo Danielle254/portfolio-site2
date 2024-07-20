@@ -237,9 +237,19 @@
 
     #mode--button-desktop, #mode--button-desktop-dark, #animate--button-desktop, #animate--button-desktop-dark {
         display: block;
+    } 
+    
+    .navbar--content {
+        padding: 0 4rem;
     }
-    
-    
+}
+
+
+@media screen and (min-width: $breakpoint5) {
+    .navbar--content {
+        width: $width-desktop;
+        margin: 0 auto;
+    }
 }
 
 

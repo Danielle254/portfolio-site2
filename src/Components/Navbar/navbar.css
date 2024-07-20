@@ -224,4 +224,13 @@
   #mode--button-desktop, #mode--button-desktop-dark, #animate--button-desktop, #animate--button-desktop-dark {
     display: block;
   }
+  .navbar--content {
+    padding: 0 4rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .navbar--content {
+    width: 80%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=navbar.css.map */

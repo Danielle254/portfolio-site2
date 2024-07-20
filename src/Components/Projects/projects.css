@@ -67,4 +67,11 @@
   #more-projects-button, #more-projects-button-dark {
     margin: 4rem 0;
   }
+}
+@media screen and (min-width: 1200px) {
+  #projects--section {
+    padding: 0;
+    width: 80%;
+    margin: 4rem auto;
+  }
 }/*# sourceMappingURL=projects.css.map */
