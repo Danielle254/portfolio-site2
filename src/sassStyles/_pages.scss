@@ -1,4 +1,94 @@
-@import './sassStyles/animations';
-@import './sassStyles/typography';
-@import './sassStyles/variables';
+@import './animations';
+@import './typography';
+@import './variables';
 
+.page {
+    background-color: $white-color;
+    color: $black-color;
+}
+
+.page-dark {
+    background-color: $darkgray-color;
+    color: $white-color;
+}
+
+.page--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;    
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+h1 {
+    padding-top: 4rem;
+    font-size: $h1-fontsize-mobile;
+}
+
+.project-video {
+    height: 200px;
+    border: 1px solid $magenta-color;
+}
+
+.project-video-dark {
+    height: 200px;
+    border: 1px solid $pink-color;
+}
+
+.tags--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tag {
+    margin-right: 1rem;
+    font-size: $tag-fontsize;
+    font-weight: bold;
+    box-shadow: -3px 3px $gray-color;
+    padding-left: 0.2rem;
+}
+
+ul li {
+    text-align: left;
+}
+
+p {
+    text-align: left;
+}
+
+.repo {
+    @include button-light-secondary;
+    width: 170px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.next-project {
+    @include button-light;
+    width: 170px;
+    margin-bottom: 4rem;    
+}
+
+.next-project:hover {
+    @include button-light-hover;
+}
+
+.next-project p {
+    text-align: center;
+}
+
+.next-project-dark {
+    @include button-dark;
+    width: 170px; 
+    margin-bottom: 4rem;   
+}
+
+.next-project-dark:hover {
+    @include button-dark-hover;
+}
+
+.next-project-dark p {
+    text-align: center;
+}
