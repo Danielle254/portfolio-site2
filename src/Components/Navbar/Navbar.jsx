@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink as Link } from 'react-router-hash-link'
 import profile from '../../Images/profile rose background.jpeg';
 import modeIcon from '../../Images/light-dark.png'
 import modeIconWhite from '../../Images/light-dark-white.png'
@@ -15,9 +16,9 @@ export default function Navbar(props) {
         <a className={props.lightMode ? 'nav--title' : 'nav--title-dark'} href='/'>Danielle Lindblom</a>
         <div id='desktop--menu'>
           <ul className='menu--items'>
-            <li><a className={props.lightMode ? 'menu-light' : 'menu-dark'} href="#about--section">About</a></li>
-            <li><a className={props.lightMode ? 'menu-light' : 'menu-dark'} href="#projects--section">Projects</a></li>
-            <li><a className={props.lightMode ? 'menu-light' : 'menu-dark'} href="#contact--section">Contact</a></li>
+            <li><Link to={'/#about--section'} style={{'text-decoration': 'none'}}><a className={props.lightMode ? 'menu-light' : 'menu-dark'} >About</a></Link></li>
+            <li><Link to={'/#projects--section'} style={{'text-decoration': 'none'}}><a className={props.lightMode ? 'menu-light' : 'menu-dark'}>Projects</a></Link></li>
+            <li><Link to={'/#contact--section'} style={{'text-decoration': 'none'}}><a className={props.lightMode ? 'menu-light' : 'menu-dark'} >Contact</a></Link></li>
             <li><a className={props.lightMode ? 'menu-light' : 'menu-dark'} href="">Resume</a></li>
           </ul>                       
           <button id={props.lightMode ? 'mode--button-desktop' : 'mode--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleLightMode}><img className='icon' src={props.lightMode ? modeIcon : modeIconWhite} />{props.lightMode ? " Dark Mode" : " Light Mode"}</button>
