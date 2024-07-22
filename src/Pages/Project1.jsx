@@ -1,9 +1,10 @@
 import React from 'react'
+import Navbar from '../Components/Navbar/Navbar'
 
 const Project1 = () => {
   return (
     <div>
-      <h1>project 1</h1>
+      
     </div>
   )
 }

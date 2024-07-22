@@ -16,6 +16,7 @@
   display: flex;
   flex: row;
   align-items: center;
+  background-color: #2c343d;
 }
 
 .navbar--content {

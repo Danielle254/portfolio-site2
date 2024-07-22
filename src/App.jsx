@@ -1,24 +1,16 @@
+import { React, useState } from 'react'
+import { useOutletContext } from 'react-router-dom'
 import './app.css'
-import Navbar from './Components/Navbar/Navbar'
 import Menu from './Components/Menu/Menu'
 import Hero from './Components/Hero/Hero'
 import Details from './Components/Details/Details'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
-import Footer from './Components/Footer/Footer'
-import { React, useState } from 'react'
-/* import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom';
-import Project1 from './Pages/Project1';
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path=''
-  )
-) */
 
 
 function App() {
-  const [lightMode, setLightMode] = useState(true);
+  const [lightMode, setLightMode] = useOutletContext();
   const [animationsOn, setAnimationsOn] = useState(true);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [showContent, setShowContent] = useState(true);
@@ -36,10 +28,6 @@ function App() {
     setShowContent(true);
   }
 
-  function toggleLightMode() {
-    setLightMode(!lightMode);
-  }
-
   function toggleAnimations() {
     setAnimationsOn(!animationsOn);
   }  
@@ -52,15 +40,7 @@ function App() {
 
   return (
     <div className={lightMode ? 'App' : 'App-dark'}>
-      <div id='app--container'>
-        {showContent && <Navbar 
-        mobileMenuVisible={mobileMenuVisible}
-        menuOn={menuOn}  
-        lightMode={lightMode} 
-        animationsOn={animationsOn}
-        toggleLightMode={toggleLightMode}  
-        toggleAnimations={toggleAnimations}    
-        />}
+      <div id='app--container'>        
         {mobileMenuVisible && 
         <Menu 
         menuOff={menuOff} 
@@ -85,10 +65,7 @@ function App() {
         {showContent && <Contact
         lightMode={lightMode} 
         animationsOn={animationsOn}      
-        />}
-        {showContent && <Footer 
-        lightMode={lightMode}
-        />}
+        />}        
       </div>
     </div>
   )
