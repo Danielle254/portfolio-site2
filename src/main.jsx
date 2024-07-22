@@ -8,26 +8,68 @@ import Project2 from './Pages/Project2.jsx'
 import Project3 from './Pages/Project3.jsx'
 import Navbar from './Components/Navbar/Navbar.jsx'
 import Footer from './Components/Footer/Footer.jsx'
-
+import Menu from './Components/Menu/Menu.jsx'
 
 
 const Layout = () => {
   const [lightMode, setLightMode] = useState(true);
+  /* const [animationsOn, setAnimationsOn] = useState(true); */
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+  const [showContent, setShowContent] = useState(true);
     
   function toggleLightMode() {
     setLightMode(!lightMode);
   }
 
+  function menuOn() {
+    const screenWidth = window.innerWidth;
+    setMobileMenuVisible(true);
+    if (screenWidth < 800) {
+      setShowContent(false);
+    }    
+  }
+
+  function menuOff() {
+    setMobileMenuVisible(false);
+    setShowContent(true);
+  }
+  
+  function mobileReset() {
+    setMobileMenuVisible(false);
+    setShowContent(true);
+  }
+
+  function toggleAnimations() {
+    setAnimationsOn(!animationsOn);
+  } 
+
   return (
     <div> 
+      {mobileMenuVisible && 
+        <Menu 
+        menuOff={menuOff} 
+        mobileReset={mobileReset}
+        lightMode={lightMode}
+        /* animationsOn={animationsOn} */
+        toggleLightMode={toggleLightMode}  
+        toggleAnimations={toggleAnimations}     
+        />
+      }
+      {showContent && 
       <Navbar 
       lightMode={lightMode} 
       toggleLightMode={toggleLightMode} 
-      />     
-      <Outlet context={[lightMode, setLightMode]}/>  
+      menuOn={menuOn}
+      /> 
+      }    
+      {showContent && 
+      <Outlet context={[lightMode]}/>  
+      }
+      {showContent && 
       <Footer 
       lightMode={lightMode}       
       />    
+      }
     </div>
   );
 };

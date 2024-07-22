@@ -10,62 +10,30 @@ import Contact from './Components/Contact/Contact'
 
 
 function App() {
-  const [lightMode, setLightMode] = useOutletContext();
-  const [animationsOn, setAnimationsOn] = useState(true);
-  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
-  const [showContent, setShowContent] = useState(true);
-
-  function menuOn() {
-    const screenWidth = window.innerWidth;
-    setMobileMenuVisible(true);
-    if (screenWidth < 800) {
-      setShowContent(false);
-    }    
-  }
-
-  function menuOff() {
-    setMobileMenuVisible(false);
-    setShowContent(true);
-  }
-
-  function toggleAnimations() {
-    setAnimationsOn(!animationsOn);
-  }  
-
-  function mobileReset() {
-    setMobileMenuVisible(false);
-    setShowContent(true);
-  }
+  const [lightMode] = useOutletContext();
+  /* const [animationsOn, setAnimationsOn] = useOutletContext(); */  
+  
   
 
   return (
     <div className={lightMode ? 'App' : 'App-dark'}>
-      <div id='app--container'>        
-        {mobileMenuVisible && 
-        <Menu 
-        menuOff={menuOff} 
-        mobileReset={mobileReset}
+      <div id='app--container'>                
+        <Hero
         lightMode={lightMode}
-        animationsOn={animationsOn}
-        toggleLightMode={toggleLightMode}  
-        toggleAnimations={toggleAnimations}     
-        />}        
-        {showContent && <Hero
+        /* animationsOn={animationsOn}  */
+        />
+        <Details 
         lightMode={lightMode}
-        animationsOn={animationsOn} 
-        />}
-        {showContent && <Details 
+        /* animationsOn={animationsOn}  */
+        />
+        <Projects 
         lightMode={lightMode}
-        animationsOn={animationsOn} 
-        />}
-        {showContent && <Projects 
-        lightMode={lightMode}
-        animationsOn={animationsOn} 
-        />}
-        {showContent && <Contact
+        /* animationsOn={animationsOn}  */
+        />
+        <Contact
         lightMode={lightMode} 
-        animationsOn={animationsOn}      
-        />}        
+        /* animationsOn={animationsOn}  */     
+        />        
       </div>
     </div>
   )
