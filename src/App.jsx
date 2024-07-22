@@ -1,7 +1,7 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 import { useOutletContext } from 'react-router-dom'
 import './app.css'
-import Menu from './Components/Menu/Menu'
+
 import Hero from './Components/Hero/Hero'
 import Details from './Components/Details/Details'
 import Projects from './Components/Projects/Projects'

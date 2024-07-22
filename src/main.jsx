@@ -1,8 +1,9 @@
 import { React, useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
+
+import App from './App.jsx'
 import Project1 from './Pages/Project1.jsx'
 import Project2 from './Pages/Project2.jsx'
 import Project3 from './Pages/Project3.jsx'
