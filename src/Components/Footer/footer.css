@@ -25,4 +25,8 @@
   grid-template-columns: 1fr;
   align-content: center;
   margin: 0;
+}
+
+.footer-dark p {
+  padding: 0 1rem;
 }/*# sourceMappingURL=footer.css.map */
