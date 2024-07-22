@@ -16,9 +16,9 @@ export default function Navbar(props) {
         <a className={props.lightMode ? 'nav--title' : 'nav--title-dark'} href='/'>Danielle Lindblom</a>
         <div id='desktop--menu'>
           <ul className='menu--items'>
-            <li><Link to={'/#about--section'} style={{'text-decoration': 'none'}}><a className={props.lightMode ? 'menu-light' : 'menu-dark'} >About</a></Link></li>
-            <li><Link to={'/#projects--section'} style={{'text-decoration': 'none'}}><a className={props.lightMode ? 'menu-light' : 'menu-dark'}>Projects</a></Link></li>
-            <li><Link to={'/#contact--section'} style={{'text-decoration': 'none'}}><a className={props.lightMode ? 'menu-light' : 'menu-dark'} >Contact</a></Link></li>
+            <li><Link to={'/#about--section'} className={props.lightMode ? 'menu-light' : 'menu-dark'}><p>About</p></Link></li>
+            <li><Link to={'/#projects--section'} className={props.lightMode ? 'menu-light' : 'menu-dark'}><p>Projects</p></Link></li>
+            <li><Link to={'/#contact--section'} className={props.lightMode ? 'menu-light' : 'menu-dark'} ><p>Contact</p></Link></li>
             <li><a className={props.lightMode ? 'menu-light' : 'menu-dark'} href="">Resume</a></li>
           </ul>                       
           <button id={props.lightMode ? 'mode--button-desktop' : 'mode--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleLightMode}><img className='icon' src={props.lightMode ? modeIcon : modeIconWhite} />{props.lightMode ? " Dark Mode" : " Light Mode"}</button>

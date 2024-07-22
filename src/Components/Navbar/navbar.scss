@@ -51,6 +51,7 @@
     color: $black-color;     
     transition: all 0.2s ease-in-out;
     margin: 0;
+    font-weight: bold;
 }
 
 .nav--title:hover {    
@@ -63,6 +64,7 @@
     color: $white-color;    
     transition: all 0.2s ease-in-out;
     margin: 0;
+    font-weight: bold;
 }
 
 .nav--title-dark:hover {    
@@ -85,6 +87,7 @@
     padding: 0.5rem;    
     box-shadow: $box-shadow;   
     transition: color 0.2s ease-in-out;
+    font-weight: bold;
 }
 
 #menu--button:hover {
@@ -103,6 +106,7 @@
     padding: 0.5rem;    
     box-shadow: $box-shadow; 
     transition: color 0.2s ease-in-out;  
+    font-weight: bold;
 }
 
 #menu--button-dark:hover {
@@ -215,6 +219,7 @@
 @media screen and (min-width: $breakpoint2) {
     .nav--title, .nav--title-dark, #menu--button, #menu--button-dark  {
         font-size: $navbar-fontsize-desktop;
+        font-weight: normal;
     }  
     
     .navbar--content {
