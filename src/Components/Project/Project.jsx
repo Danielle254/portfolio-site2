@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './project.css'
 import img1 from '../../Images/project1thumb.png'
 import img2 from '../../Images/project2thumb.png'
@@ -7,20 +8,23 @@ import img3 from '../../Images/project3thumb.png'
 export default function Project(props) {
   const tags = props.tags.map(
     tag => {
-      return (
-        
-        <p className='tag'>{tag}</p>        
-      
+      return (        
+        <p className='tag'>{tag}</p>      
       )
     }
   )
+
   let displayImage;
+  let path = '';
   if (props.id === 1) {
     displayImage = img1;
+    path = '/project1';
   } else if (props.id === 2) {
     displayImage = img2;
+    path = '/project2';
   } else {
     displayImage = img3;
+    path = '/project3';
   }
   
   return (
@@ -32,7 +36,9 @@ export default function Project(props) {
         <div className='tags--container'>
           {tags}
         </div>
-        <a className={props.lightMode ? 'button-light' : 'button-dark'} href={props.detailsPath}>Demo & Details</a>
+        <Link key={path} to={path}>
+        <a className={props.lightMode ? 'button-light' : 'button-dark'}>Demo & Details</a>
+        </Link>
       </div>
     </div>
   )
