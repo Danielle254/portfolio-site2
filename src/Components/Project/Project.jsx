@@ -36,7 +36,7 @@ export default function Project(props) {
         <div className='tags--container'>
           {tags}
         </div>
-        <Link key={path} to={path}>
+        <Link key={path} to={path} style={{'text-decoration': 'none'}}>
         <a className={props.lightMode ? 'button-light' : 'button-dark'}>Demo & Details</a>
         </Link>
       </div>
