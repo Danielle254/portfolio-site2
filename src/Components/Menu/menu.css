@@ -20,6 +20,21 @@ nav ul {
   padding-top: 2rem;
   text-align: center;
   margin-right: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #131B23;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-link-dark {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
 }
 
 #nav a {
