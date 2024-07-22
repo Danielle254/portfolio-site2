@@ -13,8 +13,6 @@ function App() {
   const [lightMode] = useOutletContext();
   /* const [animationsOn, setAnimationsOn] = useOutletContext(); */  
   
-  
-
   return (
     <div className={lightMode ? 'App' : 'App-dark'}>
       <div id='app--container'>                
