@@ -23,13 +23,28 @@ h1 {
   font-size: 1.75rem;
 }
 
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
 .project-video {
-  height: 200px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   border: 1px solid #A60067;
 }
 
 .project-video-dark {
-  height: 200px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   border: 1px solid #FFA9F9;
 }
 
@@ -68,6 +83,50 @@ p {
   transition: all 0.2s ease-in-out;
   width: 170px;
   text-align: center;
+}
+
+.repo:hover {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #2c343d;
+  color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-style: italic;
+}
+
+.repo-dark {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #E7E7E7;
+  color: #131B23;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.2s ease-in-out;
+  width: 170px;
+  text-align: center;
+}
+
+.repo-dark:hover {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  color: #131B23;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-style: italic;
+}
+
+#top--button {
   margin-top: 2rem;
 }
 
@@ -132,4 +191,19 @@ p {
 
 .next-project-dark p {
   text-align: center;
+}
+
+@media screen and (min-width: 400px) {
+  .page--container {
+    padding: 0 2rem;
+  }
+  .bullets {
+    width: 80%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    margin-top: 2rem;
+  }
 }/*# sourceMappingURL=project2.css.map */

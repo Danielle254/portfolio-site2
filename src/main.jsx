@@ -57,18 +57,18 @@ const Layout = () => {
         />
       }
       {showContent && 
-      <Navbar 
+        <Navbar 
       lightMode={lightMode} 
       toggleLightMode={toggleLightMode} 
       menuOn={menuOn}
-      /> 
+        /> 
       }    
       {showContent && 
-      <Outlet context={[lightMode]}/>  
+        <Outlet context={[lightMode]}/>  
       }
       {showContent && 
-      <Footer 
-      lightMode={lightMode}       
+        <Footer 
+        lightMode={lightMode}       
       />    
       }
     </div>

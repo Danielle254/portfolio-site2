@@ -12,7 +12,7 @@ const Project1 = () => {
     <div className={lightMode ? 'page' : 'page-dark'}>
       <div className='page--container'>
         <h1>Create Your Own Personal Itinerary from a Conference Agenda</h1>
-        <div >
+        <div className='wrapper'>
           <iframe className={lightMode ? 'project-video' : 'project-video-dark'} src="https://www.loom.com/embed/46a2bf8a9833417693093c31ff0b8585?sid=9768e78a-8541-4919-8990-d28d98dc72d5?hideEmbedTopBar=true?hide_owner=true"  webkitallowfullscreen={'true'} mozallowfullscreen={'true'} allowFullScreen></iframe>
         </div>
         <div>
@@ -27,14 +27,14 @@ const Project1 = () => {
         <br/><br/>
         Finally, there is the option to print your itinerary, which is formatted for ease of use.</p>
         <h2>Key Features</h2>
-        <ul>
+        <ul className='bullets'>
           <li>Talks display in chronological order automatically, regardless of order added to itinerary</li>
           <li>User's itinerary stays put, even if they navigate away or refresh the screen. This makes it easy to come back and make changes as needed without having the build their itinerary from scatch each time.</li>
           <li>Option to clear the itinerary and start over</li>
           <li>Ability to print a nicely formatted version of your personal itinerary</li>
         </ul>
         <h2>Skills Showcased</h2>
-        <ul>
+        <ul className='bullets'>
           <li>React components</li>
           <li>Use of state, props, hooks, and event handlers</li>
           <li>Utilizing local storage</li>
@@ -52,7 +52,8 @@ const Project1 = () => {
         <p>I'm actually planning another project like this where I create the conference agenda with some sort of library to display it visually in a more calendar-like format. This will make it easier to tell which talks happen at the same time, and even visually distinguish the locations of the talks. <br/><br/>
         I'd also like to add a "share" button in addition to printing. <br/><br/>
         Another idea would be to add "add to calendar" options so users could put the talks directly onto their own personal calendar (google, etc).</p>
-        <a className='repo' href='https://github.com/Danielle254/Conference-Agenda'>GitHub Repo</a>
+        <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Conference-Agenda'>GitHub Repo</a>
+        <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Conference-Agenda/'>Live Link</a>
         <Link to={'/project2'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
       </div>
     </div>

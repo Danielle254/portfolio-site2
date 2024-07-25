@@ -26,13 +26,28 @@ h1 {
     font-size: $h1-fontsize-mobile;
 }
 
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
 .project-video {
-    height: 200px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
     border: 1px solid $magenta-color;
 }
 
 .project-video-dark {
-    height: 200px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
     border: 1px solid $pink-color;
 }
 
@@ -61,7 +76,24 @@ p {
 .repo {
     @include button-light-secondary;
     width: 170px;
-    text-align: center;
+    text-align: center;    
+}
+
+.repo:hover {
+    @include button-light-secondary-hover;    
+}
+
+.repo-dark {
+    @include button-light-secondary;
+    width: 170px;
+    text-align: center;    
+}
+
+.repo-dark:hover {
+    @include button-secondary-dark-hover;    
+}
+
+#top--button {
     margin-top: 2rem;
 }
 
@@ -91,4 +123,23 @@ p {
 
 .next-project-dark p {
     text-align: center;
+}
+
+// mobile to desktop responsiveness
+@media screen and (min-width: $breakpoint1) {
+    .page--container {
+        padding: 0 2rem;
+    }
+
+    .bullets {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: $h1-fontsize-desktop;
+    }
+
+    h2 {
+        margin-top: 2rem;
+    }
 }
