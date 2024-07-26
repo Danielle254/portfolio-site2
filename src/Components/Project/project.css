@@ -7,14 +7,14 @@
   width: 100%;
   border: 1px solid #131B23;
   margin-bottom: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
 .img-dark {
   width: 100%;
   border: 1px solid #FFFFFF;
   margin-bottom: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
 #details--container {

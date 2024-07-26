@@ -7,7 +7,8 @@
     width: 100vw;
     background: $vertical-gradient-nav;    
     font-size: $h3-fontsize;
-    font-weight: bold;        
+    font-weight: bold; 
+    z-index: 1;          
 }
 
 #nav-dark {    
@@ -15,7 +16,8 @@
     width: 100vw;
     background: $vertical-gradient-nav-dark;   
     font-size: $h3-fontsize;
-    font-weight: bold;        
+    font-weight: bold;  
+    z-index: 1;      
 }
 
 nav ul {

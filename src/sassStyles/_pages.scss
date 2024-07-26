@@ -26,6 +26,10 @@ h1 {
     font-size: $h1-fontsize-mobile;
 }
 
+h2 {
+    font-size: $h3-fontsize;
+}
+
 .wrapper {
     position: relative;
     width: 100%;
@@ -141,5 +145,12 @@ p {
 
     h2 {
         margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: $breakpoint3) {
+    .page--container {
+        width: 80%;
+        margin: 0 auto;
     }
 }
