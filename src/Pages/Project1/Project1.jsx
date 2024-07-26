@@ -1,7 +1,6 @@
 import React from 'react'
 import { useOutletContext } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-
 import './project1.css'
 
 
