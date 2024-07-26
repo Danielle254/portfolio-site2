@@ -18,7 +18,7 @@ export default function Navbar(props) {
           <ul className='menu--items'>
             <li><Link to={'/#about--section'} className={props.lightMode ? 'menu-light' : 'menu-dark'}><p>About</p></Link></li>
             <li><Link to={'/#projects--section'} className={props.lightMode ? 'menu-light' : 'menu-dark'}><p>Projects</p></Link></li>
-            <li><Link to={'/#contact--section'} className={props.lightMode ? 'menu-light' : 'menu-dark'} ><p>Contact</p></Link></li>
+            <li><Link to={props.lightMode ? '/#contact--section' : '/#contact--section-dark'} className={props.lightMode ? 'menu-light' : 'menu-dark'}><p>Contact</p></Link></li>
             <li><a className={props.lightMode ? 'menu-light' : 'menu-dark'} href="">Resume</a></li>
           </ul>                       
           <button id={props.lightMode ? 'mode--button-desktop' : 'mode--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleLightMode}><img className='icon' src={props.lightMode ? modeIcon : modeIconWhite} />{props.lightMode ? " Dark Mode" : " Light Mode"}</button>
