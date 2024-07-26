@@ -13,7 +13,7 @@ const Project1 = () => {
       <div className='page--container'>
         <h1>Create Your Own Personal Itinerary from a Conference Agenda</h1>
         <div className='wrapper'>
-          <iframe className={lightMode ? 'project-video' : 'project-video-dark'} src="https://www.loom.com/embed/46a2bf8a9833417693093c31ff0b8585?sid=9768e78a-8541-4919-8990-d28d98dc72d5?hideEmbedTopBar=true?hide_owner=true"  webkitallowfullscreen={'true'} mozallowfullscreen={'true'} allowFullScreen></iframe>
+          <iframe className={lightMode ? 'project-video' : 'project-video-dark'} src="https://www.loom.com/embed/8f2fb0c5d93d41faac32e633ed463a56?hideEmbedTopBar=true"  webkitallowfullscreen={'true'} mozallowfullscreen={'true'} allowFullScreen></iframe>
         </div>
         <div>
           <h2>Technologies Used:</h2>
