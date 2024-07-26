@@ -2,7 +2,7 @@ import { React, useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
-
+import ScrollToTop from './Components/ScrollToTop.jsx'
 import App from './App.jsx'
 import Project1 from './Pages/Project1/Project1.jsx'
 import Project2 from './Pages/Project2/Project2.jsx'
@@ -46,6 +46,7 @@ const Layout = () => {
 
   return (
     <div> 
+      <ScrollToTop />
       {mobileMenuVisible && 
         <Menu 
         menuOff={menuOff} 
