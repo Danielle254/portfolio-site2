@@ -15,7 +15,8 @@ $darkblue-color: #182750;
 $horizontal-gradient-dark: linear-gradient(45deg,  $pink-color, $white-color);
 $vertical-gradient-nav-dark: linear-gradient(180deg, $darkblue-color 60%, $darkgray-color);
 
-$box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+$box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+$box-shadow-intense: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 $box-shadow-light: rgb(255, 255, 255, 0.2) 0px 10px 20px, rgba(255, 255, 255, 0.5) 0px 6px 6px;
 
 
@@ -29,7 +30,7 @@ $box-shadow-light: rgb(255, 255, 255, 0.2) 0px 10px 20px, rgba(255, 255, 255, 0.
     background: $magenta-color;
     color: $white-color;
     border-radius: 20px; 
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow-intense;
     margin: 0;    
 }
 
@@ -63,7 +64,7 @@ $box-shadow-light: rgb(255, 255, 255, 0.2) 0px 10px 20px, rgba(255, 255, 255, 0.
     background-color: $pink-color;
     color: $black-color;
     border-radius: 20px; 
-    box-shadow: $box-shadow;      
+    box-shadow: $box-shadow-intense;      
 }
 
 // button hover effects
@@ -76,7 +77,7 @@ $box-shadow-light: rgb(255, 255, 255, 0.2) 0px 10px 20px, rgba(255, 255, 255, 0.
     background: $horizontal-gradient-light;
     color: $white-color;
     border-radius: 20px; 
-    box-shadow: $box-shadow; 
+    box-shadow: $box-shadow-intense; 
     font-style: italic;   
 }
 
@@ -102,7 +103,7 @@ $box-shadow-light: rgb(255, 255, 255, 0.2) 0px 10px 20px, rgba(255, 255, 255, 0.
     background-color: $white-color;
     color: $black-color;
     border-radius: 20px; 
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow-intense;
     font-style: italic;    
 }
 
@@ -115,7 +116,7 @@ $box-shadow-light: rgb(255, 255, 255, 0.2) 0px 10px 20px, rgba(255, 255, 255, 0.
     background: $horizontal-gradient-dark;
     color: $black-color;
     border-radius: 20px; 
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow-intense;
     font-style: italic;      
 }
 

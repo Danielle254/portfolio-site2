@@ -3,16 +3,14 @@
 @import './sassStyles/variables';
 
 .App {
-    background-color: $white-color;       
-    font-family: $primary-font; 
+    background-color: $white-color;    
     color: $black-color;
     width: 100%;
 }
 
 .App-dark {
     background-color: $darkgray-color;
-    color: $white-color;
-    font-family: $primary-font;
+    color: $white-color;   
     width: 100%;
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink as Link } from 'react-router-hash-link'
 import profile from '../../Images/profile rose background.jpeg';
 import modeIcon from '../../Images/light-dark.png'
 import modeIconWhite from '../../Images/light-dark-white.png'
@@ -12,12 +13,12 @@ export default function Navbar(props) {
     <div className={props.lightMode ? 'navbar--background' : 'navbar--background-dark'}>
       <div className='navbar--content'>
         <img id={props.lightMode ? 'profile' : 'profile-dark'} src={profile} />
-        <a className={props.lightMode ? 'nav--title' : 'nav--title-dark'} href='/'>Danielle Lindblom</a>
+        <Link to={'/'} className={props.lightMode ? 'nav--title' : 'nav--title-dark'}><p>Danielle Lindblom</p></Link>
         <div id='desktop--menu'>
           <ul className='menu--items'>
-            <li><a className={props.lightMode ? 'menu-light' : 'menu-dark'} href="#about--section">About</a></li>
-            <li><a className={props.lightMode ? 'menu-light' : 'menu-dark'} href="#projects--section">Projects</a></li>
-            <li><a className={props.lightMode ? 'menu-light' : 'menu-dark'} href="#contact--section">Contact</a></li>
+            <li><Link to={'/#about--section'} className={props.lightMode ? 'menu-light' : 'menu-dark'}><p>About</p></Link></li>
+            <li><Link to={'/#projects--section'} className={props.lightMode ? 'menu-light' : 'menu-dark'}><p>Projects</p></Link></li>
+            <li><Link to={props.lightMode ? '/#contact--section' : '/#contact--section-dark'} className={props.lightMode ? 'menu-light' : 'menu-dark'}><p>Contact</p></Link></li>
             <li><a className={props.lightMode ? 'menu-light' : 'menu-dark'} href="">Resume</a></li>
           </ul>                       
           <button id={props.lightMode ? 'mode--button-desktop' : 'mode--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleLightMode}><img className='icon' src={props.lightMode ? modeIcon : modeIconWhite} />{props.lightMode ? " Dark Mode" : " Light Mode"}</button>
