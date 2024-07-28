@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 import profile from '../../Images/profile rose background.jpeg';
 import modeIcon from '../../Images/light-dark.png'
@@ -9,6 +9,8 @@ import motionIconWhite from '../../Images/motion-icon-white.png'
 import resume from '../../resume.pdf'
 
 export default function Navbar(props) {
+  
+
   
   return (
     <div className={props.lightMode ? 'navbar--background' : 'navbar--background-dark'}>
