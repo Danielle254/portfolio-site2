@@ -16,7 +16,7 @@ export default function Navbar(props) {
     <div className={props.lightMode ? 'navbar--background' : 'navbar--background-dark'}>
       <div className='navbar--content'>
         <img id={props.lightMode ? 'profile' : 'profile-dark'} src={profile} />
-        <Link to={'/'} className={props.lightMode ? 'nav--title' : 'nav--title-dark'}><p>Danielle Lindblom</p></Link>
+        <Link to={'/portfolio-site2/'} className={props.lightMode ? 'nav--title' : 'nav--title-dark'}><p>Danielle Lindblom</p></Link>
         <div id='desktop--menu'>
           <ul className='menu--items'>
             <li><Link to={'/portfolio-site2/#about--section'} className={props.lightMode ? 'menu-light' : 'menu-dark'}><p>About</p></Link></li>
