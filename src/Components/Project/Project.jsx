@@ -37,7 +37,7 @@ export default function Project(props) {
           {tags}
         </div>
         <Link key={path} to={path} style={{'text-decoration': 'none'}}>
-        <a className={props.lightMode ? 'button-light' : 'button-dark'}>Demo & Details</a>
+        <p className={props.lightMode ? 'button-light' : 'button-dark'}>Demo & Details</p>
         </Link>
       </div>
     </div>

@@ -4,6 +4,9 @@
 
 .project--card {    
     width: 100%;
+    border: 1px $gray-color solid;
+    padding: 4rem;
+    box-shadow: $box-shadow;
 }
 
 .img-light {
@@ -29,7 +32,7 @@
     margin-bottom: 1rem;
 }
 
-.project--card p {
+p {
     font-size: $body-fontsize;
     max-width: 40rem;
 }
@@ -50,6 +53,8 @@
 
 .button-light {
     @include button-light;
+    width: 170px;
+    text-align: center;    
 }
 
 .button-light:hover {
@@ -58,6 +63,8 @@
 
 .button-dark {
     @include button-dark;
+    width: 170px;
+    text-align: center;
 }
 
 .button-dark:hover {

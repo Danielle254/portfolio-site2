@@ -137,7 +137,7 @@
 .menu-light {
     text-decoration: none;
     color: $black-color;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-light:hover {
@@ -195,8 +195,7 @@
 }
 
 .icon {
-    height: 0.75rem;
-    width: 0.75rem;
+    height: 12px;     
 }
 
 #mode--button-desktop:hover {
