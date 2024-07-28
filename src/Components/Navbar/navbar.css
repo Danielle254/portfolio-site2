@@ -7,7 +7,7 @@
   display: flex;
   flex: row;
   align-items: center;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  border-bottom: 1px solid #E7E7E7;
 }
 
 .navbar--background-dark {
@@ -18,7 +18,7 @@
   flex: row;
   align-items: center;
   background-color: #2c343d;
-  box-shadow: rgba(255, 255, 255, 0.4) 0px 10px 10px -10px;
+  border-bottom: 1px solid #131B23;
 }
 
 .navbar--content {
