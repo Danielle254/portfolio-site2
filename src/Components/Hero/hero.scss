@@ -19,7 +19,7 @@
 }
 
 #hero--container h1 {
-    font-size: $h1-fontsize-mobile; 
+    font-size: $hero-h1-fontsize-mobile; 
     margin: 0;    
 }
 
@@ -63,7 +63,7 @@
     }
     
     #hero--container h1 {
-        font-size: $h1-fontsize-desktop;
+        font-size: $hero-h1-fontsize-desktop;
     }
 }
 
