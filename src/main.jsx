@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
+import Headroom from 'react-headroom'
 import './index.css'
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import ScrollToTop from './Components/ScrollToTop.jsx'
@@ -95,11 +96,13 @@ const Layout = () => {
         />
       }
       {showContent && 
+        <Headroom >
         <Navbar 
       lightMode={lightMode} 
       toggleLightMode={toggleLightMode} 
       menuOn={menuOn}
         /> 
+        </Headroom>
       }    
       {showContent && 
         <Outlet context={[lightMode]}/>  
