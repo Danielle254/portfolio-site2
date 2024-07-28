@@ -7,6 +7,7 @@ import resumeIcon from '../../Images/resume_icon.png'
 import githubWhite from '../../Images/github-white.png'
 import linkedinWhite from '../../Images/linkedin-white.png'
 import resumeWhite from '../../Images/resume-white.png'
+import resume from '../../resume.pdf'
 import './contact.css'
 
 export default function Contact(props) {
@@ -37,7 +38,7 @@ export default function Contact(props) {
               <p>LinkedIn</p></a>
           </div>
           <div className={props.lightMode ? 'social--icon' : 'social--icon-dark'}>
-              <a className={props.lightMode ? 'social--text' : 'social--text-dark'} href='' >
+              <a className={props.lightMode ? 'social--text' : 'social--text-dark'} href={resume} target='_blank'>
               <img src={props.lightMode ?resumeIcon : resumeWhite} />
               <p>Resume</p></a>
           </div>
