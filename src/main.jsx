@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
@@ -17,9 +17,46 @@ const Layout = () => {
   /* const [animationsOn, setAnimationsOn] = useState(true); */
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [showContent, setShowContent] = useState(true);
+  
+  useEffect(() => {
+    const prevTheme = localStorage.getItem("theme");
+
+    if (prevTheme === "dark") {
+      setLightMode(false); 
+    }
+    
+    if (!prevTheme) {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+      const prefersNotSet = window.matchMedia('(prefers-color-scheme: no-preference)').matches;
+
+      if (prefersDark) {
+        setLightMode(false);
+      }
+
+      if (prefersLight) {
+        setLightMode(true);
+      }
+
+      if (prefersNotSet) {
+        setLightMode(true);
+      }
+    }
+  }, []);
+  
+  
     
   function toggleLightMode() {
-    setLightMode(!lightMode);
+    if (lightMode) {
+      localStorage.setItem("theme", "dark");
+      setLightMode(false);
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+      const prefersNotSet = window.matchMedia('(prefers-color-scheme: no-preference)').matches;
+    } else {
+      localStorage.setItem("theme", "light");
+      setLightMode(true);
+    }    
   }
 
   function menuOn() {
