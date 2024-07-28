@@ -20,6 +20,10 @@
     text-align: center;
 }
 
+.footer a {
+    color: $white-color;
+}
+
 .footer-dark {
     background-color: $pink-color;
     color: $black-color;
@@ -36,4 +40,8 @@
 .footer-dark p {
     padding: 0 1rem;
     text-align: center;
+}
+
+.footer-dark a {
+    color: $black-color;
 }

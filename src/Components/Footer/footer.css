@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+.footer a {
+  color: #FFFFFF;
+}
+
 .footer-dark {
   background-color: #FFA9F9;
   color: #131B23;
@@ -33,4 +37,8 @@
 .footer-dark p {
   padding: 0 1rem;
   text-align: center;
+}
+
+.footer-dark a {
+  color: #131B23;
 }/*# sourceMappingURL=footer.css.map */
