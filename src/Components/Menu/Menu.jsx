@@ -12,9 +12,9 @@ export default function Menu(props) {
     <nav id={props.lightMode ? 'nav' : 'nav-dark'}>
       <button id={props.lightMode ? 'close--nav' : 'close--nav-dark'} onClick={props.menuOff}>X</button>
       <ul>
-        <li><Link to={'/#about--section'} className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset} >About</p></Link></li>
-        <li><Link to={'/#projects--section'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset}  >Projects</p></Link></li>
-        <li><Link to={'/#contact--section'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset}>Contact</p></Link></li>
+        <li><Link to={'/portfolio-site2/#about--section'} className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset} >About</p></Link></li>
+        <li><Link to={'/portfolio-site2/#projects--section'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset}  >Projects</p></Link></li>
+        <li><Link to={'/portfolio-site2/#contact--section'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset}>Contact</p></Link></li>
         <li><a onClick={props.mobileReset} href={resume} target='_blank'>Resume</a></li>
         <div className='access--container'>
           <button id={props.lightMode ? 'mode--button' : 'mode--button-dark'} className='access--button' onClick={props.toggleLightMode}><img className='icon' src={modeIcon} />{props.lightMode ? "  Dark Mode" : "   Light Mode"}</button>

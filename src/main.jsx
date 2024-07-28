@@ -118,23 +118,23 @@ const Layout = () => {
 
 const router = createBrowserRouter([
   {
-  path: '/',
+  path: '/portfolio-site2',
   element: <Layout />,
   children: [
   {
-    path: '/',
+    path: '/portfolio-site2',
     element: <App />
   },
   {
-    path: '/project1',
+    path: '/portfolio-site2/project1',
     element: <Project1 />
   },
   {
-    path: '/project2',
+    path: '/portfolio-site2/project2',
     element: <Project2 />
   },
   {
-    path: '/project3',
+    path: '/portfolio-site2/project3',
     element: <Project3 />
   }
 ],
