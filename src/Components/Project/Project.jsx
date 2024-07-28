@@ -33,7 +33,7 @@ export default function Project(props) {
       <div id='details--container'>
         <h3>{props.title}</h3>
         <p>{props.summary}</p>
-        <div className='tags--container'>
+        <div className='tags--container-main'>
           {tags}
         </div>
         <Link key={path} to={path} style={{'text-decoration': 'none'}}>
