@@ -5,7 +5,7 @@
 .project--card {    
     width: 100%;
     border: 1px $gray-color solid;
-    padding: 4rem;
+    padding: 2rem 1rem;
     box-shadow: $box-shadow;
 }
 
@@ -32,7 +32,7 @@
     margin-bottom: 1rem;
 }
 
-p {
+.project--card p {
     font-size: $body-fontsize;
     max-width: 40rem;
 }
@@ -71,12 +71,19 @@ p {
     @include button-dark-hover;
 }
 
+@media screen and (min-width: $breakpoint2) {
+    .project--card {  
+        padding: 2rem;
+    }
+}
+
 @media screen and (min-width: $breakpoint3) {
     .project--card {  
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         gap: 4rem;
+        padding: 4rem 2rem;
     }
 
     .img-light {
@@ -87,5 +94,11 @@ p {
     .img-dark {
         box-shadow: -12px 12px  $pink-color;
         margin-left: 12px;
+    }
+}
+
+@media screen and (min-width: $breakpoint4) {
+    .project--card {
+        padding: 4rem;
     }
 }

@@ -2,7 +2,7 @@
 .project--card {
   width: 100%;
   border: 1px #E7E7E7 solid;
-  padding: 4rem;
+  padding: 2rem 1rem;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
@@ -29,7 +29,7 @@
   margin-bottom: 1rem;
 }
 
-p {
+.project--card p {
   font-size: 1rem;
   max-width: 40rem;
 }
@@ -103,12 +103,18 @@ p {
   font-style: italic;
 }
 
+@media screen and (min-width: 500px) {
+  .project--card {
+    padding: 2rem;
+  }
+}
 @media screen and (min-width: 800px) {
   .project--card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     gap: 4rem;
+    padding: 4rem 2rem;
   }
   .img-light {
     box-shadow: -12px 12px #A60067;
@@ -117,5 +123,10 @@ p {
   .img-dark {
     box-shadow: -12px 12px #FFA9F9;
     margin-left: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project--card {
+    padding: 4rem;
   }
 }/*# sourceMappingURL=project.css.map */
