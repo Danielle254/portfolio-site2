@@ -92,6 +92,16 @@
   margin-right: 5px;
 }
 
+.copy-icon, .copy-icon-dark {
+  width: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.copy-icon:hover, .copy-icon-dark:hover {
+  transform: scale(1.05);
+}
+
 .social--icon:hover {
   box-shadow: -3px 3px #A60067;
 }

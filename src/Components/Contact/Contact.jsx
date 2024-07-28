@@ -8,6 +8,8 @@ import githubWhite from '../../Images/github-white.png'
 import linkedinWhite from '../../Images/linkedin-white.png'
 import resumeWhite from '../../Images/resume-white.png'
 import resume from '../../resume.pdf'
+import copy from '../../Images/copy icon.png'
+import copyDark from '../../Images/copy icon dark.png'
 import './contact.css'
 
 export default function Contact(props) {
@@ -24,7 +26,8 @@ export default function Contact(props) {
         <p>Available for remote work. Based in Missoula, Montana USA.<br />Let's connect to discuss opportunities!</p>
         <div className='email--container'>
           <img src={props.lightMode ? emailDark : emailLight} className='email-icon' /> 
-          <a id={props.lightMode ? 'link-light' : 'link-dark'} href="mailto:danielle.lindblom@gmail.com">Danielle.Lindblom@gmail.com</a>  
+          <a id={props.lightMode ? 'link-light' : 'link-dark'} href="mailto:danielle.lindblom@gmail.com">Danielle.Lindblom@gmail.com</a>
+          <img src={props.lightMode ? copy : copyDark} className={props.lightMode ? 'copy-icon' : 'copy-icon-dark'} onClick={copyToClipboard} alt='copy email address to clipboard' title='Copy to Clipboard'/>
         </div>    
         <div className='social--container'>
           <div className={props.lightMode ? 'social--icon' : 'social--icon-dark'}>
