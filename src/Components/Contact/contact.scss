@@ -8,7 +8,7 @@
     margin: 0; 
     background-color: $gray-color;
     padding-top: 5rem;
-    
+    text-align: center;
 }
 
 #contact--section-dark {
@@ -17,14 +17,13 @@
     margin: 0;     
     padding-top: 5rem;
     background-color: $darkblue-color;
-    
+    text-align: center;
 }
 
 .contact--content {      
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;  
-    
+    justify-items: center;      
     gap: 2.5rem;
     padding: 0 1rem;
 }
@@ -35,21 +34,19 @@
 }
 
 #contact--section p {
-    font-size: $body-fontsize;
-    text-align: center;
+    font-size: $body-fontsize;    
     margin: 0;
+    text-align: center;
     text-wrap: balance;
 }
 
-#link-light{    
-    color: $black-color;
-    transition: color 0.2s ease-in-out;
+#contact--section-dark p {
+    font-size: $body-fontsize;    
+    margin: 0;
+    text-align: center;
+    text-wrap: balance;
 }
 
-#link-dark {    
-    color: $white-color;
-    transition: color 0.2s ease-in-out;
-}
 
 .social--container {
     display: grid;
@@ -93,21 +90,55 @@
     color: $white-color;   
 }
 
+.contact--button {
+    @include button-light;
+    width: 160px;    
+}
+
+.contact--button:hover {
+    @include button-light-hover;    
+}
+
+.contact--button-dark {
+    @include button-dark;
+    width: 160px;    
+}
+
+.contact--button-dark:hover {
+    @include button-dark-hover;        
+}
+
 .email-icon {
-    width: 40px;
+    width: 20px;
     margin-right: 5px;
 }
 
-.copy-icon, .copy-icon-dark {
+.copy-icon {
     width: 20px;
-    margin-left: 5px;
-    cursor: pointer;
+    padding-right: 0.25rem;  
 }
 
-.copy-icon:hover, .copy-icon-dark:hover {
-    transform: scale(1.05);
+.copy--button {
+    @include button-light-secondary;
+    background-color: $white-color;
+    width: 160px;
+    margin: -1rem 0 2rem 0;
 }
 
+.copy--button:hover {
+    font-style: italic;
+    box-shadow: 0 0 0 1px $darkgray-color;  
+}
+
+.copy--button-dark {
+    @include button-light-secondary;
+    width: 160px;
+    margin: -1rem 0 2rem 0;
+}
+
+.copy--button-dark:hover {
+    @include button-secondary-dark-hover;
+}
 
 .social--icon:hover {
     box-shadow: -3px 3px $magenta-color;
@@ -117,12 +148,6 @@
     box-shadow: -3px 3px $pink-color;
 }
 
-#link-light:hover {    
-    color: $magenta-color;
-}
-#link-dark:hover {    
-    color: $pink-color;
-}
 
 // mobile to desktop - responsive design
 @media screen and (min-width: $breakpoint2) {
@@ -131,6 +156,3 @@
     }
 }
 
-@media screen and (min-width: $breakpoint3) {
-
-}

@@ -14,7 +14,7 @@ export default function Menu(props) {
       <ul>
         <li><Link to={'/portfolio-site2/#about--section'} className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset} >About</p></Link></li>
         <li><Link to={'/portfolio-site2/#projects--section'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset}  >Projects</p></Link></li>
-        <li><Link to={'/portfolio-site2/#contact--section'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset}>Contact</p></Link></li>
+        <li><Link to={props.lightMode ? '/portfolio-site2/#contact--section' : '/portfolio-site2/#contact--section-dark'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset}>Contact</p></Link></li>
         <li><a onClick={props.mobileReset} href={resume} target='_blank'>Resume</a></li>
         <div className='access--container'>
           <button id={props.lightMode ? 'mode--button' : 'mode--button-dark'} className='access--button' onClick={props.toggleLightMode}><img className='icon' src={modeIcon} alt='' />{props.lightMode ? "  Dark Mode" : "   Light Mode"}</button>
