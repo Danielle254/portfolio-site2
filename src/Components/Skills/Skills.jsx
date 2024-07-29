@@ -3,7 +3,7 @@ import './skills.css'
 
 export default function Skills(props) {
   return (
-    <div id={props.lightMode ? 'skills--section' : 'skills--section-dark'}>
+    <section id={props.lightMode ? 'skills--section' : 'skills--section-dark'}>
       <h2>Skills</h2>
       <div className='content--container'>
         <h4 className={props.lightMode ? 'h4-light' : 'h4-dark'}>Technical</h4>
@@ -29,6 +29,6 @@ export default function Skills(props) {
           <li>Project Collaboration</li>
         </ul>
       </div>
-    </div>
+    </section>
   )
 }

@@ -8,7 +8,7 @@ const Project1 = () => {
   const [lightMode] = useOutletContext();
   
   return (
-    <div className={lightMode ? 'page' : 'page-dark'}>
+    <main className={lightMode ? 'page' : 'page-dark'}>
       <div className='page--container'>
         <h1>Create Your Own Personal Itinerary from a Conference Agenda</h1>
         <div className='wrapper'>
@@ -55,7 +55,7 @@ const Project1 = () => {
         <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Conference-Agenda/'>Live Link</a>
         <Link to={'/portfolio-site2/project2'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
       </div>
-    </div>
+    </main>
   )
 }
 

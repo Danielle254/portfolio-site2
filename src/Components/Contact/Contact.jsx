@@ -20,7 +20,7 @@ export default function Contact(props) {
       }
   
     return (
-    <div id={props.lightMode ? 'contact--section' : 'contact--section-dark'}>
+    <section id={props.lightMode ? 'contact--section' : 'contact--section-dark'}>
       <div className='contact--content'>
         <h2>Contact</h2>
         <p>Available for remote work. Based in Missoula, Montana USA.<br />Let's connect to discuss opportunities!</p>
@@ -47,6 +47,6 @@ export default function Contact(props) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

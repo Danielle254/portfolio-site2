@@ -8,7 +8,7 @@ const Project2 = () => {
   const [lightMode] = useOutletContext();
 
   return (
-    <div className={lightMode ? 'page' : 'page-dark'}>
+    <main className={lightMode ? 'page' : 'page-dark'}>
       <div className='page--container'>
         <h1>Calculate How Long Your Dog Food Will Last</h1>
         <div className='wrapper'>
@@ -55,7 +55,7 @@ const Project2 = () => {
         <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Dog-Food-Calculator/'>Live Link</a>
         <Link to={'/portfolio-site2/project3'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
       </div>
-    </div>
+    </main>
   )
 }
 

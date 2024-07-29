@@ -13,7 +13,7 @@ export default function Navbar(props) {
 
   
   return (
-    <div className={props.lightMode ? 'navbar--background' : 'navbar--background-dark'}>
+    <header className={props.lightMode ? 'navbar--background' : 'navbar--background-dark'}>
       <div className='navbar--content'>
         <img id={props.lightMode ? 'profile' : 'profile-dark'} src={profile} alt='headshot of Danielle Lindblom with a circular border' />
         <Link to={'/portfolio-site2/'} className={props.lightMode ? 'nav--title' : 'nav--title-dark'}><p>Danielle Lindblom</p></Link>
@@ -29,6 +29,6 @@ export default function Navbar(props) {
         </div> 
         <button id={props.lightMode ? 'menu--button' : 'menu--button-dark'} onClick={props.menuOn}>MENU</button>         
       </div>
-    </div>
+    </header>
   )
 }
