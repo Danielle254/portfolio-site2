@@ -44,7 +44,7 @@ $box-shadow-light: rgb(255, 255, 255, 0.2) 0px 10px 20px, rgba(255, 255, 255, 0.
     color: $black-color;
     border-radius: 20px; 
     box-shadow: $box-shadow;
-    transition: all 0.2s ease-in-out;     
+        
 }
 
 @mixin button-access {      

@@ -24,11 +24,8 @@ export default function Contact(props) {
       <div className='contact--content'>
         <h2>Contact</h2>
         <p>Available for remote work. Based in Missoula, Montana USA.<br />Let's connect to discuss opportunities!</p>
-        <div className='email--container'>
-          <img src={props.lightMode ? emailDark : emailLight} className='email-icon' alt=''/> 
-          <a id={props.lightMode ? 'link-light' : 'link-dark'} href="mailto:danielle.lindblom@gmail.com">Danielle.Lindblom@gmail.com</a>
-          <img src={props.lightMode ? copy : copyDark} className={props.lightMode ? 'copy-icon' : 'copy-icon-dark'} onClick={copyToClipboard} alt='copy email address to clipboard' title='Copy to Clipboard'/>
-        </div>    
+        <a href="mailto:danielle.lindblom@gmail.com" className={props.lightMode ? 'contact--button' : 'contact--button-dark'}><img src={props.lightMode ? emailLight : emailDark} className='email-icon' alt=''/>Send Email</a>
+        <a onClick={copyToClipboard} className={props.lightMode ? 'copy--button' : 'copy--button-dark'}><img src={copy} className='copy-icon'  alt=''/>Copy Email</a>          
         <div className='social--container'>
           <div className={props.lightMode ? 'social--icon' : 'social--icon-dark'}>
               <a className={props.lightMode ? 'social--text' : 'social--text-dark'} href="https://github.com/Danielle254" target='_blank'>
