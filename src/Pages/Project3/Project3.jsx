@@ -71,7 +71,7 @@ const Project3 = () => {
         </p>
         <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Alpine-Vet'>GitHub Repo</a>
         <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Alpine-Vet/'>Live Link</a>
-        <Link to={'/project1'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
+        <Link to={'/portfolio-site2/project1'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
       </div>
     </div>
   )
