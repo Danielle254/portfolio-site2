@@ -29,14 +29,16 @@ export default function Project(props) {
   
   return (
     <div className='project--card'>
+      <Link to={path} >
       <img src={displayImage} className={props.lightMode ? 'img-light' : 'img-dark'} />
+      </Link>
       <div id='details--container'>
         <h3>{props.title}</h3>
         <p>{props.summary}</p>
         <div className='tags--container-main'>
           {tags}
         </div>
-        <Link key={path} to={path} style={{'text-decoration': 'none'}}>
+        <Link key={path} to={path} style={{textDecoration: 'none'}}>
         <p className={props.lightMode ? 'button-light' : 'button-dark'}>Demo & Details</p>
         </Link>
       </div>
