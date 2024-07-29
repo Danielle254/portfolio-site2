@@ -17,8 +17,8 @@ export default function Menu(props) {
         <li><Link to={'/portfolio-site2/#contact--section'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset}>Contact</p></Link></li>
         <li><a onClick={props.mobileReset} href={resume} target='_blank'>Resume</a></li>
         <div className='access--container'>
-          <button id={props.lightMode ? 'mode--button' : 'mode--button-dark'} className='access--button' onClick={props.toggleLightMode}><img className='icon' src={modeIcon} />{props.lightMode ? "  Dark Mode" : "   Light Mode"}</button>
-          <button id={props.lightMode ? 'animate--button' : 'animate--button-dark'} className='access--button' onClick={props.toggleAnimations}><img src={animateIcon} className='icon'/>{props.animationsOn === true ? " Animations OFF" : " Animations ON"}</button>
+          <button id={props.lightMode ? 'mode--button' : 'mode--button-dark'} className='access--button' onClick={props.toggleLightMode}><img className='icon' src={modeIcon} alt='' />{props.lightMode ? "  Dark Mode" : "   Light Mode"}</button>
+          <button id={props.lightMode ? 'animate--button' : 'animate--button-dark'} className='access--button' onClick={props.toggleAnimations}><img src={animateIcon} className='icon' alt=''/>{props.animationsOn === true ? " Animations OFF" : " Animations ON"}</button>
         </div>
       </ul>
     </nav>

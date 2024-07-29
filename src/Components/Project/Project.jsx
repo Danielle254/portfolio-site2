@@ -30,7 +30,7 @@ export default function Project(props) {
   return (
     <div className='project--card'>
       <Link to={path} >
-      <img src={displayImage} className={props.lightMode ? 'img-light' : 'img-dark'} />
+      <img src={displayImage} className={props.lightMode ? 'img-light' : 'img-dark'} alt='screenshot of project website'/>
       </Link>
       <div id='details--container'>
         <h3>{props.title}</h3>

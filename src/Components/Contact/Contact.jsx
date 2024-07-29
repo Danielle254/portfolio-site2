@@ -25,24 +25,24 @@ export default function Contact(props) {
         <h2>Contact</h2>
         <p>Available for remote work. Based in Missoula, Montana USA.<br />Let's connect to discuss opportunities!</p>
         <div className='email--container'>
-          <img src={props.lightMode ? emailDark : emailLight} className='email-icon' /> 
+          <img src={props.lightMode ? emailDark : emailLight} className='email-icon' alt=''/> 
           <a id={props.lightMode ? 'link-light' : 'link-dark'} href="mailto:danielle.lindblom@gmail.com">Danielle.Lindblom@gmail.com</a>
           <img src={props.lightMode ? copy : copyDark} className={props.lightMode ? 'copy-icon' : 'copy-icon-dark'} onClick={copyToClipboard} alt='copy email address to clipboard' title='Copy to Clipboard'/>
         </div>    
         <div className='social--container'>
           <div className={props.lightMode ? 'social--icon' : 'social--icon-dark'}>
               <a className={props.lightMode ? 'social--text' : 'social--text-dark'} href="https://github.com/Danielle254" target='_blank'>
-              <img src={props.lightMode ? githubIcon : githubWhite} />
+              <img src={props.lightMode ? githubIcon : githubWhite} alt=''/>
               <p>GitHub</p></a>
           </div>
           <div className={props.lightMode ? 'social--icon' : 'social--icon-dark'}>
               <a className={props.lightMode ? 'social--text' : 'social--text-dark'} href="https://www.linkedin.com/in/danielle-lindblom/" target='_blank'>
-              <img src={props.lightMode ? linkedinIcon : linkedinWhite} />
+              <img src={props.lightMode ? linkedinIcon : linkedinWhite} alt=''/>
               <p>LinkedIn</p></a>
           </div>
           <div className={props.lightMode ? 'social--icon' : 'social--icon-dark'}>
               <a className={props.lightMode ? 'social--text' : 'social--text-dark'} href={resume} target='_blank'>
-              <img src={props.lightMode ?resumeIcon : resumeWhite} />
+              <img src={props.lightMode ?resumeIcon : resumeWhite} alt=''/>
               <p>Resume</p></a>
           </div>
         </div>
