@@ -190,7 +190,7 @@ nav li {
     font-size: 1.5rem;
     font-weight: bold;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    z-index: 1;
+    z-index: 99999;
   }
   #nav-dark {
     display: block;

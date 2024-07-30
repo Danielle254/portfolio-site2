@@ -96,11 +96,11 @@ const Layout = () => {
         />
       }
       {showContent && 
-        <Headroom >
+        <Headroom style={{zIndex: '1'}} >
         <Navbar 
-      lightMode={lightMode} 
-      toggleLightMode={toggleLightMode} 
-      menuOn={menuOn}
+          lightMode={lightMode} 
+          toggleLightMode={toggleLightMode} 
+          menuOn={menuOn}
         /> 
         </Headroom>
       }    

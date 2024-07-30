@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 import profile from '../../Images/profile rose background.jpeg';
 import modeIcon from '../../Images/light-dark.png'
