@@ -181,7 +181,7 @@ nav li {
 @media screen and (min-width: $breakpoint3) {
     #nav {
         display: block;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         width: 350px;
@@ -199,7 +199,7 @@ nav li {
 
     #nav-dark {
         display: block;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         width: 350px;
@@ -212,6 +212,7 @@ nav li {
         font-size: $h3-fontsize;
         font-weight: bold;
         box-shadow: $box-shadow; 
+        z-index: 99999;
     }
 }
 
