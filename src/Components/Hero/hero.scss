@@ -26,8 +26,11 @@
 #hero--container p {
     font-size: $h3-fontsize;    
     margin: 0 0 2rem 0;
-    text-wrap: balance;
-    
+    text-wrap: balance;    
+}
+
+#graphic {
+    display: none;
 }
 
 #span-light {
@@ -78,7 +81,34 @@
     }
 
 }
-// add in illustration at breakpoint3
+
+// add in illustration at breakpoint4
+@media screen and (min-width: $breakpoint4) {
+    
+    #hero--container {
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 6fr 2fr;
+        align-items: center;
+        margin: 0;
+        width: 1000px;
+        margin-top: 4rem;
+    }
+
+    #hero--content p {
+        max-width: 680px;
+    }
+
+    #graphic {
+        width: 100%;
+        display: block;
+        margin-bottom: -60px;
+        transform: rotate(-10deg);
+    }
+
+    
+
+}
 
 
 
