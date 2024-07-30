@@ -26,7 +26,7 @@
   text-wrap: balance;
 }
 
-#door-image {
+#graphic {
   display: none;
 }
 
@@ -121,9 +121,10 @@
   #hero--content p {
     max-width: 680px;
   }
-  #door-image {
+  #graphic {
     width: 100%;
     display: block;
-    margin-bottom: -40px;
+    margin-bottom: -60px;
+    transform: rotate(-10deg);
   }
 }/*# sourceMappingURL=hero.css.map */
