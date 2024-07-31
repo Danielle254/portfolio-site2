@@ -53,7 +53,7 @@ const Project1 = () => {
         Another idea would be to add "add to calendar" options so users could put the talks directly onto their own personal calendar (google, etc).</p>
         <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Conference-Agenda'>GitHub Repo</a>
         <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Conference-Agenda/'>Live Link</a>
-        <Link to={'/portfolio-site2/project2'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
+        <Link to={'/project2'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
       </div>
     </main>
   )

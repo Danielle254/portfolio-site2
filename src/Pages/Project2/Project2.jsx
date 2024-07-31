@@ -53,7 +53,7 @@ const Project2 = () => {
         Finally, I could add in recommended feeding guidelines for the specific brands in my existing (manual) library</p>
         <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Dog-Food-Calculator'>GitHub Repo</a>
         <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Dog-Food-Calculator/'>Live Link</a>
-        <Link to={'/portfolio-site2/project3'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
+        <Link to={'/project3'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
       </div>
     </main>
   )

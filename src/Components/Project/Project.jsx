@@ -18,13 +18,13 @@ export default function Project(props) {
   let path = '';
   if (props.id === 1) {
     displayImage = img1;
-    path = '/portfolio-site2/project1';
+    path = '/project1';
   } else if (props.id === 2) {
     displayImage = img2;
-    path = '/portfolio-site2/project2';
+    path = '/project2';
   } else {
     displayImage = img3;
-    path = '/portfolio-site2/project3';
+    path = '/project3';
   }
   
   return (
