@@ -9,10 +9,10 @@ import resume from '../../resume.pdf'
 export default function Menu(props) {
 
   let display = props.mobileMenuVisible ? "open" : "";
-  let mode = props.lightMode ? "nav" : "nav-dark";       
+  let mode = props.lightMode ? "" : "dark";       
 
   return (
-    <nav className={`${mode} ${display}`}>
+    <nav className={`${mode} ${display} nav`}>
       <button id={props.lightMode ? 'close--nav' : 'close--nav-dark'} onClick={props.menuOff} aria-label='close mobile menu'>X</button>
       <ul>
         <li><Link to={'/#about--section'} className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset} >About</p></Link></li>

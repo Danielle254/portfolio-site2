@@ -12,17 +12,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-.nav-dark {
-  position: absolute;
-  top: -500px;
-  right: 0;
-  height: 100%;
-  width: 100%;
+.dark {
   background: linear-gradient(180deg, #182750 60%, #2c343d);
-  font-size: 1.5rem;
-  font-weight: bold;
-  z-index: 1;
-  transition: all 0.5s ease-in-out;
 }
 
 .open {
@@ -45,7 +36,7 @@ nav ul {
   transition: all 0.2s ease-in-out;
 }
 
-.menu-link-dark {
+.nav .menu-link-dark {
   text-decoration: none;
   color: #FFFFFF;
   transition: all 0.2s ease-in-out;
@@ -57,7 +48,7 @@ nav ul {
   transition: all 0.2s ease-in-out;
 }
 
-.nav-dark a {
+.dark a {
   text-decoration: none;
   color: #FFFFFF;
   transition: all 0.2s ease-in-out;
@@ -72,7 +63,7 @@ nav li {
   text-decoration: underline;
 }
 
-.nav-dark a:hover {
+.dark a:hover {
   color: #FFA9F9;
   text-decoration: underline;
 }
@@ -202,19 +193,10 @@ nav li {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
     z-index: 99999;
   }
-  .nav-dark {
-    position: fixed;
-    top: 0;
-    right: -400px;
-    width: 350px;
-    height: 500px;
+  .dark {
     background: none;
     background-color: #182750;
     border: 1px #FFFFFF solid;
-    border-radius: 10px;
-    padding-top: 2rem;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    z-index: 99999;
   }
   .open {
     right: 0;
