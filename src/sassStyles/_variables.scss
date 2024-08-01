@@ -51,7 +51,8 @@ $box-shadow-light: rgb(255, 255, 255, 0.2) 0px 10px 20px, rgba(255, 255, 255, 0.
     font-size: $body-fontsize;
     font-weight: bold;    
     border-radius: 10px; 
-    cursor: pointer;      
+    cursor: pointer;  
+    width: 190px;    
 }
 
 @mixin button-dark {

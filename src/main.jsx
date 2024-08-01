@@ -77,7 +77,7 @@ const Layout = () => {
     setMobileMenuVisible(true);
     if (screenWidth < 800) {
       setShowContent(false);
-    }    
+    } 
   }
 
   function menuOff() {

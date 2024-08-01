@@ -11,7 +11,7 @@ import resume from '../../resume.pdf'
 export default function Navbar(props) {
   
   if(props.showContent) {
-    
+
     return (
       <header className={props.lightMode ? 'navbar--background' : 'navbar--background-dark'}>
         <div className='navbar--content'>
@@ -27,7 +27,7 @@ export default function Navbar(props) {
             <button id={props.lightMode ? 'mode--button-desktop' : 'mode--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleLightMode}><img className='icon' src={props.lightMode ? modeIcon : modeIconWhite}alt='' />{props.lightMode ? " Dark Mode" : " Light Mode"}</button>
             <button id={props.lightMode ? 'animate--button-desktop' : 'animate--button-desktop-dark'} className='access--button-desktop' onClick={props.toggleAnimations}><img src={props.lightMode ? motionIcon : motionIconWhite} className='icon' alt=''/>{props.animationsOn === true ? "Animations OFF" : "Animations ON"}</button>           
           </div> 
-          <button id={props.lightMode ? 'menu--button' : 'menu--button-dark'} onClick={props.menuOn}>MENU</button>         
+          <button id={props.lightMode ? 'menu--button' : 'menu--button-dark'} onClick={props.menuOn} aria-label='open mobile menu'>MENU</button>         
         </div>
       </header>
     )
