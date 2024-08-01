@@ -50,6 +50,7 @@ const Layout = () => {
 
     if (prevAnimateSetting === "OFF") {
       setAnimationsOn(false); 
+      document.documentElement.style.scrollBehavior = "auto";
     }
     
     if (!prevAnimateSetting) {
@@ -57,6 +58,7 @@ const Layout = () => {
 
       if (prefersReduced) {
         setAnimationsOn(false);
+        document.documentElement.style.scrollBehavior = "auto";
       }
     }
   }, []);  
@@ -101,10 +103,12 @@ const Layout = () => {
     if (animationsOn) {
       setAnimationsOn(false);
       localStorage.setItem("animate", "OFF");
+      document.documentElement.style.scrollBehavior = "auto";
     }
     if (!animationsOn) {
       setAnimationsOn(true);
       localStorage.setItem("animate", "ON");
+      document.documentElement.style.scrollBehavior = "smooth";
     }    
   } 
 
@@ -128,8 +132,7 @@ const Layout = () => {
           menuOn={menuOn}
           showContent={showContent}
           animationsOn={animationsOn}
-          toggleAnimations={toggleAnimations}
-          mobileResetOnEnter={mobileResetOnEnter}
+          toggleAnimations={toggleAnimations}          
         /> 
       </Headroom>         
       <Outlet 
