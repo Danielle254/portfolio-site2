@@ -10,31 +10,33 @@ import Contact from './Components/Contact/Contact'
 
 
 function App() {
-  const [lightMode] = useOutletContext();
+  const [lightMode, showContent] = useOutletContext();
   /* const [animationsOn, setAnimationsOn] = useOutletContext(); */  
-  
-  return (
-    <div className={lightMode ? 'App' : 'App-dark'}>
-      <div id='app--container'>                
-        <Hero
-        lightMode={lightMode}
-        /* animationsOn={animationsOn}  */
-        />
-        <Details 
-        lightMode={lightMode}
-        /* animationsOn={animationsOn}  */
-        />
-        <Projects 
-        lightMode={lightMode}
-        /* animationsOn={animationsOn}  */
-        />
-        <Contact
-        lightMode={lightMode} 
-        /* animationsOn={animationsOn}  */     
-        />        
+  if (showContent) {
+    return (
+      <div className={lightMode ? 'App' : 'App-dark'}>
+        <div id='app--container'>                
+          <Hero
+          lightMode={lightMode}
+          /* animationsOn={animationsOn}  */
+          />
+          <Details 
+          lightMode={lightMode}
+          /* animationsOn={animationsOn}  */
+          />
+          <Projects 
+          lightMode={lightMode}
+          /* animationsOn={animationsOn}  */
+          />
+          <Contact
+          lightMode={lightMode} 
+          /* animationsOn={animationsOn}  */     
+          />        
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
+  
 }
 
 export default App

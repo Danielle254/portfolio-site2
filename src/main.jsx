@@ -51,9 +51,7 @@ const Layout = () => {
     if (lightMode) {
       localStorage.setItem("theme", "dark");
       setLightMode(false);
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-      const prefersNotSet = window.matchMedia('(prefers-color-scheme: no-preference)').matches;
+      
     } else {
       localStorage.setItem("theme", "light");
       setLightMode(true);
@@ -85,33 +83,30 @@ const Layout = () => {
   return (
     <div> 
       <ScrollToTop />
-      {mobileMenuVisible && 
-        <Menu 
+      <Menu 
         menuOff={menuOff} 
         mobileReset={mobileReset}
         lightMode={lightMode}
         /* animationsOn={animationsOn} */
         toggleLightMode={toggleLightMode}  
-        toggleAnimations={toggleAnimations}     
-        />
-      }
-      {showContent && 
-        <Headroom style={{zIndex: '1'}} >
-        <Navbar 
-          lightMode={lightMode} 
-          toggleLightMode={toggleLightMode} 
-          menuOn={menuOn}
-        /> 
-        </Headroom>
-      }    
-      {showContent && 
-        <Outlet context={[lightMode]}/>  
-      }
-      {showContent && 
-        <Footer 
-        lightMode={lightMode}       
-      />    
-      }
+        toggleAnimations={toggleAnimations} 
+        mobileMenuVisible={mobileMenuVisible}    
+      />      
+      <Headroom style={{zIndex: '1'}} >
+      <Navbar 
+        lightMode={lightMode} 
+        toggleLightMode={toggleLightMode} 
+        menuOn={menuOn}
+        showContent={showContent}
+      /> 
+      </Headroom>         
+      <Outlet 
+        context={[lightMode, showContent]}        
+      />      
+      <Footer 
+        lightMode={lightMode}  
+        showContent={showContent}     
+      />      
     </div>
   );
 };
