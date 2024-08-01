@@ -65,8 +65,7 @@ const Layout = () => {
   function toggleLightMode() {
     if (lightMode) {
       localStorage.setItem("theme", "dark");
-      setLightMode(false);
-      
+      setLightMode(false);      
     } else {
       localStorage.setItem("theme", "light");
       setLightMode(true);
@@ -121,6 +120,7 @@ const Layout = () => {
           menuOn={menuOn}
           showContent={showContent}
           animationsOn={animationsOn}
+          toggleAnimations={toggleAnimations}
         /> 
       </Headroom>         
       <Outlet 
