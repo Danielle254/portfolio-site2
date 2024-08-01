@@ -20,19 +20,19 @@ function App() {
         <div id='app--container'>                
           <Hero
           lightMode={lightMode}
-          /* animationsOn={animationsOn}  */
+          animationsOn={animationsOn} 
           />
           <Details 
           lightMode={lightMode}
-          /* animationsOn={animationsOn}  */
+          animationsOn={animationsOn} 
           />
           <Projects 
           lightMode={lightMode}
-          /* animationsOn={animationsOn}  */
+          animationsOn={animationsOn} 
           />
           <Contact
           lightMode={lightMode} 
-          /* animationsOn={animationsOn}  */     
+          animationsOn={animationsOn}      
           />        
         </div>
       </div>

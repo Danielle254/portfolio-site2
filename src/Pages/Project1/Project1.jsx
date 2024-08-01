@@ -5,7 +5,7 @@ import './project1.css'
 
 
 const Project1 = () => {
-  const [lightMode, showContent] = useOutletContext();
+  const [lightMode, showContent, animationsOn] = useOutletContext();
 
   if(showContent) {
     return (

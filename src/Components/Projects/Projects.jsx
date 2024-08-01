@@ -35,6 +35,7 @@ export default function Projects(props) {
         tags={project.tags}
         path={project.detailsPath}
         lightMode={props.lightMode}
+        animationsOn={props.animationsOn}
         />
       )
     }
