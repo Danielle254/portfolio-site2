@@ -87,7 +87,14 @@ const Layout = () => {
   
   function mobileReset() {
     setMobileMenuVisible(false);
-    setShowContent(true);
+    setShowContent(true);    
+  }
+  
+  function mobileResetOnEnter(e) {
+    if (e.key === "Enter") {
+      setMobileMenuVisible(false);
+    setShowContent(true);  
+    }      
   }
 
   function toggleAnimations() {
@@ -111,7 +118,8 @@ const Layout = () => {
         animationsOn={animationsOn}
         toggleLightMode={toggleLightMode}  
         toggleAnimations={toggleAnimations} 
-        mobileMenuVisible={mobileMenuVisible}    
+        mobileMenuVisible={mobileMenuVisible} 
+        mobileResetOnEnter={mobileResetOnEnter}   
       />      
       <Headroom style={{zIndex: '1'}} >
         <Navbar 
@@ -121,6 +129,7 @@ const Layout = () => {
           showContent={showContent}
           animationsOn={animationsOn}
           toggleAnimations={toggleAnimations}
+          mobileResetOnEnter={mobileResetOnEnter}
         /> 
       </Headroom>         
       <Outlet 
