@@ -1,7 +1,7 @@
 import { React } from 'react'
 import { useOutletContext } from 'react-router-dom'
-import './app.css'
 
+import './app.css'
 import Hero from './Components/Hero/Hero'
 import Details from './Components/Details/Details'
 import Projects from './Components/Projects/Projects'
@@ -10,9 +10,11 @@ import Contact from './Components/Contact/Contact'
 
 
 function App() {
-  const [lightMode, showContent] = useOutletContext();
-  /* const [animationsOn, setAnimationsOn] = useOutletContext(); */  
+
+  const [lightMode, showContent, animationsOn] = useOutletContext();
+   
   if (showContent) {
+
     return (
       <div className={lightMode ? 'App' : 'App-dark'}>
         <div id='app--container'>                

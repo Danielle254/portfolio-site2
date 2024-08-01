@@ -15,10 +15,11 @@ import Menu from './Components/Menu/Menu.jsx'
 
 const Layout = () => {
   const [lightMode, setLightMode] = useState(true);
-  /* const [animationsOn, setAnimationsOn] = useState(true); */
+  const [animationsOn, setAnimationsOn] = useState(true);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [showContent, setShowContent] = useState(true);
   
+  // retrieve user preference for dark mode
   useEffect(() => {
     const prevTheme = localStorage.getItem("theme");
 
@@ -34,17 +35,31 @@ const Layout = () => {
       if (prefersDark) {
         setLightMode(false);
       }
-
       if (prefersLight) {
         setLightMode(true);
       }
-
       if (prefersNotSet) {
         setLightMode(true);
       }
     }
   }, []);
-  
+
+  // retrieve user preference for animations
+  useEffect(() => {
+    const prevAnimateSetting = localStorage.getItem("animate");
+
+    if (prevAnimateSetting === "OFF") {
+      setAnimationsOn(false); 
+    }
+    
+    if (!prevAnimateSetting) {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)') === true || window.matchMedia('(prefers-reduced-motion: reduce)').matches === true;      
+
+      if (prefersReduced) {
+        setAnimationsOn(false);
+      }
+    }
+  }, []);  
   
     
   function toggleLightMode() {
@@ -77,7 +92,14 @@ const Layout = () => {
   }
 
   function toggleAnimations() {
-    setAnimationsOn(!animationsOn);
+    if (animationsOn) {
+      setAnimationsOn(false);
+      localStorage.setItem("animate", "OFF");
+    }
+    if (!animationsOn) {
+      setAnimationsOn(true);
+      localStorage.setItem("animate", "ON");
+    }    
   } 
 
   return (
@@ -87,25 +109,27 @@ const Layout = () => {
         menuOff={menuOff} 
         mobileReset={mobileReset}
         lightMode={lightMode}
-        /* animationsOn={animationsOn} */
+        animationsOn={animationsOn}
         toggleLightMode={toggleLightMode}  
         toggleAnimations={toggleAnimations} 
         mobileMenuVisible={mobileMenuVisible}    
       />      
       <Headroom style={{zIndex: '1'}} >
-      <Navbar 
-        lightMode={lightMode} 
-        toggleLightMode={toggleLightMode} 
-        menuOn={menuOn}
-        showContent={showContent}
-      /> 
+        <Navbar 
+          lightMode={lightMode} 
+          toggleLightMode={toggleLightMode} 
+          menuOn={menuOn}
+          showContent={showContent}
+          animationsOn={animationsOn}
+        /> 
       </Headroom>         
       <Outlet 
-        context={[lightMode, showContent]}        
+        context={[lightMode, showContent, animationsOn]}        
       />      
       <Footer 
         lightMode={lightMode}  
-        showContent={showContent}     
+        showContent={showContent}  
+        animationsOn={animationsOn}   
       />      
     </div>
   );

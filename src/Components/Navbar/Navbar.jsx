@@ -11,6 +11,7 @@ import resume from '../../resume.pdf'
 export default function Navbar(props) {
   
   if(props.showContent) {
+    
     return (
       <header className={props.lightMode ? 'navbar--background' : 'navbar--background-dark'}>
         <div className='navbar--content'>
