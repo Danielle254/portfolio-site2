@@ -81,10 +81,14 @@ const Layout = () => {
       setShowContent(false);
     } 
   }
+  
+  function showContentFunction() {
+    setShowContent(true);
+  }
 
   function menuOff() {
     setMobileMenuVisible(false);
-    setShowContent(true);
+    setTimeout(showContentFunction, 500);
   }
   
   function mobileReset() {
