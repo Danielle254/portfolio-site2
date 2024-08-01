@@ -190,7 +190,8 @@ nav li {
 @media screen and (min-width: $breakpoint3) {
     .nav {        
         position: fixed;        
-        top: -500px;
+        top: 0;
+        right: -400px;
         width: 350px;
         height: 500px;
         background: none;
@@ -204,7 +205,8 @@ nav li {
 
     .nav-dark {        
         position: fixed;        
-        top: -500px;
+        top: 0;
+        right: -400px;
         width: 350px;
         height: 500px;
         background: none;
@@ -217,7 +219,7 @@ nav li {
     }
 
     .open {
-        top: 0;
+        right: 0;
     }
 }
   

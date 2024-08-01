@@ -190,7 +190,8 @@ nav li {
 @media screen and (min-width: 800px) {
   .nav {
     position: fixed;
-    top: -500px;
+    top: 0;
+    right: -400px;
     width: 350px;
     height: 500px;
     background: none;
@@ -203,7 +204,8 @@ nav li {
   }
   .nav-dark {
     position: fixed;
-    top: -500px;
+    top: 0;
+    right: -400px;
     width: 350px;
     height: 500px;
     background: none;
@@ -215,6 +217,6 @@ nav li {
     z-index: 99999;
   }
   .open {
-    top: 0;
+    right: 0;
   }
 }/*# sourceMappingURL=menu.css.map */

@@ -9,7 +9,6 @@ import resume from '../../resume.pdf'
 export default function Menu(props) {
 
   let display = props.mobileMenuVisible ? "open" : "";
-
   let mode = props.lightMode ? "nav" : "nav-dark";       
 
   return (
