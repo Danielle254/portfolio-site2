@@ -10,11 +10,14 @@ export default function Menu(props) {
 
   let display = props.mobileMenuVisible ? "open" : "";
   let mode = props.lightMode ? "" : "dark"; 
-  let animate = props.animationsOn ? "animate" : ""      
+  let animate = props.animationsOn ? "animate" : ""  ;
+  
+  const autoFocus = (button) => button?.focus();
+  
 
   return (
     <nav className={`nav ${mode} ${animate} ${display}`}>
-      <button id={props.lightMode ? 'close--nav' : 'close--nav-dark'} onClick={props.menuOff} aria-label='close mobile menu'>X</button>
+      <button id={props.lightMode ? 'close--nav' : 'close--nav-dark'} onClick={props.menuOff} aria-label='close mobile menu' tabIndex={'1'}  ref={autoFocus}>X</button>
       <ul>
         <li><Link to={'/#about--section'} className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset} >About</p></Link></li>
         <li><Link to={'/#projects--section'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'}><p onClick={props.mobileReset}  >Projects</p></Link></li>
