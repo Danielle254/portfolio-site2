@@ -99,12 +99,22 @@
         max-width: 680px;
     }
 
-    #graphic {
+    .graphic {
         width: 100%;
         display: block;
         margin-bottom: -60px;
-        transform: rotate(-10deg);
+        transform: rotate(-10deg); 
+        transition: 0.8s ease-in-out; 
+        border-radius: 8px;      
     }
+
+    .animate:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 20px #0ff;
+        cursor: pointer;
+    }
+
+    
 
     
 

@@ -15,10 +15,11 @@ import Menu from './Components/Menu/Menu.jsx'
 
 const Layout = () => {
   const [lightMode, setLightMode] = useState(true);
-  /* const [animationsOn, setAnimationsOn] = useState(true); */
+  const [animationsOn, setAnimationsOn] = useState(true);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [showContent, setShowContent] = useState(true);
   
+  // retrieve user preference for dark mode
   useEffect(() => {
     const prevTheme = localStorage.getItem("theme");
 
@@ -34,24 +35,39 @@ const Layout = () => {
       if (prefersDark) {
         setLightMode(false);
       }
-
       if (prefersLight) {
         setLightMode(true);
       }
-
       if (prefersNotSet) {
         setLightMode(true);
       }
     }
   }, []);
-  
+
+  // retrieve user preference for animations
+  useEffect(() => {
+    const prevAnimateSetting = localStorage.getItem("animate");
+
+    if (prevAnimateSetting === "OFF") {
+      setAnimationsOn(false); 
+      document.documentElement.style.scrollBehavior = "auto";
+    }
+    
+    if (!prevAnimateSetting) {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)') === true || window.matchMedia('(prefers-reduced-motion: reduce)').matches === true;      
+
+      if (prefersReduced) {
+        setAnimationsOn(false);
+        document.documentElement.style.scrollBehavior = "auto";
+      }
+    }
+  }, []);  
   
     
   function toggleLightMode() {
     if (lightMode) {
       localStorage.setItem("theme", "dark");
-      setLightMode(false);
-      
+      setLightMode(false);      
     } else {
       localStorage.setItem("theme", "light");
       setLightMode(true);
@@ -63,21 +79,41 @@ const Layout = () => {
     setMobileMenuVisible(true);
     if (screenWidth < 800) {
       setShowContent(false);
-    }    
+    } 
+  }
+  
+  function showContentFunction() {
+    setShowContent(true);
   }
 
   function menuOff() {
     setMobileMenuVisible(false);
-    setShowContent(true);
+    setTimeout(showContentFunction, 500);
   }
   
   function mobileReset() {
     setMobileMenuVisible(false);
-    setShowContent(true);
+    setShowContent(true);    
+  }
+  
+  function mobileResetOnEnter(e) {
+    if (e.key === "Enter") {
+      setMobileMenuVisible(false);
+    setShowContent(true);  
+    }      
   }
 
   function toggleAnimations() {
-    setAnimationsOn(!animationsOn);
+    if (animationsOn) {
+      setAnimationsOn(false);
+      localStorage.setItem("animate", "OFF");
+      document.documentElement.style.scrollBehavior = "auto";
+    }
+    if (!animationsOn) {
+      setAnimationsOn(true);
+      localStorage.setItem("animate", "ON");
+      document.documentElement.style.scrollBehavior = "smooth";
+    }    
   } 
 
   return (
@@ -87,25 +123,29 @@ const Layout = () => {
         menuOff={menuOff} 
         mobileReset={mobileReset}
         lightMode={lightMode}
-        /* animationsOn={animationsOn} */
+        animationsOn={animationsOn}
         toggleLightMode={toggleLightMode}  
         toggleAnimations={toggleAnimations} 
-        mobileMenuVisible={mobileMenuVisible}    
+        mobileMenuVisible={mobileMenuVisible} 
+        mobileResetOnEnter={mobileResetOnEnter}   
       />      
       <Headroom style={{zIndex: '1'}} >
-      <Navbar 
-        lightMode={lightMode} 
-        toggleLightMode={toggleLightMode} 
-        menuOn={menuOn}
-        showContent={showContent}
-      /> 
+        <Navbar 
+          lightMode={lightMode} 
+          toggleLightMode={toggleLightMode} 
+          menuOn={menuOn}
+          showContent={showContent}
+          animationsOn={animationsOn}
+          toggleAnimations={toggleAnimations}          
+        /> 
       </Headroom>         
       <Outlet 
-        context={[lightMode, showContent]}        
+        context={[lightMode, showContent, animationsOn]}        
       />      
       <Footer 
         lightMode={lightMode}  
-        showContent={showContent}     
+        showContent={showContent}  
+        animationsOn={animationsOn}   
       />      
     </div>
   );

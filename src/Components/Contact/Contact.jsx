@@ -25,7 +25,7 @@ export default function Contact(props) {
         <h2>Contact</h2>
         <p>Available for remote work. Based in Missoula, Montana USA.<br />Let's connect to discuss opportunities!</p>
         <a href="mailto:danielle.lindblom@gmail.com" className={props.lightMode ? 'contact--button' : 'contact--button-dark'}><img src={props.lightMode ? emailLight : emailDark} className='email-icon' alt=''/>Send Email</a>
-        <a onClick={copyToClipboard} className={props.lightMode ? 'copy--button' : 'copy--button-dark'}><img src={copy} className='copy-icon'  alt=''/>Copy Email</a>          
+        <a tabIndex={'0'} onClick={copyToClipboard} className={props.lightMode ? 'copy--button' : 'copy--button-dark'}><img src={copy} className='copy-icon'  alt=''/>Copy Email</a>          
         <div className='social--container'>
           <div className={props.lightMode ? 'social--icon' : 'social--icon-dark'}>
               <a className={props.lightMode ? 'social--text' : 'social--text-dark'} href="https://github.com/Danielle254" target='_blank'>
