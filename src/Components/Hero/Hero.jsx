@@ -3,7 +3,7 @@ import './hero.css'
 import graphic from '../../Images/access-image.png'
 
 export default function Hero(props) {
-  let animateHero = props.animationsOn ? "animate" : "";
+  let animateHero = props.animationsOn ? "animateHero" : "";
 
   return (
     <section id='hero--section'>

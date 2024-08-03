@@ -10,7 +10,7 @@ export default function Menu(props) {
 
   let display = props.mobileMenuVisible ? "open" : "";
   let mode = props.lightMode ? "" : "dark"; 
-  let animate = props.animationsOn ? "animate" : ""  ;
+  let animate = props.animationsOn ? "animateMenu" : ""  ;
   
   const autoFocus = (button) => button?.focus();
   
