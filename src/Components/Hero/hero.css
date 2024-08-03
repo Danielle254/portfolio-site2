@@ -30,6 +30,10 @@
   display: none;
 }
 
+.animate {
+  display: none;
+}
+
 #span-light {
   color: #A60067;
   font-weight: bold;
