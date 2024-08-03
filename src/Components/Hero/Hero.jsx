@@ -3,6 +3,8 @@ import './hero.css'
 import graphic from '../../Images/access-image.png'
 
 export default function Hero(props) {
+  let animateHero = props.animationsOn ? "animate" : "";
+
   return (
     <section id='hero--section'>
       <div id='hero--container'>
@@ -11,7 +13,7 @@ export default function Hero(props) {
           <p>a <span id={props.lightMode ? 'span-light' : 'span-dark'}>Frontend Developer</span> creating inclusive spaces by increasing accessibility, one website at a time</p>
           <a href="/portfolio-site2/#projects--section" id={props.lightMode ? 'hero--button' : 'hero--button-dark'}>View Projects</a>
         </div>
-        <img src={graphic} id='graphic' alt='web accessibility symbol illustration' />
+        <img src={graphic} className={`graphic ${animateHero}`} alt='web accessibility symbol illustration' />
       </div>
     </section>
   )
