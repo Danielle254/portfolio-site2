@@ -4,12 +4,13 @@ import './project.css'
 import img1 from '../../Images/project1thumb.png'
 import img2 from '../../Images/project2thumb.png'
 import img3 from '../../Images/project3thumb.png'
+import { v4 as uuid  } from "uuid"
 
 export default function Project(props) {
   const tags = props.tags.map(
     tag => {
       return (        
-        <p className='tag'>{tag}</p>      
+        <p className='tag'  key={uuid()}>{tag}</p>      
       )
     }
   )
