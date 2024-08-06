@@ -14,22 +14,26 @@ export default function Menu(props) {
   
   const autoFocus = (button) => button?.focus();
   
+  if (props.mobileMenuVisible) {
+    return (
 
-  return (
-    <nav className={`nav ${mode} ${animate} ${display}`}>
-      <button id={props.lightMode ? 'close--nav' : 'close--nav-dark'} onClick={props.menuOff} aria-label='close mobile menu' tabIndex={'1'}  ref={autoFocus}>X</button>
-      <ul>
-        <li><Link to={'/#about--section'} className={props.lightMode ? 'menu-link' : 'menu-link-dark'}  onKeyDown={props.mobileResetOnEnter}><p onClick={props.mobileReset}>About</p></Link></li>
-        <li><Link to={'/#projects--section'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'} onKeyDown={props.mobileResetOnEnter} ><p onClick={props.mobileReset}>Projects</p></Link></li>
-        <li><Link to={props.lightMode ? '/#contact--section' : '/#contact--section-dark'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'} onKeyDown={props.mobileResetOnEnter}><p onClick={props.mobileReset} >Contact</p></Link></li>
-        <li><a onClick={props.mobileReset} onKeyDown={props.mobileResetOnEnter} href={resume} target='_blank'>Resume</a></li>
-        <div className='access--container'>
-          <button id={props.lightMode ? 'mode--button' : 'mode--button-dark'} className='access--button' onClick={props.toggleLightMode}><img className='icon' src={modeIcon} alt='' />{props.lightMode ? "  Dark Mode" : "   Light Mode"}</button>
-          <button id={props.lightMode ? 'animate--button' : 'animate--button-dark'} className='access--button' onClick={props.toggleAnimations}><img src={animateIcon} className='icon' alt=''/>{props.animationsOn === true ? " Animations OFF" : " Animations ON"}</button>
-        </div>
-      </ul>
-    </nav>
-  )
+      <nav className={`nav ${mode} ${animate} ${display}`}>
+        <button id={props.lightMode ? 'close--nav' : 'close--nav-dark'} onClick={props.menuOff} aria-label='close mobile menu' tabIndex={'1'}  ref={autoFocus}>X</button>
+        <ul>
+          <li><Link to={'/#about--section'} className={props.lightMode ? 'menu-link' : 'menu-link-dark'}  onKeyDown={props.mobileResetOnEnter}><p onClick={props.mobileReset}>About</p></Link></li>
+          <li><Link to={'/#projects--section'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'} onKeyDown={props.mobileResetOnEnter} ><p onClick={props.mobileReset}>Projects</p></Link></li>
+          <li><Link to={props.lightMode ? '/#contact--section' : '/#contact--section-dark'}  className={props.lightMode ? 'menu-link' : 'menu-link-dark'} onKeyDown={props.mobileResetOnEnter}><p onClick={props.mobileReset} >Contact</p></Link></li>
+          <li><a onClick={props.mobileReset} onKeyDown={props.mobileResetOnEnter} href={resume} target='_blank'>Resume</a></li>
+          <div className='access--container'>
+            <button id={props.lightMode ? 'mode--button' : 'mode--button-dark'} className='access--button' onClick={props.toggleLightMode}><img className='icon' src={modeIcon} alt='' />{props.lightMode ? "  Dark Mode" : "   Light Mode"}</button>
+            <button id={props.lightMode ? 'animate--button' : 'animate--button-dark'} className='access--button' onClick={props.toggleAnimations}><img src={animateIcon} className='icon' alt=''/>{props.animationsOn === true ? " Animations OFF" : " Animations ON"}</button>
+          </div>
+        </ul>
+      </nav>
+    )
+  }
+
+  
 
   
 }

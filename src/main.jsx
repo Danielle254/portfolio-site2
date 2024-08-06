@@ -98,6 +98,7 @@ const Layout = () => {
   
   function mobileResetOnEnter(e) {
     if (e.key === "Enter") {
+      
       setMobileMenuVisible(false);
     setShowContent(true);  
     }      
@@ -118,17 +119,7 @@ const Layout = () => {
 
   return (
     <div> 
-      <ScrollToTop />
-      <Menu 
-        menuOff={menuOff} 
-        mobileReset={mobileReset}
-        lightMode={lightMode}
-        animationsOn={animationsOn}
-        toggleLightMode={toggleLightMode}  
-        toggleAnimations={toggleAnimations} 
-        mobileMenuVisible={mobileMenuVisible} 
-        mobileResetOnEnter={mobileResetOnEnter}   
-      />      
+      <ScrollToTop />           
       <Headroom style={{zIndex: '1'}} >
         <Navbar 
           lightMode={lightMode} 
@@ -138,7 +129,17 @@ const Layout = () => {
           animationsOn={animationsOn}
           toggleAnimations={toggleAnimations}          
         /> 
-      </Headroom>         
+      </Headroom>  
+      <Menu 
+        menuOff={menuOff} 
+        mobileReset={mobileReset}
+        lightMode={lightMode}
+        animationsOn={animationsOn}
+        toggleLightMode={toggleLightMode}  
+        toggleAnimations={toggleAnimations} 
+        mobileMenuVisible={mobileMenuVisible} 
+        mobileResetOnEnter={mobileResetOnEnter}   
+      />        
       <Outlet 
         context={[lightMode, showContent, animationsOn]}        
       />      
