@@ -96,13 +96,6 @@ const Layout = () => {
     setShowContent(true);    
   }
   
-  function mobileResetOnEnter(e) {
-    if (e.key === "Enter") {
-      
-      setMobileMenuVisible(false);
-    setShowContent(true);  
-    }      
-  }
 
   function toggleAnimations() {
     if (animationsOn) {
@@ -127,8 +120,7 @@ const Layout = () => {
         animationsOn={animationsOn}
         toggleLightMode={toggleLightMode}  
         toggleAnimations={toggleAnimations} 
-        mobileMenuVisible={mobileMenuVisible} 
-        mobileResetOnEnter={mobileResetOnEnter}   
+        mobileMenuVisible={mobileMenuVisible}   
       />      
       <Headroom style={{zIndex: '1'}} >
         <Navbar 
