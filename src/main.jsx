@@ -119,17 +119,7 @@ const Layout = () => {
 
   return (
     <div> 
-      <ScrollToTop />           
-      <Headroom style={{zIndex: '1'}} >
-        <Navbar 
-          lightMode={lightMode} 
-          toggleLightMode={toggleLightMode} 
-          menuOn={menuOn}
-          showContent={showContent}
-          animationsOn={animationsOn}
-          toggleAnimations={toggleAnimations}          
-        /> 
-      </Headroom>  
+      <ScrollToTop />
       <Menu 
         menuOff={menuOff} 
         mobileReset={mobileReset}
@@ -139,7 +129,17 @@ const Layout = () => {
         toggleAnimations={toggleAnimations} 
         mobileMenuVisible={mobileMenuVisible} 
         mobileResetOnEnter={mobileResetOnEnter}   
-      />        
+      />      
+      <Headroom style={{zIndex: '1'}} >
+        <Navbar 
+          lightMode={lightMode} 
+          toggleLightMode={toggleLightMode} 
+          menuOn={menuOn}
+          showContent={showContent}
+          animationsOn={animationsOn}
+          toggleAnimations={toggleAnimations}          
+        /> 
+      </Headroom>         
       <Outlet 
         context={[lightMode, showContent, animationsOn]}        
       />      
