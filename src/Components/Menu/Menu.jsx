@@ -14,7 +14,8 @@ export default function Menu(props) {
   
   const autoFocus = (button) => button?.focus();
   
-  if (props.mobileMenuVisible) {
+ /*  if (props.mobileMenuVisible) { */
+
     return (
 
       <nav className={`nav ${mode} ${animate} ${display}`}>
@@ -36,4 +37,4 @@ export default function Menu(props) {
   
 
   
-}
+/* } */

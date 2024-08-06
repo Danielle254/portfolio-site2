@@ -3,16 +3,16 @@
 @import '../../sassStyles/variables';
 
 .nav {  
-    position: absolute;
-    top: 0;
+    position: absolute;    
     right: 0;
+    top: 0;
     height: 100%;
     width: 100%;
     background: $vertical-gradient-nav;    
     font-size: $h3-fontsize;
     font-weight: bold; 
     z-index: 1;
-    display: none;               
+    display: none;      
 }
 
 .dark {
@@ -20,14 +20,14 @@
 }
 
 .animateMenu {
-    display: block;
     top: -1000px;
-    transition: all 0.5s ease-in-out; 
+    display: block;
+    transition: all 0.5s ease-in-out;
 }
 
 .open {
-    top: 0;
-    display: block;
+    display: block; 
+    top: 0;   
 }
 
 
