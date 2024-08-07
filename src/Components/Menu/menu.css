@@ -187,6 +187,7 @@ nav li {
 
 @media screen and (min-width: 800px) {
   .nav {
+    display: none;
     position: fixed;
     top: 0;
     right: -400px;

@@ -186,7 +186,8 @@ nav li {
 
 // from mobile to desktop - responsive design
 @media screen and (min-width: $breakpoint3) {
-    .nav {        
+    .nav {      
+        display: none;  
         position: fixed;        
         top: 0;
         right: -400px;
