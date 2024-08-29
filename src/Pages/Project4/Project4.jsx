@@ -1,9 +1,9 @@
 import React from 'react'
 import { useOutletContext } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import './project3.css'
+import './project4.css'
 
-const Project3 = () => {
+const Project4 = () => {
 
   const [lightMode, showContent, animationsOn] = useOutletContext();
 
@@ -13,7 +13,7 @@ const Project3 = () => {
         <div className='page--container'>
           <h1>Local Business Homepage Refresh</h1>
           <div className='wrapper'>
-            <iframe className={lightMode ? 'project-video' : 'project-video-dark'} src="https://www.loom.com/embed/41d9ec8e943c43bd945eeddbea745b5a?hideEmbedTopBar=true"  webkitallowfullscreen={'true'} mozallowfullscreen={'true'} allowFullScreen></iframe>
+            <iframe title='screenshare demo of project website features' className={lightMode ? 'project-video' : 'project-video-dark'} src="https://www.loom.com/embed/41d9ec8e943c43bd945eeddbea745b5a?hideEmbedTopBar=true"  webkitallowfullscreen={'true'} mozallowfullscreen={'true'} allowFullScreen></iframe>
           </div>
           <div>
             <h2>Technologies Used:</h2>
@@ -81,4 +81,4 @@ const Project3 = () => {
   
 }
 
-export default Project3
+export default Project4

@@ -11,68 +11,50 @@ const Project3 = () => {
     return (
       <main className={lightMode ? 'page' : 'page-dark'}>
         <div className='page--container'>
-          <h1>Local Business Homepage Refresh</h1>
+          <h1>Calculate How Long Your Dog Food Will Last</h1>
           <div className='wrapper'>
-            <iframe className={lightMode ? 'project-video' : 'project-video-dark'} src="https://www.loom.com/embed/41d9ec8e943c43bd945eeddbea745b5a?hideEmbedTopBar=true"  webkitallowfullscreen={'true'} mozallowfullscreen={'true'} allowFullScreen></iframe>
+            <iframe title='screenshare demo of project website features' className={lightMode ? 'project-video' : 'project-video-dark'} src="https://www.loom.com/embed/786d7f5fbc4f4079957bc76274bf2185?hideEmbedTopBar=true"  webkitallowfullscreen={'true'} mozallowfullscreen={'true'} allowFullScreen></iframe>
           </div>
           <div>
             <h2>Technologies Used:</h2>
             <div className='tags--container'>
-              <p className='tag'>HTML</p>
-              <p className='tag'>CSS</p>
+              <p className='tag'>JavaScript</p>
+              <p className='tag'>Bootstrap</p>
           </div>
           </div>
-          <p>I took the website of a local business that I frequent, Alpine Vet Care in Missoula, and gave their website homepage a refresh. This project showcases my ability to use CSS with no libraries or frameworks to create a responsive webpage for desktop and mobile.<br/><br/>
-          Their existing website was crowded, outdated, and had several accessibility issues.
-          <br/><br/>
-          I wanted to create a more user-friendly, easy to navigate homepage for the veterinarian's customers.</p>
-          <div className='difference--container' >
-            <div className='before-after-container'>
-              <h2>Before</h2>
-              <ul className='bullets'>
-                <li>Inconsistent font size and color</li>
-                <li>Does not use semantic HTML</li>
-                <li>Outdated layout</li>
-                <li>Mobile is a mix of center-aligned and right-aligned</li>
-                <li>Banner image slideshow</li>
-                <li>Contact info is not linked</li>
-                <li>Different logo on desktop vs mobile</li>
-                <li>Very crowded nav menu - many pages, some of which have very little content</li>
-              </ul>
-            </div>
-            <div className='before-after-container'>
-              <h2>After</h2>
-              <ul className='bullets'>
-                <li>Updated color palette based on logo colors</li>
-                <li>Consistent font</li>
-                <li>Semantic HTML for better web accessibility</li>
-                <li>New sectioned layout</li>
-                <li>Clickable links for phone, email, and address making it easier to users to interact with the website information they need</li>
-                <li>Replaced generic article on homepage with services section, more relevant</li>
-                <li>Reorganized the nav menu</li>
-              </ul>
-            </div>
-          </div>
+          <p>This app calculates how long a given bag of dog food will last, factoring in a multiple dog household, and provides the user with pricing information and a link to purchase the food online. There is also the ability to compare 2 different foods!<br/><br/>
+          The "days per bag" metric, which tells the user how long the bag of food will last, is helpful not only to know how often to reorder, like setting up a subscription order, but also to know if the bag you have will last the duration of your trip when setting out to travel.
+          </p>
+          <h2>Key Features</h2>
+          <ul className='bullets'>
+            <li>Simple, easy to use input form</li>
+            <li>Results message displays after form submits</li>
+            <li>Ability to reset the form at any time</li>
+            <li>Ability to compare 2 different foods and their prices</li>
+            <li>Easy ordering via "Buy Now" button</li>
+            <li>Accounts for more than 1 dog in your household</li>
+          </ul>
           <h2>Skills Showcased</h2>
           <ul className='bullets'>
-            <li>Semantic HTML</li>
-            <li>Pure CSS - FlexBox, Grid, Media Queries</li>
-            <li>Web Design and User Experience</li>
-            <li>Web Accessibility (NOTE: the checkbox hack, described below, is NOT fully web accessible)</li>
-            <li>Responsive Design</li>          
+            <li>HTML forms and form validation</li>
+            <li>Bootstrap for styling</li>
+            <li>Vanilla JavaScript with event listeners, reading and writing HTML elements</li>
+            <li>Data stored in JSON file and pulled with API call</li>
+            <li>Multiple complex JavaScript functions</li>
+            <li>Organizing JS functions with modules</li>          
           </ul>
           <h2>Lessons Learned</h2>
-          <p>I used the "checkbox hack" for the mobile menu. I could have used JavaScript, but this was a fun feature to learn. The checkbox hack utilizes the "checked" vs "not checked" property of a checkbox instead of "onClick" in JavaScript. I also created the down/up arrows for the mobile submenu manually.<br/><br/>
-          I created a 2-layer menu. It was interesting to learn different methods of creating a submenu for both dektop and mobile views. This is a very common feature in older or complex business websites.</p>
+          <p>I enjoyed writing multiple functions to perform these calculations and refactoring them into modules for better readability and organization. <br/><br/>
+          I also got good experience with how to break down a problem when encountering errors in the code with such complex calculations.<br/><br/>
+          I'm glad I went for the personal challenge of learning how to use async functions properly to retrieve JSON data via API instead of simply hosting the dataset in my main JS file. <br/><br/>
+          Having a completely original project was really fun, and I got good practice using Git branching and PRs to manage the build of my many features.</p>
           <h2>Future Enhancement Ideas</h2>
-          <p>Creating a Site Menu in the footer. The footer is already quite full. I might make it it's own section and add a site menu to the actual footer on the desktop version.<br/><br/>
-          I'd also like to add a "share" button in addition to printing. <br/><br/>
-          It would be fun to do an entire website overhaul and build the other pages.<br/><br/>
-          Add JavaScript for more simplified functionality of the navbar, and add a "return to top" icon for mobile.
-          </p>
-          <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Alpine-Vet'>GitHub Repo</a>
-          <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Alpine-Vet/'>Live Link</a>
-          <Link to={'/project1'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
+          <p>It would be an interesting challenge to utilize the Amazon API or similar to allow the user to search for their specific brand and bag size of dog food.<br/><br/>
+          They physics tutor in me wants to do real world calculations (ounces per cup) for the various brands in my existing library and update that metric in the library per brand.<br/><br/>
+          Finally, I could add in recommended feeding guidelines for the specific brands in my existing (manual) library</p>
+          <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Dog-Food-Calculator'>GitHub Repo</a>
+          <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Dog-Food-Calculator/'>Live Link</a>
+          <Link to={'/project4'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
         </div>
       </main>
     )

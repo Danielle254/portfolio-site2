@@ -8,7 +8,7 @@ export default function Projects(props) {
     {id: 1,
     title: "Service Dogs Around Town",
     summary: "This is Version 1 of my capstone project, aimed at helping service dog handlers record information about the businesses they frequent as it relates to the comfort and safety of their dogs.",
-    tags: ["React", "Sass", "Local Storage", "Forms"]},
+    tags: ["React", "CSS", "Local Storage", "Forms"]},
     {id: 2,
     title: "Custom Conference Itinerary",    
     summary: "This website displays the agenda for a conference and allows the user to add activities from the official agenda to their own personal itinerary, which they can print as a nicely formatted document. If they need to make changes later, the browser stores their itinerary for them.", 
@@ -43,7 +43,7 @@ export default function Projects(props) {
   
   return (
     <section id='projects--section'>
-      <h2>Projects</h2>
+      <h2>Projects That Help People</h2>
       {projects}
       <a id={props.lightMode ? 'more-projects-button' : 'more-projects-button-dark'} href="https://github.com/Danielle254" target="_blank">More Projects</a>
     </section>
