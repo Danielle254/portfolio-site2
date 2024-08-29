@@ -6,6 +6,10 @@
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
+.feature {
+  border: 2px #A60067 solid;
+}
+
 .img-light {
   width: 100%;
   border: 1px solid #131B23;
