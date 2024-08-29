@@ -130,6 +130,14 @@ p {
     text-align: center;
 }
 
+.link--light {
+    color: $magenta-color;
+}
+
+.link--dark {
+    color: $pink-color;
+}
+
 // mobile to desktop responsiveness
 @media screen and (min-width: $breakpoint1) {
     .page--container {

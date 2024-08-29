@@ -196,6 +196,14 @@ p {
   text-align: center;
 }
 
+.link--light {
+  color: #A60067;
+}
+
+.link--dark {
+  color: #FFA9F9;
+}
+
 @media screen and (min-width: 400px) {
   .page--container {
     padding: 0 2rem;
@@ -249,4 +257,4 @@ p {
     text-align: left;
     padding-left: 2.5rem;
   }
-}/*# sourceMappingURL=project3.css.map */
+}/*# sourceMappingURL=project4.css.map */
