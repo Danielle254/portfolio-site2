@@ -8,9 +8,11 @@ import App from './App.jsx'
 import Project1 from './Pages/Project1/Project1.jsx'
 import Project2 from './Pages/Project2/Project2.jsx'
 import Project3 from './Pages/Project3/Project3.jsx'
+import Project4 from './Pages/Project4/Project4.jsx'
 import Navbar from './Components/Navbar/Navbar.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import Menu from './Components/Menu/Menu.jsx'
+
 
 
 const Layout = () => {
@@ -169,6 +171,10 @@ const router = createBrowserRouter([
   {
     path: '/project3',
     element: <Project3 />
+  },
+  {
+    path: '/project4',
+    element: <Project4 />
   }
 ],
 },
