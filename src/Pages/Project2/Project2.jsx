@@ -52,8 +52,8 @@ const Project2 = () => {
           <p>I'm actually planning another project like this where I create the conference agenda with some sort of library to display it visually in a more calendar-like format. This will make it easier to tell which talks happen at the same time, and even visually distinguish the locations of the talks. <br/><br/>
           I'd also like to add a "share" button in addition to printing. <br/><br/>
           Another idea would be to add "add to calendar" options so users could put the talks directly onto their own personal calendar (google, etc).</p>
-          <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Conference-Agenda'>GitHub Repo</a>
-          <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Conference-Agenda/'>Live Link</a>
+          <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Conference-Agenda' target='_blank'>GitHub Repo</a>
+          <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Conference-Agenda/' target='_blank'>Live Link</a>
           <Link to={'/project3'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
         </div>
       </main>
