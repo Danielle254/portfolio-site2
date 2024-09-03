@@ -3,7 +3,7 @@ import { useOutletContext } from 'react-router-dom'
 
 import './app.css'
 import Hero from './Components/Hero/Hero'
-import Details from './Components/Details/Details'
+import About from './Components/About/About'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
 
@@ -22,7 +22,7 @@ function App() {
           lightMode={lightMode}
           animationsOn={animationsOn} 
           />
-          <Details 
+          <About 
           lightMode={lightMode}
           animationsOn={animationsOn} 
           />

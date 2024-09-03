@@ -4,14 +4,29 @@ import './about.css'
 
 export default function About(props) {
   return (
-    <section id='about--section'>
-      <h2>About Me</h2>
-      <h4 id={props.lightMode ? 'h4-light' : 'h4-dark'}>Once an engineer, always an engineer.</h4>
-      <p>With a background in mechanical engineering, small business ownership, and technical training, I've always been a problem solver. Now, I'm bringing all of that experience to frontend web development.<br/><br/>
-      I built websites for my small businesses for many years using Wix. I'm fascinated with why people do what they do, and that includes using a website.<br/><br/>
-      I'm passionate about accessibility and inclusion, and I'm on a mission to make digital spaces more welcoming and easy to enjoy.<br/>
-      </p>
-      <a id={props.lightMode ? 'resume-button-light' : 'resume-button-dark'} href={resume} target='_blank'>Full Resume</a>
+    <section id='about--section' className={props.lightMode ? 'about--background' : 'about--background-dark'}>
+      <div className='about--container'>
+        <h2>About Me</h2>        
+        <h4 id={props.lightMode ? 'h4-light' : 'h4-dark'}>A Diverse Background</h4>
+        <p>
+        Former Mechanical Engineer, Former Lean Manufacturing Leader, Former Canine Behaviorist, Former Life Coach, Former Implementation Specialist
+        <br/><br/>
+        I've had quite the career journey!
+        <br/><br/>
+        The through-line of it all is: <b>Solving Problems and Helping People.</b>
+        <br/><br/>
+        I've always been keen to figure out how things work - whether that's assembly lines, animals, or people. This has manifested in a combination of technical professions and those rooted in behavior science. And a strong emphasis on teaching.
+        </p>      
+      
+        <h4 id={props.lightMode ? 'h4-light' : 'h4-dark'}>Let's Get Programming!</h4>
+        <p>
+        My first exposure to programming was a C++ course for my Mechanical Engineering degree. Later, I loved the challenge of building and updating my own websites for my small businesses using Wix. 
+        <br/><br/>
+        Now, I've spent the last 3 years learning Software Engineering through my own grit and determination because it combines all of my interests. <b>Once and engineer, always an engineer.</b> I'm invested in this career for the long term, and I'm bringing all of my experiences and learnings with me as unique strengths!
+        </p>
+                
+        <a id={props.lightMode ? 'resume-button-light' : 'resume-button-dark'} href={resume} target='_blank'>View Resume</a>
+      </div> 
     </section>
   )
 }

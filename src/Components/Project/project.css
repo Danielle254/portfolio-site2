@@ -45,6 +45,8 @@
 .tags--container-main {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
   margin: 1rem auto 3rem auto;
 }
 
