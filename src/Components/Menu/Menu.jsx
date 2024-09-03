@@ -14,7 +14,7 @@ export default function Menu(props) {
   
   const autoFocus = (button) => button?.focus();
   
- /*  if (props.mobileMenuVisible) { */
+  if (props.mobileMenuVisible) {
 
     return (
 
@@ -37,4 +37,4 @@ export default function Menu(props) {
   
 
   
-/* } */
+}
