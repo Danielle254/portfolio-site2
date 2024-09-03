@@ -42,8 +42,7 @@
 }
 
 #resume-button-light {
-    @include button-light;  
-    
+    @include button-light;    
 }
 
 #resume-button-light:hover {
@@ -51,8 +50,7 @@
 }
 
 #resume-button-dark {
-    @include button-dark;
-    
+    @include button-dark;    
 }
 
 #resume-button-dark:hover {
@@ -74,8 +72,8 @@
     .about--container {
         width: 80%;
         margin: 0 auto;
+        padding-bottom: 2rem;
     }
-
 
     #about--section h2 {
         margin: 0 auto 2rem auto;
