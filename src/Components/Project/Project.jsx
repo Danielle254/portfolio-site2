@@ -23,10 +23,7 @@ export default function Project(props) {
     case 1:
       displayImage = img1;
       path = '/project1';
-      cardClass += ' feature';
-      if (!props.lightMode) {
-        cardClass += ' feature-dark';
-      }
+      cardClass += props.lightMode ? ' feature' : ' feature-dark';
       break;
     case 2:
       displayImage = img2;
