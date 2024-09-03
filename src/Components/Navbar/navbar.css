@@ -191,6 +191,11 @@
   height: 12px;
 }
 
+.new-window-icon2 {
+  width: 1rem;
+  margin-left: 0.25rem;
+}
+
 #mode--button-desktop:hover {
   background-color: #131B23;
   color: #FFFFFF;

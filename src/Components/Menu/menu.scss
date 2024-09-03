@@ -184,6 +184,11 @@ nav li {
     width: 1rem;
 }
 
+.new-window-icon {
+    width: 1.5rem;
+    margin-left: 0.25rem;
+}
+
 // from mobile to desktop - responsive design
 @media screen and (min-width: $breakpoint3) {
     .nav {      
