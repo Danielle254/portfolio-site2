@@ -12,6 +12,8 @@
 
 .about--container {
     margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .about--background {
@@ -22,10 +24,28 @@
     background-color: $darkblue-color;       
 }
 
+.about--content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
 #about--section h2 {
     font-size: $h2-fontsize;
     margin-bottom: 4rem;      
     text-align: center;
+}
+
+.danielle-pic {
+    border: 1px $black-color solid;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.danielle-pic-dark {
+    border: 1px $white-color solid;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #about--section p {
@@ -42,7 +62,9 @@
 }
 
 #resume-button-light {
-    @include button-light;    
+    @include button-light; 
+    align-self: center;
+    margin-top: 2rem;
 }
 
 #resume-button-light:hover {
@@ -50,7 +72,9 @@
 }
 
 #resume-button-dark {
-    @include button-dark;    
+    @include button-dark; 
+    align-self: center;
+    margin-top: 2rem;   
 }
 
 #resume-button-dark:hover {
@@ -75,18 +99,35 @@
         padding-bottom: 4rem;
     }
 
+    .about--content-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .about--content-container img {
+        max-width: 400px;
+        width: 100%;        
+    }
+
     #about--section h2 {
         margin: 0 auto 2rem auto;
     }
 
     #h4-dark, #h4-light, #about--section p {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     #about--section h2 {
         margin-bottom: 4rem; 
         padding-top: 4rem;  
     }
+}
+
+@media screen and (min-width: $breakpoint4) {
+    .about--content-container {
+        grid-template-columns: 1fr 2fr;
+    }
+
 }
 
 
