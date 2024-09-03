@@ -13,6 +13,10 @@
     border: 2px $magenta-color solid;
 }
 
+.feature-dark {
+    border: 2px $pink-color solid;
+}
+
 .img-light {
     width: 100%;   
     border: 1px solid $black-color;  
@@ -44,6 +48,8 @@
 .tags--container-main {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
     margin: 1rem auto 3rem auto;
 }
 

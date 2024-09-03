@@ -45,7 +45,7 @@ export default function Projects(props) {
     <section id='projects--section'>
       <h2>Projects That Help People</h2>
       {projects}
-      <a id={props.lightMode ? 'more-projects-button' : 'more-projects-button-dark'} href="https://github.com/Danielle254" target="_blank">More Projects</a>
+      <a id={props.lightMode ? 'more-projects-button' : 'more-projects-button-dark'} href="https://github.com/Danielle254" target="_blank">View GitHub</a>
     </section>
   )
 }

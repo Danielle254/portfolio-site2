@@ -24,6 +24,9 @@ export default function Project(props) {
       displayImage = img1;
       path = '/project1';
       cardClass += ' feature';
+      if (!props.lightMode) {
+        cardClass += ' feature-dark';
+      }
       break;
     case 2:
       displayImage = img2;
@@ -38,6 +41,8 @@ export default function Project(props) {
       path = '/project4';
       break;
   }
+
+  
   
   return (
     <div className={cardClass}>

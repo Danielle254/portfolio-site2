@@ -2,16 +2,30 @@
 @import '../../sassStyles/typography';
 @import '../../sassStyles/variables';
 
-#about--section {
-    min-height: 100vh; 
-    width: 100%;
-    padding: 0 1rem;   
+#about--section {      
     scroll-margin-top: 6rem; 
+    margin: 2rem 0; 
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1rem 4rem 1rem;
+}
+
+.about--container {
+    margin: 4rem 0;
+}
+
+.about--background {
+    background-color: $gray-color;
+}
+
+.about--background-dark {
+    background-color: $darkblue-color;       
 }
 
 #about--section h2 {
     font-size: $h2-fontsize;
-    margin-bottom: 2rem;    
+    margin-bottom: 4rem;      
+    text-align: center;
 }
 
 #about--section p {
@@ -28,7 +42,8 @@
 }
 
 #resume-button-light {
-    @include button-light;
+    @include button-light;  
+    
 }
 
 #resume-button-light:hover {
@@ -37,6 +52,7 @@
 
 #resume-button-dark {
     @include button-dark;
+    
 }
 
 #resume-button-dark:hover {
@@ -47,15 +63,31 @@
     #about--section {
         padding: 0 3rem;       
     }
+
+    #about--section h2 {
+        margin-bottom: 4rem; 
+        padding-top: 4rem;  
+    }
 }
 
 @media screen and (min-width: $breakpoint3) {
-    #about--section {
-        padding: 0;
+    .about--container {
+        width: 80%;
+        margin: 0 auto;
     }
+
 
     #about--section h2 {
         margin: 0 auto 2rem auto;
+    }
+
+    #h4-dark, #h4-light, #about--section p {
+        font-size: 1.25rem;
+    }
+
+    #about--section h2 {
+        margin-bottom: 4rem; 
+        padding-top: 4rem;  
     }
 }
 

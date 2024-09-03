@@ -10,6 +10,10 @@
   border: 2px #A60067 solid;
 }
 
+.feature-dark {
+  border: 2px #FFA9F9 solid;
+}
+
 .img-light {
   width: 100%;
   border: 1px solid #131B23;
@@ -41,6 +45,8 @@
 .tags--container-main {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
   margin: 1rem auto 3rem auto;
 }
 
