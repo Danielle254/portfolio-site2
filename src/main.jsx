@@ -2,7 +2,7 @@ import { React, useState, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import Headroom from 'react-headroom'
 import './index.css'
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { Outlet, RouterProvider, createHashRouter } from 'react-router-dom'
 import ScrollToTop from './Components/ScrollToTop.jsx'
 import App from './App.jsx'
 import Project1 from './Pages/Project1/Project1.jsx'
@@ -94,8 +94,7 @@ const Layout = () => {
       setTimeout(showContentFunction, 500);
     } else {
       showContentFunction();
-    }
-    
+    }    
   }
   
   function mobileReset() {
@@ -151,7 +150,7 @@ const Layout = () => {
   );
 };
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
   path: '/',
   element: <Layout />,
