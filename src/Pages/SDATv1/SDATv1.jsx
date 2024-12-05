@@ -1,10 +1,10 @@
 import React from 'react'
 import { useOutletContext } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import './project1.css'
+import './sdatv1.css'
 
 
-const Project1 = () => {
+const SDATv1 = () => {
   const [lightMode, showContent, animationsOn] = useOutletContext();
 
   if(showContent) {
@@ -54,7 +54,7 @@ const Project1 = () => {
           </p>
           <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/ServiceDogsAroundTown_v1' target='_blank'>GitHub Repo</a>
           <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/ServiceDogsAroundTown_v1/' target='_blank'>Live Link</a>
-          <Link to={'/project2'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
+          <Link to={'/conferenceagenda'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
         </div>
       </main>
     )
@@ -63,4 +63,4 @@ const Project1 = () => {
   
 }
 
-export default Project1
+export default SDATv1

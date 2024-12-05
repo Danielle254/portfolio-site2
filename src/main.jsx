@@ -5,13 +5,13 @@ import './index.css'
 import { Outlet, RouterProvider, createHashRouter } from 'react-router-dom'
 import ScrollToTop from './Components/ScrollToTop.jsx'
 import App from './App.jsx'
-import Project1 from './Pages/Project1/Project1.jsx'
-import Project2 from './Pages/Project2/Project2.jsx'
-import Project3 from './Pages/Project3/Project3.jsx'
-import Project4 from './Pages/Project4/Project4.jsx'
+import SDATv1 from './Pages/SDATv1/SDATv1.jsx'
+import DogFoodCalculator from './Pages/DogFoodCalculator/DogFoodCalculator.jsx'
+import AlpineVet from './Pages/AlpineVet/AlpineVet.jsx'
 import Navbar from './Components/Navbar/Navbar.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import Menu from './Components/Menu/Menu.jsx'
+import ConferenceAgenda from './Pages/ConferenceAgenda/ConferenceAgenda.jsx'
 
 
 
@@ -160,20 +160,20 @@ const router = createHashRouter([
     element: <App />
   },
   {
-    path: '/project1',
-    element: <Project1 />
+    path: '/sdatv1',
+    element: <SDATv1 />
   },
   {
-    path: '/project2',
-    element: <Project2 />
+    path: '/conferenceagenda',
+    element: <ConferenceAgenda />
   },
   {
-    path: '/project3',
-    element: <Project3 />
+    path: '/dogfoodcalculator',
+    element: <DogFoodCalculator />
   },
   {
-    path: '/project4',
-    element: <Project4 />
+    path: '/alpinevet',
+    element: <AlpineVet />
   }
 ],
 },

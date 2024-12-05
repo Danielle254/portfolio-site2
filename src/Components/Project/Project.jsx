@@ -22,20 +22,20 @@ export default function Project(props) {
   switch (props.id) {
     case 1:
       displayImage = img1;
-      path = '/project1';
+      path = '/sdatv1';
       cardClass += props.lightMode ? ' feature' : ' feature-dark';
       break;
     case 2:
       displayImage = img2;
-      path = '/project2';
+      path = '/conferenceagenda';
       break;
     case 3:
       displayImage = img3;
-      path = '/project3';
+      path = '/dogfoodcalculator';
       break;
     case 4:
       displayImage = img4;
-      path = '/project4';
+      path = '/alpinevet';
       break;
   }
 

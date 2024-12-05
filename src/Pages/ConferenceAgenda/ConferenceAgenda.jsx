@@ -1,9 +1,9 @@
 import React from 'react'
 import { useOutletContext } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import './project2.css'
+import './conferenceagenda.css'
 
-const Project2 = () => {
+const ConferenceAgenda = () => {
 
   const [lightMode, showContent, animationsOn] = useOutletContext();
 
@@ -54,7 +54,7 @@ const Project2 = () => {
           Another idea would be to add "add to calendar" options so users could put the talks directly onto their own personal calendar (google, etc).</p>
           <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Conference-Agenda' target='_blank'>GitHub Repo</a>
           <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Conference-Agenda/' target='_blank'>Live Link</a>
-          <Link to={'/project3'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
+          <Link to={'/dogfoodcalculator'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
         </div>
       </main>
     )
@@ -63,4 +63,4 @@ const Project2 = () => {
   
 }
 
-export default Project2
+export default ConferenceAgenda

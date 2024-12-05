@@ -1,9 +1,9 @@
 import React from 'react'
 import { useOutletContext } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import './project4.css'
+import './alpinevet.css'
 
-const Project4 = () => {
+const AlpineVet = () => {
 
   const [lightMode, showContent, animationsOn] = useOutletContext();
 
@@ -72,7 +72,7 @@ const Project4 = () => {
           </p>
           <a target='_blank' className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Alpine-Vet'>GitHub Repo</a>
           <a target='_blank' className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Alpine-Vet/'>Live Link</a>
-          <Link to={'/project1'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
+          <Link to={'/sdatv1'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
         </div>
       </main>
     )
@@ -81,4 +81,4 @@ const Project4 = () => {
   
 }
 
-export default Project4
+export default AlpineVet
