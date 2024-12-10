@@ -63,6 +63,10 @@
     @include button-dark-hover;
 }
 
+#hero-tags {
+    font-style: italic;
+}
+
 // from mobile to desktop - responsive design
 @media screen and (min-width: $breakpoint2) {
     #hero--container {

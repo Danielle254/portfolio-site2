@@ -12,6 +12,7 @@ export default function Hero(props) {
         <div id='hero--content'>
           <h1>Hi, I'm Danielle</h1>
           <p>a <span id={props.lightMode ? 'span-light' : 'span-dark'}>Front End Developer</span> creating impactful web experiences with a focus on accessibility.</p>
+          <p id='hero-tags'>React - Next.js - TypeScript</p>
           <Link to="/#projects--section" id={props.lightMode ? 'hero--button' : 'hero--button-dark'}>View Projects</Link>
         </div>
         <img src={graphic} className={`graphic ${animateHero}`} alt='web accessibility symbol illustration' />
