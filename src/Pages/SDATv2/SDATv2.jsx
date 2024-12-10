@@ -1,6 +1,5 @@
 import React from 'react'
 import { useOutletContext } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 import './sdatv2.css'
 
 
@@ -26,34 +25,30 @@ const SDATv2 = () => {
               <p className='tag'>Tailwind CSS</p>
           </div>
           </div>
-          <p>This is what I'd call my capstone project. It is broken down into multiple versions and deployments, and will ultimately be a multi-user, public application utilizing a database. I want to work outside of my comfort zone and create something that makes me grow my skills.<br/><br/>
-          <a target='_blank' className={lightMode ? 'link--light' : 'link--dark'} href='https://docs.google.com/document/d/1qis5J6LwGeG49rQRjwhjirpdhUqHIUrBGo0ejoxNWIA/edit?usp=sharing'>View the full planning document</a>
+          <p>This is what I'd call my capstone project. It was broken down into multiple versions and deployments, and is now a multi-user, public application utilizing a database and multiple APIs.
           <br/><br/>
-          The idea for this project came from me, as a service dog handler, not being able to remember which businesses (particularly restuarants) I've visited were a good experience. Version 1 of this application allows users to capture information about the business and add a personal note regarding the comfort and safety of their service dog when visiting.
-          <br/><br/>
-          Version 2 will incorporate the Google Maps API and Pocket Base database.
+          The idea for this project came from a personal problem. As a service dog handler, I was having difficulty remembering which businesses (particularly restuarants) I'd visited where I'd had a good experience. I built this React application using the Google Maps interface to allow users like myself to easily search for and add information about a local business as it relates to the comfort and safety of my service dog.
           </p>
           <h2>Key Features</h2>
           <ul className='bullets'>
-            <li>Create a list of businesses you've visited</li>
-            <li>Browser saves the list in local storage</li>
-            <li>User can edit or delete entries</li>
-            <li>Note which businesses were your favorites</li>
-            <li>Sort entries by Date Visited or Business Name. Filter entries by Favorites.</li>
+            <li>User Authentication with Firebase</li>
+            <li>Search for a Business with Google Maps Autocomplete API</li>
+            <li>User can add, edit and delete their own entries</li>
+            <li>Note which businesses are your favorites</li>
+            <li>Mobile Friendly</li>
+            <li>See public data from other users</li>
           </ul>
           <h2>Skills Showcased</h2> 
           <ul className='bullets'>
-            <li>React components</li>            
-            <li>Utilizing local storage</li>
+            <li>Working with multiple APIs</li>            
+            <li>Managing user data</li>
             <li>CRUD app - Create, Read, Update, Delete</li>
-            <li>Keyboard Navigable</li>
-            <li>Form Validation</li>            
-          </ul>
-          
+            <li>Multi-Page app with React Router</li>           
+          </ul>          
           <h2>Future Enhancement Ideas</h2>
-          <p>Version 2 will incorporate the Google Maps API and utilize PocketBase for a database. There are further iterations/deployments scheduled after that as well. These first 2 versions will be single user, "private" applications. After that, it will open up to be a multi-user, "public" application that displays data from all users (except personal notes, which will be kept private to each user).
+          <p>I have lots of ideas to make the user experience even better. I'd like to add the functionality where the list of places on the sidebar matches what is shown on the map and adjusts itself based on the map window changing, just like Google Maps does. Another big item on the To Do list is to allow multiple users to rate and review the same business location.
           <br/><br/>
-          You can see the full planning document here: <a target='_blank' className={lightMode ? 'link--light' : 'link--dark'} href='https://docs.google.com/document/d/1qis5J6LwGeG49rQRjwhjirpdhUqHIUrBGo0ejoxNWIA/edit?usp=sharing'>View Next Steps for this project</a>
+          You can see the project task tracking board (GitHub Projects) here: <a target='_blank' className={lightMode ? 'link--light' : 'link--dark'} href='https://github.com/users/Danielle254/projects/1'>Project Board</a>
           </p>
           <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/ServiceDogsAroundTown_v2' target='_blank'>GitHub Repo</a>
           <a className={lightMode ? 'repo' : 'repo-dark'} href='https://servicedogsaroundtown.vercel.app/' target='_blank'>Live Site</a>
