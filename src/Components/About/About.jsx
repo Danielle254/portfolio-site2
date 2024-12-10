@@ -24,7 +24,7 @@ export default function About(props) {
             <p>
             My first exposure to programming was a C++ course for my Mechanical Engineering degree. Later, I built and updated my own Wix websites for my small businesses. 
             <br/><br/>
-            Now, I've spent the last 3 years learning Software Engineering through my own grit and determination. <b>Once and engineer, always an engineer.</b> I'm invested in this career for the long term, and I'm bringing all of my experiences and learnings with me as unique strengths!
+            Now, I've spent the last 3 years learning Software Engineering through my own grit and determination. <b>Once an engineer, always an engineer.</b> I'm invested in this career for the long term, and I'm bringing all of my experiences and learnings with me as unique strengths!
             </p>
           </div>
         </div>        
