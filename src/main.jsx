@@ -12,7 +12,8 @@ import Navbar from './Components/Navbar/Navbar.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import Menu from './Components/Menu/Menu.jsx'
 import ConferenceAgenda from './Pages/ConferenceAgenda/ConferenceAgenda.jsx'
-
+import GridironSurvivor from './Pages/GridironSurvivor/GridironSurvivor.jsx'
+import SDATv2 from './Pages/SDATv2/SDATv2.jsx'
 
 
 const Layout = () => {
@@ -174,6 +175,14 @@ const router = createHashRouter([
   {
     path: '/alpinevet',
     element: <AlpineVet />
+  },
+  {
+    path: '/sdatv2',
+    element: <SDATv2 />
+  },
+  {
+    path: '/gridironsurvivor',
+    element: <GridironSurvivor />
   }
 ],
 },

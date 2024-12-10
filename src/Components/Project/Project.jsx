@@ -47,7 +47,7 @@ export default function Project(props) {
       break;
     case 6:
       displayImage = img6;
-      path = '/gridiron';
+      path = '/gridironsurvivor';
       break;
   }
 
