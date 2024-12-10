@@ -12,7 +12,7 @@ const SDATv2 = () => {
         <div className='page--container'>
           <h1>Service Dogs Around Town - Version 2</h1>
           <div className='wrapper'>
-            <iframe className={lightMode ? 'project-video' : 'project-video-dark'} src="https://www.loom.com/embed/146fece58802487cb4003b5b77854c2c?hideEmbedTopBar=true"  webkitallowfullscreen={'true'} mozallowfullscreen={'true'} allowFullScreen title='screenshare demo of project website features' ></iframe>
+            <iframe className={lightMode ? 'project-video' : 'project-video-dark'} src="https://www.loom.com/embed/f552d67328864f02969384f3a6eee2fc?hideEmbedTopBar=true"  webkitallowfullscreen={'true'} mozallowfullscreen={'true'} allowFullScreen title='screenshare demo of project website features' ></iframe>
           </div>
           <div>
             <h2>Technologies Used:</h2>
