@@ -5,6 +5,8 @@ import img1 from '../../Images/project1thumb.png'
 import img2 from '../../Images/project2thumb.png'
 import img3 from '../../Images/project3thumb.png'
 import img4 from "../../Images/project4thumb.png"
+import img5 from "../../Images/project5thumb.png"
+import img6 from "../../Images/project6thumb.png"
 import { v4 as uuid  } from "uuid"
 
 export default function Project(props) {
@@ -38,6 +40,14 @@ export default function Project(props) {
     case 4:
       displayImage = img4;
       path = '/alpinevet';
+      break;
+    case 5:
+      displayImage = img5;
+      path = '/sdatv2';
+      break;
+    case 6:
+      displayImage = img6;
+      path = '/gridiron';
       break;
   }
 
