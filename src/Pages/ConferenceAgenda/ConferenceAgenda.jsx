@@ -16,9 +16,9 @@ const ConferenceAgenda = () => {
           </div>
           <div>
             <h2>Technologies Used:</h2>
-            <div className='tags--container'>
-              <p className='tag'>React</p>
-              <p className='tag'>CSS</p>
+            <div className='page-tags--container'>
+              <p className='page-tag'>React</p>
+              <p className='page-tag'>CSS</p>
           </div>
           </div>
           <p>This is a project of my own idea and design. The site displays the agenda for a conference in chronological order (data stored in separate file), then allows the user to add activities from the agenda to their own personal itinerary.<br/><br/>

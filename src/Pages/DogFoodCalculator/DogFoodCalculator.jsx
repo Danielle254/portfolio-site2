@@ -16,9 +16,9 @@ const DogFoodCalculator = () => {
           </div>
           <div>
             <h2>Technologies Used:</h2>
-            <div className='tags--container'>
-              <p className='tag'>JavaScript</p>
-              <p className='tag'>Bootstrap</p>
+            <div className='page-tags--container'>
+              <p className='page-tag'>JavaScript</p>
+              <p className='page-tag'>Bootstrap</p>
           </div>
           </div>
           <p>This app calculates how long a given bag of dog food will last, factoring in a multiple dog household, and provides the user with pricing information and a link to purchase the food online. There is also the ability to compare 2 different foods!<br/><br/>

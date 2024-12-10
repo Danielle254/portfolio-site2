@@ -16,13 +16,13 @@ const SDATv2 = () => {
           </div>
           <div>
             <h2>Technologies Used:</h2>
-            <div className='tags--container'>
-              <p className='tag'>React</p>
-              <p className='tag'>JavaScript</p>
-              <p className='tag'>Google Maps API</p>
-              <p className='tag'>Firebase Database</p>
-              <p className='tag'>Firebase Authentication</p>
-              <p className='tag'>Tailwind CSS</p>
+            <div className='page-tags--container'>
+              <p className='page-tag'>React</p>
+              <p className='page-tag'>JavaScript</p>
+              <p className='page-tag'>Google Maps API</p>
+              <p className='page-tag'>Firebase Database</p>
+              <p className='page-tag'>Firebase Authentication</p>
+              <p className='page-tag'>Tailwind CSS</p>
           </div>
           </div>
           <p>This is what I'd call my capstone project. It was broken down into multiple versions and deployments, and is now a multi-user, public application utilizing a database and multiple APIs.

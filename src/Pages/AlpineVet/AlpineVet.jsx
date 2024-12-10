@@ -16,9 +16,9 @@ const AlpineVet = () => {
           </div>
           <div>
             <h2>Technologies Used:</h2>
-            <div className='tags--container'>
-              <p className='tag'>HTML</p>
-              <p className='tag'>CSS</p>
+            <div className='page-tags--container'>
+              <p className='page-tag'>HTML</p>
+              <p className='page-tag'>CSS</p>
           </div>
           </div>
           <p>I took the website of a local business that I frequent, Alpine Vet Care in Missoula, and gave their website homepage a refresh. This project showcases my ability to use CSS with no libraries or frameworks to create a responsive webpage for desktop and mobile.<br/><br/>

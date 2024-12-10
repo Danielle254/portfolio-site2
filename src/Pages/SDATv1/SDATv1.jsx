@@ -16,10 +16,10 @@ const SDATv1 = () => {
           </div>
           <div>
             <h2>Technologies Used:</h2>
-            <div className='tags--container'>
-              <p className='tag'>React</p>
-              <p className='tag'>CSS</p>
-              <p className='tag'>Forms</p>
+            <div className='page-tags--container'>
+              <p className='page-tag'>React</p>
+              <p className='page-tag'>CSS</p>
+              <p className='page-tag'>Forms</p>
           </div>
           </div>
           <p>This is what I'd call my capstone project. It is broken down into multiple versions and deployments, and will ultimately be a multi-user, public application utilizing a database. I want to work outside of my comfort zone and create something that makes me grow my skills.<br/><br/>

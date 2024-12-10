@@ -16,13 +16,13 @@ const GridironSurvivor = () => {
           </div>
           <div>
             <h2>Technologies Used:</h2>
-            <div className='tags--container'>
-            <p className='tag'>Next.js</p>
-              <p className='tag'>React</p>
-              <p className='tag'>TypeScript</p>
-              <p className='tag'>Jest</p>
-              <p className='tag'>React Testing Library</p>
-              <p className='tag'>shadcn/ui</p>
+            <div className='page-tags--container'>
+              <p className='page-tag'>Next.js</p>
+              <p className='page-tag'>React</p>
+              <p className='page-tag'>TypeScript</p>
+              <p className='page-tag'>Jest</p>
+              <p className='page-tag'>React Testing Library</p>
+              <p className='page-tag'>shadcn/ui</p>
           </div>
           </div>
           <p>Gridiron Survivor is a unique software development apprenticeship program run by Shashi Lo, a Senior Developer at Microsoft. I have been a member since October 2024, contributing to the existing Next.js code base. 
