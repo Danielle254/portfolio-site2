@@ -11,16 +11,19 @@ const GridironSurvivor = () => {
     return (
       <main className={lightMode ? 'page' : 'page-dark'}>
         <div className='page--container'>
-          <h1>Service Dogs Around Town - Version 1</h1>
+          <h1>Gridiron Survivor</h1>
           <div className='wrapper'>
             <iframe className={lightMode ? 'project-video' : 'project-video-dark'} src="https://www.loom.com/embed/146fece58802487cb4003b5b77854c2c?hideEmbedTopBar=true"  webkitallowfullscreen={'true'} mozallowfullscreen={'true'} allowFullScreen title='screenshare demo of project website features' ></iframe>
           </div>
           <div>
             <h2>Technologies Used:</h2>
             <div className='tags--container'>
+            <p className='tag'>Next.js</p>
               <p className='tag'>React</p>
-              <p className='tag'>CSS</p>
-              <p className='tag'>Forms</p>
+              <p className='tag'>TypeScript</p>
+              <p className='tag'>Jest</p>
+              <p className='tag'>React Testing Library</p>
+              <p className='tag'>shadcn/ui</p>
           </div>
           </div>
           <p>This is what I'd call my capstone project. It is broken down into multiple versions and deployments, and will ultimately be a multi-user, public application utilizing a database. I want to work outside of my comfort zone and create something that makes me grow my skills.<br/><br/>
@@ -52,9 +55,8 @@ const GridironSurvivor = () => {
           <br/><br/>
           You can see the full planning document here: <a target='_blank' className={lightMode ? 'link--light' : 'link--dark'} href='https://docs.google.com/document/d/1qis5J6LwGeG49rQRjwhjirpdhUqHIUrBGo0ejoxNWIA/edit?usp=sharing'>View Next Steps for this project</a>
           </p>
-          <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/ServiceDogsAroundTown_v1' target='_blank'>GitHub Repo</a>
-          <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/ServiceDogsAroundTown_v1/' target='_blank'>Live Link</a>
-          <Link to={'/conferenceagenda'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
+          <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/LetsGetTechnical/gridiron-survivor/pulls?q=is%3Apr+author%3A%40me+is%3Aclosed' target='_blank'>GitHub PRs</a>
+          <a className={lightMode ? 'repo' : 'repo-dark'} href='https://www.gridironsurvivor.com/' target='_blank'>Live Site</a>
         </div>
       </main>
     )

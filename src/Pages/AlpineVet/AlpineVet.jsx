@@ -72,7 +72,6 @@ const AlpineVet = () => {
           </p>
           <a target='_blank' className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Alpine-Vet'>GitHub Repo</a>
           <a target='_blank' className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Alpine-Vet/'>Live Link</a>
-          <Link to={'/sdatv1'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
         </div>
       </main>
     )

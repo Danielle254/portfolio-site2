@@ -54,7 +54,6 @@ const SDATv1 = () => {
           </p>
           <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/ServiceDogsAroundTown_v1' target='_blank'>GitHub Repo</a>
           <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/ServiceDogsAroundTown_v1/' target='_blank'>Live Link</a>
-          <Link to={'/conferenceagenda'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
         </div>
       </main>
     )

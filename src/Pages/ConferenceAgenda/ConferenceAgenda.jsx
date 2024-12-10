@@ -54,7 +54,6 @@ const ConferenceAgenda = () => {
           Another idea would be to add "add to calendar" options so users could put the talks directly onto their own personal calendar (google, etc).</p>
           <a className={lightMode ? 'repo' : 'repo-dark'} id='top--button' href='https://github.com/Danielle254/Conference-Agenda' target='_blank'>GitHub Repo</a>
           <a className={lightMode ? 'repo' : 'repo-dark'} href='https://danielle254.github.io/Conference-Agenda/' target='_blank'>Live Link</a>
-          <Link to={'/dogfoodcalculator'} className={lightMode ? 'next-project' : 'next-project-dark'} ><p>Next Project ➤</p></Link>
         </div>
       </main>
     )
