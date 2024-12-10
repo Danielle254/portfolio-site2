@@ -5,11 +5,14 @@
 .page {
     background-color: $white-color;
     color: $black-color;
+    margin-bottom: 2rem;
 }
 
 .page-dark {
     background-color: $darkgray-color;
     color: $white-color;
+    margin-bottom: 2rem;
+
 }
 
 .page--container {
@@ -81,7 +84,7 @@ p {
 .repo {
     @include button-light-secondary;
     width: 170px;
-    text-align: center;    
+    text-align: center;   
 }
 
 .repo:hover {
@@ -100,34 +103,6 @@ p {
 
 #top--button {
     margin-top: 2rem;
-}
-
-.next-project {
-    @include button-light;
-    width: 170px;
-    margin-bottom: 4rem;    
-}
-
-.next-project:hover {
-    @include button-light-hover;
-}
-
-.next-project p {
-    text-align: center;
-}
-
-.next-project-dark {
-    @include button-dark;
-    width: 170px; 
-    margin-bottom: 4rem;   
-}
-
-.next-project-dark:hover {
-    @include button-dark-hover;
-}
-
-.next-project-dark p {
-    text-align: center;
 }
 
 .link--light {
