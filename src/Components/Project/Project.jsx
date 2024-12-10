@@ -19,11 +19,13 @@ export default function Project(props) {
   let displayImage;
   let path = '';
   let cardClass = 'project--card';
+  if (props.highlight) {
+    cardClass += props.lightMode ? ' feature' : ' feature-dark';
+  }
   switch (props.id) {
     case 1:
       displayImage = img1;
-      path = '/sdatv1';
-      cardClass += props.lightMode ? ' feature' : ' feature-dark';
+      path = '/sdatv1';      
       break;
     case 2:
       displayImage = img2;
