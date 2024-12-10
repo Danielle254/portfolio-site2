@@ -17,18 +17,33 @@
     text-align: center;  
 }
 
-#more-projects-button, #more-projects-button-dark {
+.expand-projects-button, .expand-projects-button-dark {
+    @include button-light-secondary;
+    margin: -2rem 0 10rem 1rem;
+    text-align: center;   
+    border: none; 
+}
+
+.expand-projects-button:hover {
+    cursor: pointer; 
+}
+
+.expand-projects-button-dark:hover {
+    cursor: pointer;    
+}
+
+.more-projects-button, .more-projects-button-dark {
     @include button-light-secondary;
     margin: -2rem 0 10rem 1rem;
     width: 155px;
     text-align: center;    
 }
 
-#more-projects-button:hover {
+.more-projects-button:hover {
     @include button-light-secondary-hover;    
 }
 
-#more-projects-button-dark:hover {
+.more-projects-button-dark:hover {
     @include button-secondary-dark-hover;    
 }
 
@@ -44,7 +59,7 @@
         justify-items: center;
     }
 
-    #more-projects-button, #more-projects-button-dark {
+    .more-projects-button, .more-projects-button-dark {
         margin: 4rem 0;
     }
 }
